@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="产品周刊,产品设计,PM," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="张贺的博客" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="值得关注的新产品 1. DeepL Translator（Web）DeepL 所推出的翻译工具，得到 TechCrunch 的盛赞。虽然不是新推出的产品，不知怎么近期在 Twitter 上火了起来。截至本周刊写作时支持 11 种语言互翻，下图是 TualatriX 所发布的 DeepL 与谷歌翻译案例效果对比。)  链接：https:&#x2F;&#x2F;www.deepl.com&#x2F;translatorhttps:">
+<meta name="keywords" content="产品周刊,产品设计,PM">
+<meta property="og:type" content="article">
+<meta property="og:title" content="产品周刊 | 第 10 期（20200405）">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;04&#x2F;05&#x2F;%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A%EF%BC%9A%E7%AC%AC-10-%E6%9C%9F%EF%BC%8820200405%EF%BC%89&#x2F;index.html">
+<meta property="og:site_name" content="张贺的博客">
+<meta property="og:description" content="值得关注的新产品 1. DeepL Translator（Web）DeepL 所推出的翻译工具，得到 TechCrunch 的盛赞。虽然不是新推出的产品，不知怎么近期在 Twitter 上火了起来。截至本周刊写作时支持 11 种语言互翻，下图是 TualatriX 所发布的 DeepL 与谷歌翻译案例效果对比。)  链接：https:&#x2F;&#x2F;www.deepl.com&#x2F;translatorhttps:">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1586160422299-7ca476e7-4a83-4fd1-993a-7d4a2290f48e.png#align=left&amp;display=inline&amp;height=406&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=812&amp;originWidth=1017&amp;size=225065&amp;status=done&amp;style=none&amp;width=508.5">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1586160442714-3bb40540-7e9c-4871-afad-42a89fe67eba.png#align=left&amp;display=inline&amp;height=413&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=825&amp;originWidth=1043&amp;size=238396&amp;status=done&amp;style=none&amp;width=521.5">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;jpeg&#x2F;535404&#x2F;1586159764463-fee709a0-dfa6-42df-a0dc-e60696cb28c0.jpeg#align=left&amp;display=inline&amp;height=351&amp;margin=%5Bobject%20Object%5D&amp;name=e8f1fe20650d8da43f.jpg&amp;originHeight=950&amp;originWidth=1080&amp;size=76006&amp;status=done&amp;style=none&amp;width=399">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1586160144634-8ab19342-ce9b-4c76-a3c2-c45d8562e374.png#align=left&amp;display=inline&amp;height=346&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=516&amp;originWidth=443&amp;size=168387&amp;status=done&amp;style=none&amp;width=297">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1586164620740-c616f8c6-b2cb-4735-aad7-28041e9e96a4.png#align=left&amp;display=inline&amp;height=309&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=481&amp;originWidth=953&amp;size=389222&amp;status=done&amp;style=none&amp;width=613">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1586165404472-6e52e680-4039-46c4-9ff2-574d765da993.png#align=left&amp;display=inline&amp;height=414&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=827&amp;originWidth=1794&amp;size=894257&amp;status=done&amp;style=none&amp;width=897">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1586163781379-96b2a9f9-a850-4af0-9280-ea5aae04e8fc.png#align=left&amp;display=inline&amp;height=1608&amp;margin=%5Bobject%20Object%5D&amp;name=dea7c075-6800-49c9-a564-f9ff67f58acd.png&amp;originHeight=1608&amp;originWidth=3350&amp;size=1303974&amp;status=done&amp;style=none&amp;width=3350">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1585740295805-0b343c17-679e-45ec-9879-4e7edb49c2d8.png#align=left&amp;display=inline&amp;height=431&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=861&amp;originWidth=1709&amp;size=189050&amp;status=done&amp;style=none&amp;width=854.5">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1586167003836-27a6739a-741f-44dc-8eec-b6e1e3b00d6a.png#align=left&amp;display=inline&amp;height=426&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=852&amp;originWidth=1890&amp;size=712744&amp;status=done&amp;style=none&amp;width=945">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;jpeg&#x2F;535404&#x2F;1586169535193-dd2e568e-5284-4d45-b261-66cf2c75deef.jpeg#align=left&amp;display=inline&amp;height=387&amp;margin=%5Bobject%20Object%5D&amp;originHeight=387&amp;originWidth=270&amp;size=0&amp;status=done&amp;style=none&amp;width=270">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2019&#x2F;jpeg&#x2F;535404&#x2F;1571989117002-cef6be63-7b29-4ac4-a35f-3b5a43e7ce88.jpeg#align=left&amp;display=inline&amp;height=258&amp;margin=%5Bobject%20Object%5D&amp;originHeight=258&amp;originWidth=258&amp;status=done&amp;style=none&amp;width=258">
+<meta property="og:updated_time" content="2020-05-07T06:10:24.084Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1586160422299-7ca476e7-4a83-4fd1-993a-7d4a2290f48e.png#align=left&amp;display=inline&amp;height=406&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=812&amp;originWidth=1017&amp;size=225065&amp;status=done&amp;style=none&amp;width=508.5">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2020/04/05/产品周刊：第-10-期（20200405）/"/>
+
+
+
+
+
+  <title>产品周刊 | 第 10 期（20200405） | 张贺的博客</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">张贺的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">若愚若昏</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/05/%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A%EF%BC%9A%E7%AC%AC-10-%E6%9C%9F%EF%BC%8820200405%EF%BC%89/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Herbert Chang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="张贺的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">产品周刊 | 第 10 期（20200405）</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-04-05T15:39:51+08:00">
+                2020-04-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A/" itemprop="url" rel="index">
+                    <span itemprop="name">产品周刊</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2020/04/05/%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A%EF%BC%9A%E7%AC%AC-10-%E6%9C%9F%EF%BC%8820200405%EF%BC%89/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2020/04/05/产品周刊：第-10-期（20200405）/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="值得关注的新产品"><a href="#值得关注的新产品" class="headerlink" title="值得关注的新产品"></a>值得关注的新产品<br /></h3><p><a name="Z0A2e"></a></p>
+<h4 id="1-DeepL-Translator（Web）"><a href="#1-DeepL-Translator（Web）" class="headerlink" title="1. DeepL Translator（Web）"></a>1. <a href="https://www.deepl.com/translator" target="_blank" rel="noopener">DeepL Translator</a>（Web）</h4><p>DeepL 所推出的翻译工具，得到 TechCrunch 的盛赞。虽然不是新推出的产品，不知怎么近期在 Twitter 上火了起来。截至本周刊写作时支持 11 种语言互翻，下图是 TualatriX 所发布的 DeepL 与谷歌翻译案例效果对比。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1586160422299-7ca476e7-4a83-4fd1-993a-7d4a2290f48e.png#align=left&display=inline&height=406&margin=%5Bobject%20Object%5D&name=image.png&originHeight=812&originWidth=1017&size=225065&status=done&style=none&width=508.5" alt="image.png">)<img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1586160442714-3bb40540-7e9c-4871-afad-42a89fe67eba.png#align=left&display=inline&height=413&margin=%5Bobject%20Object%5D&name=image.png&originHeight=825&originWidth=1043&size=238396&status=done&style=none&width=521.5" alt="image.png"></p>
+<blockquote>
+<p>链接：<a href="https://www.deepl.com/translator" target="_blank" rel="noopener">https://www.deepl.com/translator</a><br><a href="https://techcrunch.com/2017/08/29/deepl-schools-other-online-translators-with-clever-machine-learning/" target="_blank" rel="noopener">https://techcrunch.com/2017/08/29/deepl-schools-other-online-translators-with-clever-machine-learning/</a></p>
+</blockquote>
+<p><a name="UPRdR"></a></p>
+<h4 id="2-Telegram-6-0-（iOS-Android-Mac-amp-Win）"><a href="#2-Telegram-6-0-（iOS-Android-Mac-amp-Win）" class="headerlink" title="2. Telegram 6.0 （iOS, Android, Mac &amp; Win）"></a>2. <a href="https://telegram.org/blog/folders" target="_blank" rel="noopener">Telegram 6.0</a> （iOS, Android, Mac &amp; Win）</h4><p>知名IM软件 Telegram 发布 6.0 版本，更新特性包括：</p>
+<ul>
+<li>新增对话文件夹功能，方便会话归类；已归档会话可以从「All chats」隐藏。对话文件夹设置支持多终端同步。</li>
+<li>每个对话文件夹置顶会话数量不限。</li>
+<li>查看频道的详细增长数据。</li>
+<li>发送骰子图标可以获取随机点数，并支持其他多个「animated emoji 」。</li>
+<li>4 月 3 日开始提供 <a href="https://telegram.org/blog/coronavirus" target="_blank" rel="noopener">COVID-19 新闻相关频道认证</a>。</li>
+</ul>
+<p><br /><img src="https://cdn.nlark.com/yuque/0/2020/jpeg/535404/1586159764463-fee709a0-dfa6-42df-a0dc-e60696cb28c0.jpeg#align=left&display=inline&height=351&margin=%5Bobject%20Object%5D&name=e8f1fe20650d8da43f.jpg&originHeight=950&originWidth=1080&size=76006&status=done&style=none&width=399" alt="e8f1fe20650d8da43f.jpg">)<img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1586160144634-8ab19342-ce9b-4c76-a3c2-c45d8562e374.png#align=left&display=inline&height=346&margin=%5Bobject%20Object%5D&name=image.png&originHeight=516&originWidth=443&size=168387&status=done&style=none&width=297" alt="image.png"><br /><br><br />本周刊在<a href="https://www.yuque.com/herbert-chang/pmweekly/issue-4" target="_blank" rel="noopener">第四期</a>曾经介绍过 Telegram 出色的一些产品设计。</p>
+<blockquote>
+<p>链接：<a href="https://telegram.org/blog/folders" target="_blank" rel="noopener">https://telegram.org/blog/folders</a><br><a href="https://telegram.org/blog/coronavirus" target="_blank" rel="noopener">https://telegram.org/blog/coronavirus</a><br><a href="https://www.yuque.com/herbert-chang/pmweekly/issue-4" target="_blank" rel="noopener">https://www.yuque.com/herbert-chang/pmweekly/issue-4</a></p>
+</blockquote>
+<br />
+<a name="8hhFU"></a>
+
+<h4 id="3-Comeet-（iOS-amp-Android）"><a href="#3-Comeet-（iOS-amp-Android）" class="headerlink" title="3. Comeet （iOS &amp; Android）"></a>3. Comeet （iOS &amp; Android）</h4><p>即刻团队出品的相亲交友应用，主打同城兴趣匹配的组局线下交友。用户新进入应用时可以选择感兴趣的活动（春日踏青四人局、动森联机四人局、心动咖啡二人局、有料饭局四人局），对系统生成的匹配用户可以选择「无感」/「喜欢」（类似 Tinder 的操作）。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1586164620740-c616f8c6-b2cb-4735-aad7-28041e9e96a4.png#align=left&display=inline&height=309&margin=%5Bobject%20Object%5D&name=image.png&originHeight=481&originWidth=953&size=389222&status=done&style=none&width=613" alt="image.png"></p>
+<blockquote>
+<p>链接：<a href="https://www.chinaz.com/2020/0327/1121282.shtml" target="_blank" rel="noopener">https://www.chinaz.com/2020/0327/1121282.shtml</a><br><a href="https://zhuanlan.zhihu.com/p/121783044" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/121783044</a></p>
+</blockquote>
+<br />
+<a name="loAXY"></a>
+
+<h4 id="4-Make-Passport-Photo（Web）"><a href="#4-Make-Passport-Photo（Web）" class="headerlink" title="4. Make Passport Photo（Web）"></a>4. <a href="https://makepassportphoto.com/" target="_blank" rel="noopener">Make Passport Photo</a>（Web）</h4><p>制作护照、ID、VISA 等所需照片的工具，支持 150 个国家，提供免费基础版和付费 Pro 版服务。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1586165404472-6e52e680-4039-46c4-9ff2-574d765da993.png#align=left&display=inline&height=414&margin=%5Bobject%20Object%5D&name=image.png&originHeight=827&originWidth=1794&size=894257&status=done&style=none&width=897" alt="image.png"></p>
+<blockquote>
+<p>链接：<a href="https://makepassportphoto.com/" target="_blank" rel="noopener">https://makepassportphoto.com</a></p>
+</blockquote>
+<p><a name="AWsn6"></a></p>
+<h4 id="5-动物之森图鉴-（Web）"><a href="#5-动物之森图鉴-（Web）" class="headerlink" title="5. 动物之森图鉴 （Web）"></a>5. <a href="http://diobulanduo.gitee.io/animalcrossing.github.io/#/fish" target="_blank" rel="noopener">动物之森图鉴</a> （Web）</h4><p>《动物之森》在线图鉴工具，它能够快速根据月份、地点等信息对鱼类和昆虫信息进行筛选，方便你了解每个月可以收集的元素。类似的还有一个小程序叫「<a href="https://creatorsdaily.com/f189ecb5-698d-49bb-baad-be8c67e07bab" target="_blank" rel="noopener">Latte 动森图鉴</a>」。Sketch 设计师 Marcelo Marfil 做的<a href="https://dribbble.com/shots/10905314-Animal-Crossing-New-Horizon-Wallpaper" target="_blank" rel="noopener">动森主题壁纸</a>也很漂亮。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1586163781379-96b2a9f9-a850-4af0-9280-ea5aae04e8fc.png#align=left&display=inline&height=1608&margin=%5Bobject%20Object%5D&name=dea7c075-6800-49c9-a564-f9ff67f58acd.png&originHeight=1608&originWidth=3350&size=1303974&status=done&style=none&width=3350" alt="dea7c075-6800-49c9-a564-f9ff67f58acd.png"></p>
+<blockquote>
+<p>链接：<a href="http://diobulanduo.gitee.io/animalcrossing.github.io/#/fish" target="_blank" rel="noopener">http://diobulanduo.gitee.io/animalcrossing.github.io/#/fish</a><br><a href="https://xinquji.com/posts/75811" target="_blank" rel="noopener">https://xinquji.com/posts/75811</a><br><a href="https://creatorsdaily.com/f189ecb5-698d-49bb-baad-be8c67e07bab" target="_blank" rel="noopener">https://creatorsdaily.com/f189ecb5-698d-49bb-baad-be8c67e07bab</a><br>动森主题壁纸 <a href="https://dribbble.com/shots/10905314-Animal-Crossing-New-Horizon-Wallpaper" target="_blank" rel="noopener">https://dribbble.com/shots/10905314-Animal-Crossing-New-Horizon-Wallpaper</a></p>
+</blockquote>
+<p><a name="qhT3W"></a></p>
+<h3 id="佳文推介"><a href="#佳文推介" class="headerlink" title="佳文推介"></a>佳文推介</h3><p><a name="i9rxS"></a></p>
+<h4 id="1-古早-Mac-App-的式微"><a href="#1-古早-Mac-App-的式微" class="headerlink" title="1. 古早 Mac App 的式微"></a>1. <a href="https://happyaddone.com/Mac-App-7a99e3fcb6694ae8b38928024f6a46d7" target="_blank" rel="noopener">古早 Mac App 的式微</a></h4><p>「喜加一」播客主播第一篇 Newsletter，聊了 Omni Group 最近开始裁员，联想到的旧式 Mac App 们的退潮，也分享了最近一周里发现的值得推荐的播客、视频、文章。<br /></p>
+<blockquote>
+<p>链接：<a href="https://happyaddone.com/Mac-App-7a99e3fcb6694ae8b38928024f6a46d7" target="_blank" rel="noopener">https://happyaddone.com/Mac-App-7a99e3fcb6694ae8b38928024f6a46d7</a></p>
+</blockquote>
+<p><a name="nSOeh"></a></p>
+<h4 id="2-快捷键的体验设计"><a href="#2-快捷键的体验设计" class="headerlink" title="2. 快捷键的体验设计"></a>2. <a href="https://www.yuque.com/yuque/blog/egrhf6" target="_blank" rel="noopener"><strong>快捷键的体验设计</strong></a></h4><p>阿里巴巴语雀体验设计师 Suki 的快捷键体验设计心得。介绍对功能键的理解，给出了如何设计快捷键Tips。</p>
+<blockquote>
+<p>链接：<a href="https://www.yuque.com/yuque/blog/egrhf6" target="_blank" rel="noopener">https://www.yuque.com/yuque/blog/egrhf6</a></p>
+</blockquote>
+<p><a name="fMfnK"></a></p>
+<h4 id="3-How-each-generation-gets-the-drugs-it-deserves"><a href="#3-How-each-generation-gets-the-drugs-it-deserves" class="headerlink" title="3. How each generation gets the drugs it deserves"></a>3. <a href="https://aeon.co/essays/how-each-generation-gets-the-drugs-it-deserves" target="_blank" rel="noopener">How each generation gets the drugs it deserves</a></h4><p>Aeon 杂志刊登文章，副标题是 _LSD in the ‘60s; ecstasy in the ‘80s; ‘smart’ drugs today: how we get high reflects the desires and fears of our times。_讲述精神类药物变迁与时代文化精神状况之间的脉络关联。</p>
+<blockquote>
+<p>链接：<a href="https://aeon.co/essays/how-each-generation-gets-the-drugs-it-deserves" target="_blank" rel="noopener">https://aeon.co/essays/how-each-generation-gets-the-drugs-it-deserves</a></p>
+</blockquote>
+<p><a name="3eYNe"></a></p>
+<h3 id="资源与工具"><a href="#资源与工具" class="headerlink" title="资源与工具"></a>资源与工具</h3><p><a name="oM3dc"></a></p>
+<h4 id="1-Rework导航"><a href="#1-Rework导航" class="headerlink" title="1. Rework导航"></a>1. <a href="https://rework.tools" target="_blank" rel="noopener">Rework导航</a></h4><p>效率工具导航站点。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1585740295805-0b343c17-679e-45ec-9879-4e7edb49c2d8.png#align=left&display=inline&height=431&margin=%5Bobject%20Object%5D&name=image.png&originHeight=861&originWidth=1709&size=189050&status=done&style=none&width=854.5" alt="image.png"></p>
+<blockquote>
+<p>链接：<a href="https://rework.tools/" target="_blank" rel="noopener">https://rework.tools</a></p>
+</blockquote>
+<br />
+<a name="pigMg"></a>
+
+<h4 id="2-DesignerHunt"><a href="#2-DesignerHunt" class="headerlink" title="2. DesignerHunt"></a>2. <a href="https://www.designerhunt.io" target="_blank" rel="noopener">DesignerHunt</a></h4><p>分类提供了国际优秀设计师的个人简介和社交网站链接。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1586167003836-27a6739a-741f-44dc-8eec-b6e1e3b00d6a.png#align=left&display=inline&height=426&margin=%5Bobject%20Object%5D&name=image.png&originHeight=852&originWidth=1890&size=712744&status=done&style=none&width=945" alt="image.png"></p>
+<blockquote>
+<p>参考链接：<a href="https://www.designerhunt.io" target="_blank" rel="noopener">https://www.designerhunt.io</a><br><a href="https://anyway.fm/news.php" target="_blank" rel="noopener">https://anyway.fm/news.php</a></p>
+</blockquote>
+<br />
+<a name="UXUA7"></a>
+
+<h3 id="每周一书"><a href="#每周一书" class="headerlink" title="每周一书"></a>每周一书</h3><p>高居翰《<a href="https://book.douban.com/subject/25774379/" target="_blank" rel="noopener">图说中国绘画史</a>》<br /><img src="https://cdn.nlark.com/yuque/0/2020/jpeg/535404/1586169535193-dd2e568e-5284-4d45-b261-66cf2c75deef.jpeg#align=left&display=inline&height=387&margin=%5Bobject%20Object%5D&originHeight=387&originWidth=270&size=0&status=done&style=none&width=270" alt=""><br /><br><br />美籍艺术史大家高居翰（James Cahill）先生成名作，译者为高居翰的弟子。高居翰教授从 1965 年开始到 1994 年退休前都在加州大学伯克利分校(University of California, Berkeley)任教， 他是上世纪 50 年代到 70 年代对中国美术作品进行研究和编目造册的一批著名美术史学家之一。高居翰教授一开始是和瑞典学者喜仁龙(Osvald Siren)合作，后独自展开工作，他对中国绘画精品进行纪录和拍照，建立起一套正典体系，在此基础上去理解中国绘画千百年来的发展。《图说中国绘画史》首次出版于六十年前，采用风格解读的方式对百幅中国绘画史代表作品娓娓道来，阐述中国绘画的嬗变过程。此书配图精美，尽可能展示画作细节，实为难得。<br /><br><br />高居翰先生于 2014 年辞世。2017 年 2 月 18 日，「高居翰数字图书馆」正式上线，足不出户即可访问老爷子毕生心血。<br /></p>
+<blockquote>
+<p>链接：<a href="https://mp.weixin.qq.com/s/7ysdHZWMo3l5ziGpwEnp-A" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/7ysdHZWMo3l5ziGpwEnp-A</a></p>
+</blockquote>
+<p><a name="GWXUE"></a></p>
+<h3 id=""><a href="#" class="headerlink" title=""></a><br /></h3><p><a name="rM0Xt"></a></p>
+<h3 id="订阅"><a href="#订阅" class="headerlink" title="订阅"></a>订阅</h3><p>如无意外，本周刊每周日发布，同步更新在 <a href="https://github.com/HerbertChang/pmweekly" target="_blank" rel="noopener">GitHub</a>、<a href="https://weixin.sogou.com/weixin?type=1&s_from=input&query=%E8%8B%A5%E6%84%9A%E8%8B%A5%E6%98%8F&ie=utf8&_sug_=y&_sug_type_=&w=01019900&sut=10610&sst0=1571666684054&lkt=0%2C0%2C0" target="_blank" rel="noopener">微信公众号</a>和<a href="https://yuque.com/herbert-chang/pmweekly/" target="_blank" rel="noopener">语雀</a>。本周刊遵循 CC BY-NC-ND 标准。<br />微信搜索「若愚若昏」，即可订阅。<br /><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/535404/1571989117002-cef6be63-7b29-4ac4-a35f-3b5a43e7ce88.jpeg#align=left&display=inline&height=258&margin=%5Bobject%20Object%5D&originHeight=258&originWidth=258&status=done&style=none&width=258" alt=""><br><a name="eI53v"></a></p>
+<h3 id="-1"><a href="#-1" class="headerlink" title=""></a></h3><p><a name="omNyd"></a></p>
+<h3 id="致谢"><a href="#致谢" class="headerlink" title="致谢"></a>致谢</h3><p>想法来自阮一峰老师的《科技爱好者周刊》。特此致谢！ <a href="https://github.com/ruanyf/weekly" target="_blank" rel="noopener">https://github.com/ruanyf/weekly</a></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/uploads/wechat-qcode.jpg" alt="Herbert Chang wechat" style="width: 200px; max-width: 100%;"/>
+    <div>欢迎您扫一扫上面的微信公众号，订阅我的博客！</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>转发和赞赏是对俺创作的支持</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/uploads/wechatpay.png" alt="Herbert Chang 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/uploads/alipay.png" alt="Herbert Chang 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A/" rel="tag"># 产品周刊</a>
+          
+            <a href="/tags/%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1/" rel="tag"># 产品设计</a>
+          
+            <a href="/tags/PM/" rel="tag"># PM</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/03/29/%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A%EF%BC%9A%E7%AC%AC-9-%E6%9C%9F%EF%BC%8820200329%EF%BC%89/" rel="next" title="产品周刊：第 9 期（20200329）">
+                <i class="fa fa-chevron-left"></i> 产品周刊：第 9 期（20200329）
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/04/19/%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A%EF%BC%9A%E7%AC%AC-11-%E6%9C%9F%EF%BC%8820200419%EF%BC%89/" rel="prev" title="产品周刊 | 第 11 期（20200419）">
+                产品周刊 | 第 11 期（20200419） <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Herbert Chang</p>
+              <p class="site-description motion-element" itemprop="description">所南心史井中全</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%20%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-globe"></i>
+                
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://leiquan.website/" title="雷全的个人博客" target="_blank">雷全的个人博客</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#值得关注的新产品"><span class="nav-number">1.</span> <span class="nav-text">值得关注的新产品</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-DeepL-Translator（Web）"><span class="nav-number">1.1.</span> <span class="nav-text">1. DeepL Translator（Web）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-Telegram-6-0-（iOS-Android-Mac-amp-Win）"><span class="nav-number">1.2.</span> <span class="nav-text">2. Telegram 6.0 （iOS, Android, Mac &amp; Win）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-Comeet-（iOS-amp-Android）"><span class="nav-number">1.3.</span> <span class="nav-text">3. Comeet （iOS &amp; Android）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-Make-Passport-Photo（Web）"><span class="nav-number">1.4.</span> <span class="nav-text">4. Make Passport Photo（Web）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-动物之森图鉴-（Web）"><span class="nav-number">1.5.</span> <span class="nav-text">5. 动物之森图鉴 （Web）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#佳文推介"><span class="nav-number">2.</span> <span class="nav-text">佳文推介</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-古早-Mac-App-的式微"><span class="nav-number">2.1.</span> <span class="nav-text">1. 古早 Mac App 的式微</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-快捷键的体验设计"><span class="nav-number">2.2.</span> <span class="nav-text">2. 快捷键的体验设计</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-How-each-generation-gets-the-drugs-it-deserves"><span class="nav-number">2.3.</span> <span class="nav-text">3. How each generation gets the drugs it deserves</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#资源与工具"><span class="nav-number">3.</span> <span class="nav-text">资源与工具</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-Rework导航"><span class="nav-number">3.1.</span> <span class="nav-text">1. Rework导航</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-DesignerHunt"><span class="nav-number">3.2.</span> <span class="nav-text">2. DesignerHunt</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#每周一书"><span class="nav-number">4.</span> <span class="nav-text">每周一书</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-number">5.</span> <span class="nav-text"></span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#订阅"><span class="nav-number">6.</span> <span class="nav-text">订阅</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#-1"><span class="nav-number">7.</span> <span class="nav-text"></span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#致谢"><span class="nav-number">8.</span> <span class="nav-text">致谢</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2018 &mdash; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Herbert Chang</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://Herbert.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://yoursite.com/2020/04/05/%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A%EF%BC%9A%E7%AC%AC-10-%E6%9C%9F%EF%BC%8820200405%EF%BC%89/';
+          this.page.identifier = '2020/04/05/产品周刊：第-10-期（20200405）/';
+          this.page.title = '产品周刊 | 第 10 期（20200405）';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://Herbert.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

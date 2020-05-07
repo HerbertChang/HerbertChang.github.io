@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="产品周刊,产品设计,PM," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="张贺的博客" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="值得关注的新产品 1. Photopea （Web）上周 Product Hunt 排行第四，创作者为伊万·库茨基尔 (Ivan Kutskir) 。功能上可以说是在线版 Photoshop，支持 PSD、XD、Sketch、XCF、CDR 等文件格式，自2020 年 1 月 27 日（V4.6）及之后的版本支持 Figma 格式。将复杂图片处理做成在线工具颇为不易，这款产品堪称挑战 Web 技术">
+<meta name="keywords" content="产品周刊,产品设计,PM">
+<meta property="og:type" content="article">
+<meta property="og:title" content="产品周刊 | 第 11 期（20200419）">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;04&#x2F;19&#x2F;%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A%EF%BC%9A%E7%AC%AC-11-%E6%9C%9F%EF%BC%8820200419%EF%BC%89&#x2F;index.html">
+<meta property="og:site_name" content="张贺的博客">
+<meta property="og:description" content="值得关注的新产品 1. Photopea （Web）上周 Product Hunt 排行第四，创作者为伊万·库茨基尔 (Ivan Kutskir) 。功能上可以说是在线版 Photoshop，支持 PSD、XD、Sketch、XCF、CDR 等文件格式，自2020 年 1 月 27 日（V4.6）及之后的版本支持 Figma 格式。将复杂图片处理做成在线工具颇为不易，这款产品堪称挑战 Web 技术">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1587195246402-0a19c39a-9a43-4673-b057-a723ac69890b.png#align=left&amp;display=inline&amp;height=452&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=903&amp;originWidth=1920&amp;size=174374&amp;status=done&amp;style=none&amp;width=960">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1587196369259-e6397a3b-ccf8-4813-9973-a05f19568144.png#align=left&amp;display=inline&amp;height=305&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=609&amp;originWidth=1018&amp;size=622017&amp;status=done&amp;style=none&amp;width=509">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1587197571856-e9c7dca1-ae2c-4c2f-aeea-e8c780a7ad2d.png#align=left&amp;display=inline&amp;height=379&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=758&amp;originWidth=551&amp;size=89335&amp;status=done&amp;style=none&amp;width=275.5">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1587199247891-508fca1e-c9a8-4238-b8eb-37368c51e887.png#align=left&amp;display=inline&amp;height=351&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=702&amp;originWidth=1180&amp;size=1036248&amp;status=done&amp;style=none&amp;width=590">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1587198754802-866de9f5-17d0-4dd6-aa03-8e8047222d6e.png#align=left&amp;display=inline&amp;height=437&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=874&amp;originWidth=1553&amp;size=610152&amp;status=done&amp;style=none&amp;width=776.5">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1587200202771-212c4098-269f-4705-b10c-d68fa4e383c6.png#align=left&amp;display=inline&amp;height=438&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=876&amp;originWidth=1862&amp;size=1857296&amp;status=done&amp;style=none&amp;width=931">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1587200805783-f96de129-53fa-4c29-bd64-ffe1aa468345.png#align=left&amp;display=inline&amp;height=307&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=839&amp;originWidth=609&amp;size=908457&amp;status=done&amp;style=none&amp;width=223">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2019&#x2F;jpeg&#x2F;535404&#x2F;1571989117002-cef6be63-7b29-4ac4-a35f-3b5a43e7ce88.jpeg#align=left&amp;display=inline&amp;height=200&amp;margin=%5Bobject%20Object%5D&amp;originHeight=258&amp;originWidth=258&amp;status=done&amp;style=none&amp;width=200">
+<meta property="og:updated_time" content="2020-05-07T06:12:10.998Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1587195246402-0a19c39a-9a43-4673-b057-a723ac69890b.png#align=left&amp;display=inline&amp;height=452&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=903&amp;originWidth=1920&amp;size=174374&amp;status=done&amp;style=none&amp;width=960">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2020/04/19/产品周刊：第-11-期（20200419）/"/>
+
+
+
+
+
+  <title>产品周刊 | 第 11 期（20200419） | 张贺的博客</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">张贺的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">若愚若昏</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/19/%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A%EF%BC%9A%E7%AC%AC-11-%E6%9C%9F%EF%BC%8820200419%EF%BC%89/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Herbert Chang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="张贺的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">产品周刊 | 第 11 期（20200419）</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-04-19T17:34:25+08:00">
+                2020-04-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A/" itemprop="url" rel="index">
+                    <span itemprop="name">产品周刊</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2020/04/19/%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A%EF%BC%9A%E7%AC%AC-11-%E6%9C%9F%EF%BC%8820200419%EF%BC%89/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2020/04/19/产品周刊：第-11-期（20200419）/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="值得关注的新产品"><a href="#值得关注的新产品" class="headerlink" title="值得关注的新产品"></a>值得关注的新产品<br /></h3><p><a name="lhS0J"></a></p>
+<h4 id="1-Photopea-（Web）"><a href="#1-Photopea-（Web）" class="headerlink" title="1. Photopea （Web）"></a>1. <a href="https://www.photopea.com/" target="_blank" rel="noopener">Photopea</a> （Web）</h4><p>上周 Product Hunt 排行第四，创作者为伊万·库茨基尔 (Ivan Kutskir) 。功能上可以说是在线版 Photoshop，支持 PSD、XD、Sketch、XCF、CDR 等文件格式，自2020 年 1 月 27 日（V4.6）及之后的版本支持 Figma 格式。将复杂图片处理做成在线工具颇为不易，这款产品堪称挑战 Web 技术极限。伊万还开源了一些为了 Photopea 自研的技术，包括字体解析、PNG 图片编解码和 ZIP 压缩算法等。Photopea 目前已有中国区官方合作推出的在线产品「稿定在线 PS」。（厦门稿定科技有限公司看到这条请给我打下广告费哈哈）<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1587195246402-0a19c39a-9a43-4673-b057-a723ac69890b.png#align=left&display=inline&height=452&margin=%5Bobject%20Object%5D&name=image.png&originHeight=903&originWidth=1920&size=174374&status=done&style=none&width=960" alt="image.png"></p>
+<blockquote>
+<p>链接：<br>官网 <a href="https://www.photopea.com/" target="_blank" rel="noopener">https://www.photopea.com</a><br>官方博客 <a href="https://blog.photopea.com/" target="_blank" rel="noopener">https://blog.photopea.com/</a><br>GitHub项目 <a href="https://github.com/photopea/photopea" target="_blank" rel="noopener">https://github.com/photopea</a><br>稿定在线 PS <a href="https://ps.gaoding.com/#/" target="_blank" rel="noopener">https://ps.gaoding.com/#/</a><br>这个程序员写的免费在线 PS，让他三十岁前财务自由<a href="https://mp.weixin.qq.com/s/oYEpD8KI8YL3hi8GXpqVPA" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/oYEpD8KI8YL3hi8GXpqVPA</a></p>
+</blockquote>
+<br />
+<a name="alISD"></a>
+
+<h4 id="2-Buildbox-FBX-（Web）"><a href="#2-Buildbox-FBX-（Web）" class="headerlink" title="2. Buildbox FBX （Web）"></a>2. <a href="https://www.buildbox.com/" target="_blank" rel="noopener">Buildbox FBX </a>（Web）</h4><p>「无代码」构建手机游戏的平台。号称不写代码做应用的平台太多了，实际工程实践中总归还是要处理很多问题。降低这方面期望。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1587196369259-e6397a3b-ccf8-4813-9973-a05f19568144.png#align=left&display=inline&height=305&margin=%5Bobject%20Object%5D&name=image.png&originHeight=609&originWidth=1018&size=622017&status=done&style=none&width=509" alt="image.png"></p>
+<blockquote>
+<p>链接：<a href="https://www.buildbox.com/" target="_blank" rel="noopener">https://www.buildbox.com/</a><br><a href="https://youtu.be/X9ejHuO3Thk" target="_blank" rel="noopener">https://youtu.be/X9ejHuO3Thk</a></p>
+</blockquote>
+<p><a name="bTpMN"></a></p>
+<h4 id="3-How-to-Product（电子书）"><a href="#3-How-to-Product（电子书）" class="headerlink" title="3. How to Product（电子书）"></a>3. <a href="https://howtoproduct.io/" target="_blank" rel="noopener">How to Product</a>（电子书）</h4><p>来自 Google、Shopify、Coursera 等公司的产品人经验集，可免费下载。<br />相似的参考文档 <a href="https://gumroad.com/l/dphandbook" target="_blank" rel="noopener">The Digital Product Handbook</a>。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1587197571856-e9c7dca1-ae2c-4c2f-aeea-e8c780a7ad2d.png#align=left&display=inline&height=379&margin=%5Bobject%20Object%5D&name=image.png&originHeight=758&originWidth=551&size=89335&status=done&style=none&width=275.5" alt="image.png"><br /></p>
+<blockquote>
+<p>链接：官网 <a href="https://howtoproduct.io/" target="_blank" rel="noopener">https://howtoproduct.io</a><br>30 分钟速读精简版 <a href="https://howtoproduct.io/in-30-min" target="_blank" rel="noopener">https://howtoproduct.io/in-30-min</a><br>Product Managers talk about their journey <a href="https://youtu.be/5Mzgu1JdmdY" target="_blank" rel="noopener">https://youtu.be/5Mzgu1JdmdY</a><br>The Digital Product Handbook <a href="https://gumroad.com/l/dphandbook" target="_blank" rel="noopener">https://gumroad.com/l/dphandbook</a></p>
+</blockquote>
+<p><a name="dZuEn"></a></p>
+<h4 id="4-音街（Android-amp-iOS）"><a href="#4-音街（Android-amp-iOS）" class="headerlink" title="4.  音街（Android &amp; iOS）"></a>4.  <a href="https://k.163.com/" target="_blank" rel="noopener">音街</a>（Android &amp; iOS）</h4><p>网易云音乐团队公测的K歌应用。（为什么不写一下短评呢因为打开应用授权网易云音乐登录但是还让我输入手机号神烦完全不想再用）<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1587199247891-508fca1e-c9a8-4238-b8eb-37368c51e887.png#align=left&display=inline&height=351&margin=%5Bobject%20Object%5D&name=image.png&originHeight=702&originWidth=1180&size=1036248&status=done&style=none&width=590" alt="image.png"></p>
+<blockquote>
+<p>链接：<a href="https://k.163.com/" target="_blank" rel="noopener">https://k.163.com/</a><br><a href="https://mp.weixin.qq.com/s/sMTL2jpOrNZRcFU0HOJXng" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/sMTL2jpOrNZRcFU0HOJXng</a></p>
+</blockquote>
+<p><a name="4GUbQ"></a></p>
+<h3 id="佳文推介"><a href="#佳文推介" class="headerlink" title="佳文推介"></a>佳文推介</h3><p><a name="BhGcP"></a></p>
+<h4 id="1-互联网是人类历史的一段弯路吗？"><a href="#1-互联网是人类历史的一段弯路吗？" class="headerlink" title="1. 互联网是人类历史的一段弯路吗？"></a>1. <a href="https://mp.weixin.qq.com/s/V5Dk4gpzpdb-zsfurp9ZiA" target="_blank" rel="noopener">互联网是人类历史的一段弯路吗？</a></h4><p>大约 40000 字的互联网历史阐述。文中厘清了一些术语（如红旗法案、技术中立原则）的源流脉络、 社会决定论与技术决定论之争等问题，遗憾的是对政治哲学的理解尚不够深。<br /></p>
+<blockquote>
+<p>「民主国家觉得互联网破坏了民主，独裁国家觉得互联网破坏了独裁。那么唯一的可能，就是互联网在更务实、更微观的层面开始展现其负面作用，以至于任何形态的上层建筑都开始对其产生敌意。」<br>链接：<a href="https://mp.weixin.qq.com/s/V5Dk4gpzpdb-zsfurp9ZiA" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/V5Dk4gpzpdb-zsfurp9ZiA</a></p>
+</blockquote>
+<p><a name="M9FMa"></a></p>
+<h4 id="2-任天堂是怎么做出《动物森友会》的？"><a href="#2-任天堂是怎么做出《动物森友会》的？" class="headerlink" title="2. 任天堂是怎么做出《动物森友会》的？"></a>2. <a href="http://youxiputao.com/articles/19787" target="_blank" rel="noopener">任天堂是怎么做出《动物森友会》的？</a></h4><p>任天堂的游戏设计理念太出色了。<br /></p>
+<blockquote>
+<p>链接：<a href="http://youxiputao.com/articles/19787" target="_blank" rel="noopener">http://youxiputao.com/articles/19787</a><br><a href="https://www.washingtonpost.com/video-games/2020/03/23/nintendo-explains-philosophy-behind-animal-crossings-big-changes-like-gender-expression-terraforming/" target="_blank" rel="noopener">https://www.washingtonpost.com/video-games/2020/03/23/nintendo-explains-philosophy-behind-animal-crossings-big-changes-like-gender-expression-terraforming/</a></p>
+</blockquote>
+<p><a name="OS6JY"></a></p>
+<h4 id="3-Programming-principles-from-id-software"><a href="#3-Programming-principles-from-id-software" class="headerlink" title="3. Programming principles from id software"></a>3. <a href="https://blog.usejournal.com/programming-principles-from-id-software-bed83e762210" target="_blank" rel="noopener">Programming principles from id software</a></h4><p>湾区日报的推荐语：「id Software公司创始人 John Romero 分享，很有用的编程指导原则——不要长时间编代码、写30分钟就要测试等等。这些原则帮助 id software 如何在不到 6 年的时间里，用不到 10 个开发者就可以发布 28 款高质量游戏包括 doom、quake 神作。」 <br /></p>
+<blockquote>
+<p>链接：<a href="https://blog.usejournal.com/programming-principles-from-id-software-bed83e762210" target="_blank" rel="noopener">https://blog.usejournal.com/programming-principles-from-id-software-bed83e762210</a><br><a href="https://www.youtube.com/watch?v=KFziBfvAFnM" target="_blank" rel="noopener">https://www.youtube.com/watch?v=KFziBfvAFnM</a></p>
+</blockquote>
+<br />
+<a name="LUn6i"></a>
+
+<h3 id="资源与工具"><a href="#资源与工具" class="headerlink" title="资源与工具"></a>资源与工具</h3><p><a name="IwROd"></a></p>
+<h4 id="1-好鲸奇"><a href="#1-好鲸奇" class="headerlink" title="1. 好鲸奇"></a>1. <a href="http://hao.jingqii.com/" target="_blank" rel="noopener">好鲸奇</a></h4><p>探索世界顶级设计师和创意人。与本周刊在<a href="https://www.yuque.com/herbert-chang/pmweekly/issue-10#3eYNe" target="_blank" rel="noopener">第十期</a>分享过的 <a href="https://www.designerhunt.io" target="_blank" rel="noopener">DesignerHunt</a> 思路相似。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1587198754802-866de9f5-17d0-4dd6-aa03-8e8047222d6e.png#align=left&display=inline&height=437&margin=%5Bobject%20Object%5D&name=image.png&originHeight=874&originWidth=1553&size=610152&status=done&style=none&width=776.5" alt="image.png"><br /></p>
+<blockquote>
+<p>链接 <a href="http://hao.jingqii.com/" target="_blank" rel="noopener">http://hao.jingqii.com/</a></p>
+</blockquote>
+<p><a name="ZNgud"></a></p>
+<h4 id="2-Interface-in-Game"><a href="#2-Interface-in-Game" class="headerlink" title="2. Interface in Game"></a>2. <a href="https://interfaceingame.com/" target="_blank" rel="noopener">Interface in Game</a></h4><p>收集游戏中界面设计的网站，按照游戏类型、发布时间、界面类型做了细致的截图存档。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1587200202771-212c4098-269f-4705-b10c-d68fa4e383c6.png#align=left&display=inline&height=438&margin=%5Bobject%20Object%5D&name=image.png&originHeight=876&originWidth=1862&size=1857296&status=done&style=none&width=931" alt="image.png"></p>
+<blockquote>
+<p>链接：<a href="https://interfaceingame.com/" target="_blank" rel="noopener">https://interfaceingame.com</a></p>
+</blockquote>
+<br />
+<a name="JXzW9"></a>
+
+<h3 id="每周一书"><a href="#每周一书" class="headerlink" title="每周一书"></a>每周一书<br /></h3><p>张文江<a href="https://book.douban.com/subject/30168601/" target="_blank" rel="noopener">《古典学术讲要》</a><br /><a href="https://book.douban.com/subject/30168601/" target="_blank" rel="noopener"><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1587200805783-f96de129-53fa-4c29-bd64-ffe1aa468345.png#align=left&display=inline&height=307&margin=%5Bobject%20Object%5D&name=image.png&originHeight=839&originWidth=609&size=908457&status=done&style=none&width=223" alt="image.png"></a><br />张文江先生现为同济大学人文学院教授，在后记中他说阅读古典是「清理它们的源流演变，并探讨它们和现实生活的联系」。本书即为张文江教授以自己的方式解说古典学术的讲稿集，收录了《学记》、《史记·货殖列传》、《五灯会元》、《风姿花传》、《西游记》等古典作品的讲授记录，讲法深入浅出、品味无穷。张文江先生在一封信中说：「《古典学术讲要》的主题还是在于谈教育，此教育应理解为人在天地之间，小而言之在当今社会中，何以自处。」<br /></p>
+<blockquote>
+<p>教育的首要功能，正在于判断一件事情该不该做。至于如何做一件事情，那还是它其次的作用。<br>自由教育的真谛是唤醒人内在的卓越，也就是柏拉图所谓「人性中之人」，职业教育是其次的东西。<br>人生最高的学问是生命本身，就是“水在水中是什么”，在life里边研究life，所以说任何时候研究都不算晚，这就是古希腊所谓“认识你自己”。</p>
+</blockquote>
+<br />
+<a name="NPQi6"></a>
+
+<h3 id="订阅"><a href="#订阅" class="headerlink" title="订阅"></a>订阅</h3><p>如无意外，本周刊每周日发布，同步更新在 <a href="https://github.com/HerbertChang/pmweekly" target="_blank" rel="noopener">GitHub</a>、<a href="https://weixin.sogou.com/weixin?type=1&s_from=input&query=%E8%8B%A5%E6%84%9A%E8%8B%A5%E6%98%8F&ie=utf8&_sug_=y&_sug_type_=&w=01019900&sut=10610&sst0=1571666684054&lkt=0%2C0%2C0" target="_blank" rel="noopener">微信公众号</a>和<a href="https://yuque.com/herbert-chang/pmweekly/" target="_blank" rel="noopener">语雀</a>。本周刊遵循 CC BY-NC-ND 标准。<br />微信搜索「若愚若昏」，即可订阅。<br /><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/535404/1571989117002-cef6be63-7b29-4ac4-a35f-3b5a43e7ce88.jpeg#align=left&display=inline&height=200&margin=%5Bobject%20Object%5D&originHeight=258&originWidth=258&status=done&style=none&width=200" alt=""><br /></p>
+<p><a name="b4kSE"></a></p>
+<h3 id="致谢"><a href="#致谢" class="headerlink" title="致谢"></a>致谢<br /></h3><p>想法来自阮一峰老师的《<a href="https://github.com/ruanyf/weekly" target="_blank" rel="noopener">科技爱好者周刊</a>》。特此致谢！ <a href="https://github.com/ruanyf/weekly" target="_blank" rel="noopener">https://github.com/ruanyf/weekly</a>)</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/uploads/wechat-qcode.jpg" alt="Herbert Chang wechat" style="width: 200px; max-width: 100%;"/>
+    <div>欢迎您扫一扫上面的微信公众号，订阅我的博客！</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>转发和赞赏是对俺创作的支持</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/uploads/wechatpay.png" alt="Herbert Chang 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/uploads/alipay.png" alt="Herbert Chang 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A/" rel="tag"># 产品周刊</a>
+          
+            <a href="/tags/%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1/" rel="tag"># 产品设计</a>
+          
+            <a href="/tags/PM/" rel="tag"># PM</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/04/05/%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A%EF%BC%9A%E7%AC%AC-10-%E6%9C%9F%EF%BC%8820200405%EF%BC%89/" rel="next" title="产品周刊 | 第 10 期（20200405）">
+                <i class="fa fa-chevron-left"></i> 产品周刊 | 第 10 期（20200405）
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/04/26/%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A%EF%BC%9A%E7%AC%AC-12-%E6%9C%9F%EF%BC%8820200426%EF%BC%89/" rel="prev" title="产品周刊 | 第 12 期（20200426）">
+                产品周刊 | 第 12 期（20200426） <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Herbert Chang</p>
+              <p class="site-description motion-element" itemprop="description">所南心史井中全</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%20%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-globe"></i>
+                
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://leiquan.website/" title="雷全的个人博客" target="_blank">雷全的个人博客</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#值得关注的新产品"><span class="nav-number">1.</span> <span class="nav-text">值得关注的新产品</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-Photopea-（Web）"><span class="nav-number">1.1.</span> <span class="nav-text">1. Photopea （Web）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-Buildbox-FBX-（Web）"><span class="nav-number">1.2.</span> <span class="nav-text">2. Buildbox FBX （Web）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-How-to-Product（电子书）"><span class="nav-number">1.3.</span> <span class="nav-text">3. How to Product（电子书）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-音街（Android-amp-iOS）"><span class="nav-number">1.4.</span> <span class="nav-text">4.  音街（Android &amp; iOS）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#佳文推介"><span class="nav-number">2.</span> <span class="nav-text">佳文推介</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-互联网是人类历史的一段弯路吗？"><span class="nav-number">2.1.</span> <span class="nav-text">1. 互联网是人类历史的一段弯路吗？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-任天堂是怎么做出《动物森友会》的？"><span class="nav-number">2.2.</span> <span class="nav-text">2. 任天堂是怎么做出《动物森友会》的？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-Programming-principles-from-id-software"><span class="nav-number">2.3.</span> <span class="nav-text">3. Programming principles from id software</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#资源与工具"><span class="nav-number">3.</span> <span class="nav-text">资源与工具</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-好鲸奇"><span class="nav-number">3.1.</span> <span class="nav-text">1. 好鲸奇</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-Interface-in-Game"><span class="nav-number">3.2.</span> <span class="nav-text">2. Interface in Game</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#每周一书"><span class="nav-number">4.</span> <span class="nav-text">每周一书</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#订阅"><span class="nav-number">5.</span> <span class="nav-text">订阅</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#致谢"><span class="nav-number">6.</span> <span class="nav-text">致谢</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2018 &mdash; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Herbert Chang</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://Herbert.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://yoursite.com/2020/04/19/%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A%EF%BC%9A%E7%AC%AC-11-%E6%9C%9F%EF%BC%8820200419%EF%BC%89/';
+          this.page.identifier = '2020/04/19/产品周刊：第-11-期（20200419）/';
+          this.page.title = '产品周刊 | 第 11 期（20200419）';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://Herbert.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
