@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Flowable,B端产品,工作流,Workflow," />
+  <meta name="keywords" content="Flowable,B端产品,工作流,流程引擎,Workflow," />
 
 
 
@@ -81,13 +81,13 @@
 
 
 
-<meta name="description" content="一、工作流引擎使用场景工作流在企业管理系统中是高频使用的功能，一个最常见的例子是请假加班申请与审批的过程。事实上，工作流引擎能支持的业务场景远远不止单据审批，几乎所有涉及到业务流转、多人按流程完成工作的场景背后都可以通过工作流引擎作为支撑。基于工作流引擎，可以搭建客户关系管理系统（CRM）、运输管理系统（TMS）、仓储管理系统（WMS）、财务费用系统等多种复杂业务系统。对于达到一定规模的企业，良好">
-<meta name="keywords" content="Flowable,B端产品,工作流,Workflow">
+<meta name="description" content="2020-05-13 按：本文写作完成于 2019 年 6 月 1 日，当时 Flowable 版本号为 V6.4.1。2020 年 3 月，Flowable 发布 V6.5.1 版本。Flowable 官方网站进行了 flowable.org 域名与 flowable.com 域名的合并，原官方文档新地址为 https:&#x2F;&#x2F;flowable.com&#x2F;open-source&#x2F;docs&#x2F;。 一、工作">
+<meta name="keywords" content="Flowable,B端产品,工作流,流程引擎,Workflow">
 <meta property="og:type" content="article">
 <meta property="og:title" content="一文看懂开源工作流引擎 Flowable">
 <meta property="og:url" content="https:&#x2F;&#x2F;herbertchang.github.io&#x2F;2019&#x2F;06&#x2F;01&#x2F;%E4%B8%80%E6%96%87%E7%9C%8B%E6%87%82%E5%BC%80%E6%BA%90%E5%B7%A5%E4%BD%9C%E6%B5%81%E5%BC%95%E6%93%8E%20Flowable&#x2F;index.html">
 <meta property="og:site_name" content="张贺的博客">
-<meta property="og:description" content="一、工作流引擎使用场景工作流在企业管理系统中是高频使用的功能，一个最常见的例子是请假加班申请与审批的过程。事实上，工作流引擎能支持的业务场景远远不止单据审批，几乎所有涉及到业务流转、多人按流程完成工作的场景背后都可以通过工作流引擎作为支撑。基于工作流引擎，可以搭建客户关系管理系统（CRM）、运输管理系统（TMS）、仓储管理系统（WMS）、财务费用系统等多种复杂业务系统。对于达到一定规模的企业，良好">
+<meta property="og:description" content="2020-05-13 按：本文写作完成于 2019 年 6 月 1 日，当时 Flowable 版本号为 V6.4.1。2020 年 3 月，Flowable 发布 V6.5.1 版本。Flowable 官方网站进行了 flowable.org 域名与 flowable.com 域名的合并，原官方文档新地址为 https:&#x2F;&#x2F;flowable.com&#x2F;open-source&#x2F;docs&#x2F;。 一、工作">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2019&#x2F;webp&#x2F;535404&#x2F;1571932613341-322fd689-4fea-4988-b30e-fa402789e725.webp#align=left&amp;display=inline&amp;height=455&amp;originHeight=455&amp;originWidth=564&amp;search=&amp;size=0&amp;status=done&amp;width=564">
 <meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2019&#x2F;webp&#x2F;535404&#x2F;1571932613344-c3ef7c4e-8bc3-4604-b5b4-96be26d44d2c.webp#align=left&amp;display=inline&amp;height=363&amp;originHeight=363&amp;originWidth=602&amp;search=&amp;size=0&amp;status=done&amp;width=602">
@@ -99,7 +99,7 @@
 <meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2019&#x2F;webp&#x2F;535404&#x2F;1571932726714-63fe270d-8dd4-4941-943f-ce4e4aed493d.webp#align=left&amp;display=inline&amp;height=336&amp;originHeight=286&amp;originWidth=340&amp;search=&amp;size=0&amp;status=done&amp;width=399">
 <meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2019&#x2F;webp&#x2F;535404&#x2F;1571932738859-560c883c-7325-4719-b55e-c1d1ea0d9642.webp#align=left&amp;display=inline&amp;height=268&amp;originHeight=331&amp;originWidth=557&amp;search=&amp;size=0&amp;status=done&amp;width=452">
 <meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2019&#x2F;webp&#x2F;535404&#x2F;1571932613387-679b4573-6286-472c-8e61-03bde88df59a.webp#align=left&amp;display=inline&amp;height=173&amp;originHeight=211&amp;originWidth=562&amp;search=&amp;size=0&amp;status=done&amp;width=458">
-<meta property="og:updated_time" content="2019-11-10T03:48:15.841Z">
+<meta property="og:updated_time" content="2020-05-15T08:26:02.277Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2019&#x2F;webp&#x2F;535404&#x2F;1571932613341-322fd689-4fea-4988-b30e-fa402789e725.webp#align=left&amp;display=inline&amp;height=455&amp;originHeight=455&amp;originWidth=564&amp;search=&amp;size=0&amp;status=done&amp;width=564">
 
@@ -379,7 +379,8 @@
       
 
       
-        <h2 id="一、工作流引擎使用场景"><a href="#一、工作流引擎使用场景" class="headerlink" title="一、工作流引擎使用场景"></a><strong>一、工作流引擎使用场景</strong></h2><p>工作流在企业管理系统中是高频使用的功能，一个最常见的例子是请假加班申请与审批的过程。事实上，工作流引擎能支持的业务场景远远不止单据审批，几乎所有涉及到业务流转、多人按流程完成工作的场景背后都可以通过工作流引擎作为支撑。基于工作流引擎，可以搭建客户关系管理系统（CRM）、运输管理系统（TMS）、仓储管理系统（WMS）、财务费用系统等多种复杂业务系统。对于达到一定规模的企业，良好的 BPM（业务流程管理，Business Process Management）体系可以支持创建公司内横跨不同部门的复杂业务流程，既提高工作效率、又可推动企业规范化发展。<br /><img src="https://cdn.nlark.com/yuque/0/2019/webp/535404/1571932613341-322fd689-4fea-4988-b30e-fa402789e725.webp#align=left&display=inline&height=455&originHeight=455&originWidth=564&search=&size=0&status=done&width=564" alt=""><br />图1  业务流转示意图（图片来源：<a href="http://www.flowable.com）" target="_blank" rel="noopener">www.flowable.com）</a></p>
+        <p>2020-05-13 按：本文写作完成于 2019 年 6 月 1 日，当时 Flowable 版本号为 V6.4.1。2020 年 3 月，Flowable 发布 V6.5.1 版本。Flowable 官方网站进行了 flowable.org 域名与 flowable.com 域名的合并，原官方文档新地址为 <a href="https://flowable.com/open-source/docs/。" target="_blank" rel="noopener">https://flowable.com/open-source/docs/。</a></p>
+<h2 id="一、工作流引擎使用场景"><a href="#一、工作流引擎使用场景" class="headerlink" title="一、工作流引擎使用场景"></a><strong>一、工作流引擎使用场景</strong></h2><p>工作流在企业管理系统中是高频使用的功能，一个最常见的例子是请假加班申请与审批的过程。事实上，工作流引擎能支持的业务场景远远不止单据审批，几乎所有涉及到业务流转、多人按流程完成工作的场景背后都可以通过工作流引擎作为支撑。基于工作流引擎，可以搭建客户关系管理系统（CRM）、运输管理系统（TMS）、仓储管理系统（WMS）、财务费用系统等多种复杂业务系统。对于达到一定规模的企业，良好的 BPM（业务流程管理，Business Process Management）体系可以支持创建公司内横跨不同部门的复杂业务流程，既提高工作效率、又可推动企业规范化发展。<br /><img src="https://cdn.nlark.com/yuque/0/2019/webp/535404/1571932613341-322fd689-4fea-4988-b30e-fa402789e725.webp#align=left&display=inline&height=455&originHeight=455&originWidth=564&search=&size=0&status=done&width=564" alt=""><br />图1  业务流转示意图（图片来源：<a href="http://www.flowable.com）" target="_blank" rel="noopener">www.flowable.com）</a></p>
 <p><a name="tNrAx"></a></p>
 <h2 id="二、Flowable-是什么"><a href="#二、Flowable-是什么" class="headerlink" title="二、Flowable 是什么"></a><strong>二、Flowable 是什么</strong></h2><p>Flowable 是一个使用 Java 编写的轻量级业务流程引擎，使用 Apache V2 license 协议开源。2016 年 10 月，Activiti 工作流引擎的主要开发者离开 Alfresco 公司并在 Activiti 分支基础上开启了 Flowable 开源项目。基于 Activiti v6 beta4 发布的第一个 Flowable release 版本为6.0。以 JAR 形式发布使得 Flowable 可以轻易加入任何Java环境：Java SE、Tomcat、Jetty 或 Spring 之类的 servlet 容器；JBoss 或 WebSphere 之类的 Java EE 服务器等等。 另外，也可以使用 Flowable REST API 进行 HTTP 调用。<br />Flowable 项目中包括 BPMN（Business Process Model and Notation）引擎、CMMN（Case Management Model and Notation）引擎、DMN（Decision Model and Notation）引擎、表单引擎（Form Engine）等模块。也有许多Flowable 应用（Flowable Modeler、Flowable Admin、Flowable IDM 与 Flowable Task），并提供了直接可用的 UI 示例。模块之间协作关系可以参考下图：</p>
 <p><img src="https://cdn.nlark.com/yuque/0/2019/webp/535404/1571932613344-c3ef7c4e-8bc3-4604-b5b4-96be26d44d2c.webp#align=left&display=inline&height=363&originHeight=363&originWidth=602&search=&size=0&status=done&width=602" alt=""><br />图2  Flowable 架构示意图（图片来源：<a href="http://www.shareniu.com）" target="_blank" rel="noopener">www.shareniu.com）</a></p>
@@ -423,10 +424,12 @@
 <p><img src="https://cdn.nlark.com/yuque/0/2019/webp/535404/1571932726714-63fe270d-8dd4-4941-943f-ce4e4aed493d.webp#align=left&display=inline&height=336&originHeight=286&originWidth=340&search=&size=0&status=done&width=399" alt=""><br />图7 CMMN 引擎使用场景示例<br /><br><br />CMMN 中一个案例模型呈现为一个公文夹的样式。每个案例模型都包含一个用于安置计划元素的「计划模型」，每个计划元素包含一个明确其类型和可能配置选项的计划元素定义，常见计划元素如用户任务（human task）、里程碑（milestone）、流程任务（process task）、案例任务（case task）和阶段（stage）。例如下图中的计划模型包含三个用户任务计划项和一个里程碑。<br /><img src="https://cdn.nlark.com/yuque/0/2019/webp/535404/1571932738859-560c883c-7325-4719-b55e-c1d1ea0d9642.webp#align=left&display=inline&height=268&originHeight=331&originWidth=557&search=&size=0&status=done&width=452" alt=""><br />图8 CMMN 计划模型示意图<br /><br><br />Flowable CMMN 引擎支持如下类型的案例元素：<br />1. 阶段（Stage）：阶段用于把一组元素聚合在一起，可以有进入和退出的条件。阶段可以嵌套，一个阶段中的计划元素只有其父阶段激活时才生效。<br />2. 任务（Task）：任务是发生于引擎外部的事件，包含名称、阻塞（决定任务是否阻塞的布尔值）、阻塞表达式（表达式的布尔值决定任务是否阻塞）等属性。<br />3. 用户任务（Human task）：通常指需要用户通过表单执行的手动任务，包含一系列属性。<br />4. 里程碑（Milestone）：里程碑标识某一具体案例到达特定点。<br />5. 案例任务（Case task）：案例可以嵌套，案例中的子案例就是案例任务。<br />6. 流程任务（Process task）：当流程任务阻塞时，实例化的计划要素会处于激活状态，直至流程任务完成。<br />7. 条件（Criteria）：分为进入条件和退出条件。<br />8. 决策任务（Decision task）：调用 DMN 引擎中的决策表。<br />9. HTTP任务、脚本任务、Java 服务任务、时间监听器等：与 BPMN 中的相应元素含义相近，不再赘述。<br /></p>
 <p><a name="nv9nA"></a></p>
 <h2 id="六、Flowable-Form-表单引擎"><a href="#六、Flowable-Form-表单引擎" class="headerlink" title="六、Flowable Form 表单引擎"></a><strong>六、Flowable Form 表单引擎</strong></h2><p><img src="https://cdn.nlark.com/yuque/0/2019/webp/535404/1571932613387-679b4573-6286-472c-8e61-03bde88df59a.webp#align=left&display=inline&height=173&originHeight=211&originWidth=562&search=&size=0&status=done&width=458" alt=""><br />图9 Flowable Form引擎服务示意图（图片来源：<a href="http://www.flowable.org）" target="_blank" rel="noopener">www.flowable.org）</a><br /><br><br />Flowable 框架中将表单作为一个独立的子模块，可以将表单作为一个服务在其他模块中进行调用，表单服务就可以控制所有流程所使用的表单以及表单字段的可读、可写等操作。表单相关的使用可分为表单的定义以及表单的运行实例两个阶段。表单定义支持导入以 .form 为后缀的表单定义文件（JSON 语言编写） 。在 Flowable Modeler 应用中，「表单」菜单下可以进行简单的表单拖拽拼接可视化配置定义。flowable.com网站上也提供了一个可视化构建表单案例可以参考<a href="https://flowable.com/flowable-forms/。余不赘述。" target="_blank" rel="noopener">https://flowable.com/flowable-forms/。余不赘述。</a><br /></p>
-<p><a name="QjmfJ"></a></p>
-<h2 id="七、参考资料"><a href="#七、参考资料" class="headerlink" title="七、参考资料"></a><strong>七、参考资料</strong></h2><ol>
-<li>Flowable 6.4.1 官方文档 <a href="https://www.flowable.org/documentation.html" target="_blank" rel="noopener">https://www.flowable.org/documentation.html</a><br />2. Flowable 商业案例介绍 <a href="https://flowable.com/casestudies/" target="_blank" rel="noopener">https://flowable.com/casestudies/</a><br />3. TKJohn 博客 <a href="https://tkjohn.github.io" target="_blank" rel="noopener">https://tkjohn.github.io</a><br />4. 分享牛博客 <a href="http://www.shareniu.com" target="_blank" rel="noopener">http://www.shareniu.com</a><br />5. IBM BPM解决方案<a href="https://www.ibm.com/cloud-computing/cn-zh/products/business-process-management/" target="_blank" rel="noopener">https://www.ibm.com/cloud-computing/cn-zh/products/business-process-management/</a></li>
-</ol>
+<h2 id="七、参考资料"><a href="#七、参考资料" class="headerlink" title="七、参考资料"></a><strong>七、参考资料</strong></h2><p>\1. <a href="https://www.flowable.org/documentation.html" target="_blank" rel="noopener">Flowable 6.4.1 官方文档</a> </p>
+<p>\2. <a href="https://flowable.com/casestudies/" target="_blank" rel="noopener">Flowable 商业案例介绍</a> </p>
+<p>\3. <a href="https://tkjohn.github.io" target="_blank" rel="noopener">TKJohn 博客</a> </p>
+<p>\4. <a href="http://www.shareniu.com" target="_blank" rel="noopener">分享牛博客</a> </p>
+<p>\5. <a href="http://www.shareniu.com/flowable6.5_zh_document/bpm/index.html" target="_blank" rel="noopener">Flowable BPMN 用户手册 （V6.5.0）Flowable中国社区翻译</a></p>
+<p>\6. <a href="https://www.ibm.com/cloud-computing/cn-zh/products/business-process-management/" target="_blank" rel="noopener">IBM BPM解决方案</a></p>
 
       
     </div>
@@ -486,6 +489,8 @@
             <a href="/tags/B%E7%AB%AF%E4%BA%A7%E5%93%81/" rel="tag"># B端产品</a>
           
             <a href="/tags/%E5%B7%A5%E4%BD%9C%E6%B5%81/" rel="tag"># 工作流</a>
+          
+            <a href="/tags/%E6%B5%81%E7%A8%8B%E5%BC%95%E6%93%8E/" rel="tag"># 流程引擎</a>
           
             <a href="/tags/Workflow/" rel="tag"># Workflow</a>
           
@@ -595,7 +600,7 @@
               
                 <a href="/archives/%20%7C%7C%20archive">
               
-                  <span class="site-state-item-count">16</span>
+                  <span class="site-state-item-count">17</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -617,7 +622,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-count">12</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
