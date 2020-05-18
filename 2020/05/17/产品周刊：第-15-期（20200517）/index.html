@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="产品周刊,产品设计,PM," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="张贺的博客" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="新产品：Easy Bloggers、Inkscape、虚幻引擎5、TeleportHQ；佳文推介：How Notion Uses Notion、Mac视觉史；资源与工具：NotionExpert、WinUI；每周一书：以赛亚·伯林《观念的力量》。">
+<meta name="keywords" content="产品周刊,产品设计,PM">
+<meta property="og:type" content="article">
+<meta property="og:title" content="产品周刊 | 第 15 期（20200517）">
+<meta property="og:url" content="https:&#x2F;&#x2F;herbertchang.github.io&#x2F;2020&#x2F;05&#x2F;17&#x2F;%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A%EF%BC%9A%E7%AC%AC-15-%E6%9C%9F%EF%BC%8820200517%EF%BC%89&#x2F;index.html">
+<meta property="og:site_name" content="张贺的博客">
+<meta property="og:description" content="新产品：Easy Bloggers、Inkscape、虚幻引擎5、TeleportHQ；佳文推介：How Notion Uses Notion、Mac视觉史；资源与工具：NotionExpert、WinUI；每周一书：以赛亚·伯林《观念的力量》。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1589615285793-20e50874-a2b4-4712-8041-e9ff2d4ad051.png#align=left&amp;display=inline&amp;height=554&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20200516154730.png&amp;originHeight=554&amp;originWidth=989&amp;size=280396&amp;status=done&amp;style=none&amp;width=989">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;jpeg&#x2F;535404&#x2F;1589614506566-5918acd3-b093-48bd-b13c-88aa836f879b.jpeg#align=left&amp;display=inline&amp;height=492&amp;margin=%5Bobject%20Object%5D&amp;name=Unreal%205%20%20%20%20d02354c5-237e-419b-920e-b02c357caf67.jpg&amp;originHeight=492&amp;originWidth=875&amp;size=117224&amp;status=done&amp;style=none&amp;width=875">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;gif&#x2F;535404&#x2F;1589610511116-cb7d8fdc-554f-4b00-be07-a626042d790b.gif#align=left&amp;display=inline&amp;height=840&amp;margin=%5Bobject%20Object%5D&amp;name=Boolean_Operations_LPE.gif&amp;originHeight=840&amp;originWidth=1375&amp;size=1339206&amp;status=done&amp;style=none&amp;width=1375">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1589615733860-1c561db2-407f-45f4-bfc0-fe8803711340.png#align=left&amp;display=inline&amp;height=668&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20200516155451.png&amp;originHeight=668&amp;originWidth=1310&amp;size=330252&amp;status=done&amp;style=none&amp;width=1310">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1589352660895-8f3dedab-198d-4499-9a48-7b78d225cb23.png#align=left&amp;display=inline&amp;height=1350&amp;margin=%5Bobject%20Object%5D&amp;name=Screen_Shot_2020-05-01_at_10.06.27_AM.png&amp;originHeight=1350&amp;originWidth=2000&amp;size=1786723&amp;status=done&amp;style=none&amp;width=2000">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1589615009308-5d7641fc-443a-414c-a91f-c437d9b83322.png#align=left&amp;display=inline&amp;height=601&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20200516154314.png&amp;originHeight=601&amp;originWidth=670&amp;size=176370&amp;status=done&amp;style=none&amp;width=670">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1589609635271-2ed01d27-36e6-4809-b9f9-3558055a77b9.png#align=left&amp;display=inline&amp;height=598&amp;margin=%5Bobject%20Object%5D&amp;name=WinUI.png&amp;originHeight=598&amp;originWidth=946&amp;size=385095&amp;status=done&amp;style=none&amp;width=946">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1589600226278-b517ab10-82c9-4a17-8ef4-2dc59c37a516.png#align=left&amp;display=inline&amp;height=895&amp;margin=%5Bobject%20Object%5D&amp;name=notionexpert.png&amp;originHeight=895&amp;originWidth=1500&amp;size=346007&amp;status=done&amp;style=none&amp;width=1500">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;jpeg&#x2F;535404&#x2F;1589617436878-efe17e02-e397-4d3f-84c4-0b202f1fb513.jpeg#align=left&amp;display=inline&amp;height=443&amp;margin=%5Bobject%20Object%5D&amp;name=s32302027.jpg&amp;originHeight=1595&amp;originWidth=1080&amp;size=270751&amp;status=done&amp;style=none&amp;width=300">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2019&#x2F;jpeg&#x2F;535404&#x2F;1571989117002-cef6be63-7b29-4ac4-a35f-3b5a43e7ce88.jpeg#align=left&amp;display=inline&amp;height=200&amp;margin=%5Bobject%20Object%5D&amp;originHeight=258&amp;originWidth=258&amp;status=done&amp;style=none&amp;width=200">
+<meta property="og:updated_time" content="2020-05-18T02:44:16.492Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1589615285793-20e50874-a2b4-4712-8041-e9ff2d4ad051.png#align=left&amp;display=inline&amp;height=554&amp;margin=%5Bobject%20Object%5D&amp;name=%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20200516154730.png&amp;originHeight=554&amp;originWidth=989&amp;size=280396&amp;status=done&amp;style=none&amp;width=989">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://herbertchang.github.io/2020/05/17/产品周刊：第-15-期（20200517）/"/>
+
+
+
+
+
+  <title>产品周刊 | 第 15 期（20200517） | 张贺的博客</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">张贺的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">若愚若昏</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://herbertchang.github.io/2020/05/17/%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A%EF%BC%9A%E7%AC%AC-15-%E6%9C%9F%EF%BC%8820200517%EF%BC%89/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Herbert Chang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="张贺的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">产品周刊 | 第 15 期（20200517）</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-17T10:17:42+08:00">
+                2020-05-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A/" itemprop="url" rel="index">
+                    <span itemprop="name">产品周刊</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2020/05/17/%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A%EF%BC%9A%E7%AC%AC-15-%E6%9C%9F%EF%BC%8820200517%EF%BC%89/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2020/05/17/产品周刊：第-15-期（20200517）/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+              <div class="post-description">
+                  新产品：Easy Bloggers、Inkscape、虚幻引擎5、TeleportHQ；佳文推介：How Notion Uses Notion、Mac视觉史；资源与工具：NotionExpert、WinUI；每周一书：以赛亚·伯林《观念的力量》。
+              </div>
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="值得关注的新产品"><a href="#值得关注的新产品" class="headerlink" title="值得关注的新产品"></a>值得关注的新产品</h3><p><a name="lhS0J"></a></p>
+<h4 id="1-Easy-Bloggers-（Web）"><a href="#1-Easy-Bloggers-（Web）" class="headerlink" title="1. Easy Bloggers （Web）"></a>1. <a href="https://www.easybloggers.io/" target="_blank" rel="noopener">Easy Bloggers</a> （Web）</h4><p>寻找有影响力博主的营销搜索工具，根据关键词快速定位到相应的高影响力博主，便于进行精准广告营销。顺带说一句，播客（Podcast）领域有一个叫做 <a href="https://www.listennotes.com/" target="_blank" rel="noopener">ListenNotes</a> 的网站很好用。此类网站也可用于寻找一些鲜有人涉足的细分领域，做 Vlog/Podcast 市场探索调研工具用。Marketing 类的产品在本周刊<a href="https://www.yuque.com/herbert-chang/pmweekly/issue-9#ncrIg" target="_blank" rel="noopener">第 9 期</a>也曾介绍过一个。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1589615285793-20e50874-a2b4-4712-8041-e9ff2d4ad051.png#align=left&display=inline&height=554&margin=%5Bobject%20Object%5D&name=%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20200516154730.png&originHeight=554&originWidth=989&size=280396&status=done&style=none&width=989" alt="微信截图_20200516154730.png"></p>
+<blockquote>
+<p>链接：<br>官网 <a href="https://www.easybloggers.io/" target="_blank" rel="noopener">https://www.easybloggers.io</a><br>ListenNotes <a href="https://www.listennotes.com/" target="_blank" rel="noopener">https://www.listennotes.com</a></p>
+</blockquote>
+<p><a name="bTpMN"></a></p>
+<h4 id="2-Unreal-Engine-5-（游戏引擎）"><a href="#2-Unreal-Engine-5-（游戏引擎）" class="headerlink" title="2. Unreal Engine 5 （游戏引擎）"></a>2. <a href="https://mp.weixin.qq.com/s/BIpcY2Q7nTwA8tcqeFea4Q" target="_blank" rel="noopener">Unreal Engine 5</a> （游戏引擎）</h4><p>今日举办的 Summer Game Fest 线上活动中，开发商 Epic Games 公开了虚幻引擎 5 的首个演示视频，该视频也是在 PS5 上展示的实机技术演示视频。该演示展示了虚幻引擎 5 的<a href="https://www.gcores.com/articles/123817" target="_blank" rel="noopener">两大全新核心技术</a>：</p>
+<blockquote>
+<p><strong>Nanite</strong>：虚拟微多边形几何体可以让美术师们创建出人眼所能看到的一切几何体细节。Nanite虚拟几何体的出现意味着由数以亿计的多边形组成的影视级美术作品可以被直接导入虚幻引擎——无论是来自Zbrush的雕塑还是用摄影测量法扫描的CAD数据。<br><strong>Lumen</strong>：是一套全动态全局光照解决方案，能够对场景和光照变化做出实时反应，且无需专门的光线追踪硬件。该系统能在宏大而精细的场景中渲染间接镜面反射和可以无限反弹的漫反射；小到毫米级、大到千米级，Lumen都能游刃有余。</p>
+</blockquote>
+<p><br />虚幻引擎 5 将在 2021 年早些时候发布预览版，并在 2021 年晚些时候发布完整版。它将支持次世代主机、现世代主机、PC、Mac、iOS和Android 平台。Epic 同时计划在明年年中时将其集成入《堡垒之夜》，这款游戏也会成为今年 PS5 和 Xbox Series X 的首发作品之一。<br /><img src="https://cdn.nlark.com/yuque/0/2020/jpeg/535404/1589614506566-5918acd3-b093-48bd-b13c-88aa836f879b.jpeg#align=left&display=inline&height=492&margin=%5Bobject%20Object%5D&name=Unreal%205%20%20%20%20d02354c5-237e-419b-920e-b02c357caf67.jpg&originHeight=492&originWidth=875&size=117224&status=done&style=none&width=875" alt="Unreal 5    d02354c5-237e-419b-920e-b02c357caf67.jpg"></p>
+<blockquote>
+<p>链接<br>初探虚幻引擎5 <a href="https://mp.weixin.qq.com/s/BIpcY2Q7nTwA8tcqeFea4Q" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/BIpcY2Q7nTwA8tcqeFea4Q</a><br>PS5+虚幻引擎5，首个实机技术演示视频公开 <a href="https://www.gcores.com/articles/123817" target="_blank" rel="noopener">https://www.gcores.com/articles/123817</a><br>虚幻 5 究竟牛在哪 <a href="https://www.gcores.com/articles/123821" target="_blank" rel="noopener">https://www.gcores.com/articles/123821</a><br>不再透明的未来：浅谈虚幻引擎（Unreal Engine）的历史 <a href="https://www.gcores.com/articles/95303" target="_blank" rel="noopener">https://www.gcores.com/articles/95303</a></p>
+</blockquote>
+<p><a name="BBxy7"></a></p>
+<h4 id="3-Inkscape（Win-amp-macOS-amp-Linux）"><a href="#3-Inkscape（Win-amp-macOS-amp-Linux）" class="headerlink" title="3. Inkscape（Win &amp; macOS &amp; Linux）"></a>3. <a href="https://inkscape.org" target="_blank" rel="noopener">Inkscape</a>（Win &amp; macOS &amp; Linux）</h4><p>开源的矢量图工具软件 Inkscape 经历 17 年的开发于近期正式推出 1.0 版本，支持对象创建、对象模拟交互、填充描边、路径操作等常用工具，可导入SVG、AI、EPS、PDF、PS 和 PNG 等常见文件格式。<a href="https://sspai.com/post/60428" target="_blank" rel="noopener">详细可参考少数派的测评文章</a>。<br /><a href="https://inkscape.org/release/inkscape-1.0/" target="_blank" rel="noopener"><img src="https://cdn.nlark.com/yuque/0/2020/gif/535404/1589610511116-cb7d8fdc-554f-4b00-be07-a626042d790b.gif#align=left&display=inline&height=840&margin=%5Bobject%20Object%5D&name=Boolean_Operations_LPE.gif&originHeight=840&originWidth=1375&size=1339206&status=done&style=none&width=1375" alt="Boolean_Operations_LPE.gif"></a><br /></p>
+<blockquote>
+<p>链接：<a href="https://inkscape.org/" target="_blank" rel="noopener">https://inkscape.org</a><br>少数派测评文章 <a href="https://sspai.com/post/60428" target="_blank" rel="noopener">https://sspai.com/post/60428</a></p>
+</blockquote>
+<p><a name="FGhv0"></a></p>
+<h4 id="4-TeleportHQ（Web）"><a href="#4-TeleportHQ（Web）" class="headerlink" title="4. TeleportHQ（Web）"></a>4. <a href="https://teleporthq.io/" target="_blank" rel="noopener">TeleportHQ</a>（Web）</h4><p>基于 AI 的No-code 建站工具，可以输出主流前端框架代码。本周刊往期也曾介绍过快速制作<a href="https://www.yuque.com/herbert-chang/pmweekly/issue-4#0M7ue" target="_blank" rel="noopener">网站</a>、<a href="https://www.yuque.com/herbert-chang/pmweekly/issue-5#KQJAn" target="_blank" rel="noopener">App</a>、<a href="https://www.yuque.com/herbert-chang/pmweekly/issue-11#alISD" target="_blank" rel="noopener">游戏</a>的平台。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1589615733860-1c561db2-407f-45f4-bfc0-fe8803711340.png#align=left&display=inline&height=668&margin=%5Bobject%20Object%5D&name=%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20200516155451.png&originHeight=668&originWidth=1310&size=330252&status=done&style=none&width=1310" alt="微信截图_20200516155451.png"></p>
+<blockquote>
+<p>链接 <a href="https://teleporthq.io/" target="_blank" rel="noopener">https://teleporthq.io</a><br>快速建站工具 <a href="https://www.yuque.com/herbert-chang/pmweekly/issue-4#0M7ue" target="_blank" rel="noopener">https://www.yuque.com/herbert-chang/pmweekly/issue-4#0M7ue</a><br>无代码构建游戏 <a href="https://www.yuque.com/herbert-chang/pmweekly/issue-11#alISD" target="_blank" rel="noopener">https://www.yuque.com/herbert-chang/pmweekly/issue-11#alISD</a><br>无代码构建App <a href="https://www.yuque.com/herbert-chang/pmweekly/issue-5#KQJAn" target="_blank" rel="noopener">https://www.yuque.com/herbert-chang/pmweekly/issue-5#KQJAn</a></p>
+</blockquote>
+<p><a name="4GUbQ"></a></p>
+<h3 id="佳文推介"><a href="#佳文推介" class="headerlink" title="佳文推介"></a>佳文推介</h3><p><a name="BhGcP"></a></p>
+<h4 id="1-How-Notion-Uses-Notion"><a href="#1-How-Notion-Uses-Notion" class="headerlink" title="1. How Notion Uses Notion"></a>1. <a href="https://www.notion.so/How-Notion-Uses-Notion-616f41d2f5124f3185cf1c36d267c07e" target="_blank" rel="noopener">How Notion Uses Notion</a></h4><p>Notion 团队是怎样用 Notion 的，图文介绍 Notion 的最佳实践。优秀的协作工具实践中总是于无形中渗透着管理思维。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1589352660895-8f3dedab-198d-4499-9a48-7b78d225cb23.png#align=left&display=inline&height=1350&margin=%5Bobject%20Object%5D&name=Screen_Shot_2020-05-01_at_10.06.27_AM.png&originHeight=1350&originWidth=2000&size=1786723&status=done&style=none&width=2000" alt="Screen_Shot_2020-05-01_at_10.06.27_AM.png"></p>
+<blockquote>
+<p>链接 <a href="https://www.notion.so/How-Notion-Uses-Notion-616f41d2f5124f3185cf1c36d267c07e" target="_blank" rel="noopener">https://www.notion.so/How-Notion-Uses-Notion-616f41d2f5124f3185cf1c36d267c07e</a></p>
+</blockquote>
+<p><a name="M9FMa"></a></p>
+<h4 id="2-Mac-视觉史-vol-1：从-Macintosh-到-Mac-OS"><a href="#2-Mac-视觉史-vol-1：从-Macintosh-到-Mac-OS" class="headerlink" title="2. Mac 视觉史 vol.1：从 Macintosh 到 Mac OS"></a>2. <a href="https://mp.weixin.qq.com/s/ufU3rUEciy1BUxs6RM9t_w" target="_blank" rel="noopener">Mac 视觉史 vol.1：从 Macintosh 到 Mac OS</a></h4><p>Mac 系统的第一个操作系统系列（System 1 ~ Mac OS 9）演变史，「Mac 系统确实在很早的阶段，就已经开始注意体验和『不言自明』的交互逻辑」。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1589615009308-5d7641fc-443a-414c-a91f-c437d9b83322.png#align=left&display=inline&height=601&margin=%5Bobject%20Object%5D&name=%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20200516154314.png&originHeight=601&originWidth=670&size=176370&status=done&style=none&width=670" alt="微信截图_20200516154314.png"></p>
+<blockquote>
+<p>链接 <a href="https://mp.weixin.qq.com/s/ufU3rUEciy1BUxs6RM9t_w" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/ufU3rUEciy1BUxs6RM9t_w</a></p>
+</blockquote>
+<p><a name="LUn6i"></a></p>
+<h3 id="资源与工具"><a href="#资源与工具" class="headerlink" title="资源与工具"></a>资源与工具</h3><p><a name="IwROd"></a></p>
+<h4 id="1-WinUI"><a href="#1-WinUI" class="headerlink" title="1. WinUI"></a>1. <a href="https://microsoft.github.io/microsoft-ui-xaml/" target="_blank" rel="noopener">WinUI</a></h4><p>Microsoft 开源了 WinUI，并表示WinUI是构建优秀 Fluent Design 的最简便方式，可以在任意 Windows 10 UWP XAML 应用或者 Xamarin 中使用。WinUI 由高度优化的C ++内核提供支持，可提供出色的性能和专业开发人员所需的响应式交互性。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1589609635271-2ed01d27-36e6-4809-b9f9-3558055a77b9.png#align=left&display=inline&height=598&margin=%5Bobject%20Object%5D&name=WinUI.png&originHeight=598&originWidth=946&size=385095&status=done&style=none&width=946" alt="WinUI.png"></p>
+<blockquote>
+<p>链接 <a href="https://microsoft.github.io/microsoft-ui-xaml/" target="_blank" rel="noopener">https://microsoft.github.io/microsoft-ui-xaml/</a></p>
+</blockquote>
+<p><a name="ZNgud"></a></p>
+<h4 id="2-NotionExpert"><a href="#2-NotionExpert" class="headerlink" title="2. NotionExpert"></a>2. <a href="https://www.notionexpert.com" target="_blank" rel="noopener">NotionExpert</a></h4><p>Notion 资源聚合，包括教程、附加组件、博客/Newsletter、模板库、社区等分类，帮助用户成为 Notion 进阶玩家。支持邮件订阅网站更新。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1589600226278-b517ab10-82c9-4a17-8ef4-2dc59c37a516.png#align=left&display=inline&height=895&margin=%5Bobject%20Object%5D&name=notionexpert.png&originHeight=895&originWidth=1500&size=346007&status=done&style=none&width=1500" alt="notionexpert.png"><br /></p>
+<blockquote>
+<p>链接：<a href="https://www.notionexpert.com/" target="_blank" rel="noopener">https://www.notionexpert.com</a></p>
+</blockquote>
+<p><a name="JXzW9"></a></p>
+<h3 id="每周一书"><a href="#每周一书" class="headerlink" title="每周一书"></a>每周一书</h3><p>以赛亚·伯林<a href="https://book.douban.com/subject/27060620/" target="_blank" rel="noopener">《观念的力量》</a><br /><a href="https://book.douban.com/subject/27060620/" target="_blank" rel="noopener"><img src="https://cdn.nlark.com/yuque/0/2020/jpeg/535404/1589617436878-efe17e02-e397-4d3f-84c4-0b202f1fb513.jpeg#align=left&display=inline&height=443&margin=%5Bobject%20Object%5D&name=s32302027.jpg&originHeight=1595&originWidth=1080&size=270751&status=done&style=none&width=300" alt="s32302027.jpg"></a><br />以赛亚·伯林在中国最知名的观点大概要数「两种自由观念」和「狐狸与刺猬」比喻了。作为英国哲学家、观念史学家、二十世纪著名自由主义知识分子，他在专著方面并不算高产，很多精妙观点通过演讲、散文等形式流传，但这不影响伯林被后世列为最有影响力观念史学者行列。以赛亚·伯林 1928 年进入牛津大学攻读哲学、政治与经济（PPE），1939 年借撰写《卡尔·马克思》的契机转向观念史研究，《卡尔·马克思》这本书也是终于在时隔 70 余年方得以翻译成简体中文版本。《观念的力量》收录伯林此前不曾集结成书的 22 篇文章，「从伯林对自身学术道路的梳理，到令他成名的俄国思想家研究，再到令他享誉世界的自由论述，无不以优雅的文字和磅礴的论证，证明伟大的观念可以革新人类对世界、对自身的理解，而可怕的观念也可以给世人带来厄运和灾难。」<a href="http://www.aisixiang.com/data/14571.html" target="_blank" rel="noopener">刘擎教授对伯林观点有较多阐述</a>。<br />顺带提一句，伯林 1932 年考入牛津的万灵学院（All Souls College）做研究员。单是考入此学院就可以作为一生荣耀，《The Economist》前执行主编 Anthony Gottlieb 也曾在万灵学院做研究员。可以在这个链接感受下<a href="https://mp.weixin.qq.com/s/V0qNM8ndaaWKu-HyoOF6bQ" target="_blank" rel="noopener">万灵学院的考题</a>。更多关于伯林的著作和论文可参考<a href="http://berlin.wolf.ox.ac.uk/" target="_blank" rel="noopener">伯林虚拟图书馆</a>。<br />_</p>
+<blockquote>
+<p>有人认为，只要让科学家或接受了科学训练的人走上管理岗位，世界就会焕然一新；这样的思想家并不罕见。对此我不得不说，从未提出过比这更好的借口甚至理由来为精英阶层无限的专制主义辩护，他们剥夺了大多数人不可或缺的自由。<br>有人曾说，在古代，男人和女人被当作牺牲品献给诸神；到了现代，新的偶像，即形形色色的「主义」，替换了古代诸神。让人遭受痛苦、杀人或折磨他人，通常会受到正义的遣责：但是如果我做这些事情不是为了个人利益，而是为了某种主义一一如民族主义、法西斯主义、狂热的宗教信念、各种进步或者历史发展规律一一它们就是无可非议的。多数革命者公开或不公开地宣称，为了创造一个理想世界，我们必须先打破鸡蛋，否则是吃不上煎鸡蛋的。鸡蛋早被打破——在我们这个时代，鸡蛋已被猛烈地或普遍地打破，这是史无前例的一一煎鸡蛋却遥不可及，煎鸡蛋消失得无影无踪。这就是我所谓明目张胆的一元论的必然结果——有人称之为狂热，但是一元论乃所有极端主义之根源。</p>
+</blockquote>
+<blockquote>
+<p>引自《观念的力量》中&lt;我的学术之路&gt;一文</p>
+</blockquote>
+<p>_<br />_<br><a name="NPQi6"></a></p>
+<h3 id="订阅"><a href="#订阅" class="headerlink" title="订阅"></a>订阅</h3><p>如无意外，本周刊每周日发布，同步更新在 <a href="https://github.com/HerbertChang/pmweekly" target="_blank" rel="noopener">GitHub</a>、<a href="https://weixin.sogou.com/weixin?type=1&s_from=input&query=%E8%8B%A5%E6%84%9A%E8%8B%A5%E6%98%8F&ie=utf8&_sug_=y&_sug_type_=&w=01019900&sut=10610&sst0=1571666684054&lkt=0%2C0%2C0" target="_blank" rel="noopener">微信公众号</a>和<a href="https://yuque.com/herbert-chang/pmweekly/" target="_blank" rel="noopener">语雀</a>。本周刊遵循 CC BY-NC-ND 标准。<br />微信搜索「若愚若昏」，即可订阅。<br /><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/535404/1571989117002-cef6be63-7b29-4ac4-a35f-3b5a43e7ce88.jpeg#align=left&display=inline&height=200&margin=%5Bobject%20Object%5D&originHeight=258&originWidth=258&status=done&style=none&width=200" alt=""><br /></p>
+<p><a name="b4kSE"></a></p>
+<h3 id="致谢"><a href="#致谢" class="headerlink" title="致谢"></a>致谢</h3><p>想法来自阮一峰老师的《<a href="https://github.com/ruanyf/weekly" target="_blank" rel="noopener">科技爱好者周刊</a>》。特此致谢！ </p>
+
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/uploads/wechat-qcode.jpg" alt="Herbert Chang wechat" style="width: 200px; max-width: 100%;"/>
+    <div>欢迎您扫一扫上面的微信公众号，订阅我的博客！</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>转发和赞赏是对俺创作的支持</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/uploads/wechatpay.png" alt="Herbert Chang 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/uploads/alipay.png" alt="Herbert Chang 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A/" rel="tag"># 产品周刊</a>
+          
+            <a href="/tags/%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1/" rel="tag"># 产品设计</a>
+          
+            <a href="/tags/PM/" rel="tag"># PM</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/05/10/%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A%EF%BC%9A%E7%AC%AC-14-%E6%9C%9F%EF%BC%8820200510%EF%BC%89/" rel="next" title="产品周刊 | 第 14 期（20200510）">
+                <i class="fa fa-chevron-left"></i> 产品周刊 | 第 14 期（20200510）
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Herbert Chang</p>
+              <p class="site-description motion-element" itemprop="description">所南心史井中全</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%20%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">17</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-globe"></i>
+                
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://youhan26.github.io/" title="Tony You 的个人博客" target="_blank">Tony You 的个人博客</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://leiquan.website/" title="雷全的个人博客" target="_blank">雷全的个人博客</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#值得关注的新产品"><span class="nav-number">1.</span> <span class="nav-text">值得关注的新产品</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-Easy-Bloggers-（Web）"><span class="nav-number">1.1.</span> <span class="nav-text">1. Easy Bloggers （Web）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-Unreal-Engine-5-（游戏引擎）"><span class="nav-number">1.2.</span> <span class="nav-text">2. Unreal Engine 5 （游戏引擎）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-Inkscape（Win-amp-macOS-amp-Linux）"><span class="nav-number">1.3.</span> <span class="nav-text">3. Inkscape（Win &amp; macOS &amp; Linux）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-TeleportHQ（Web）"><span class="nav-number">1.4.</span> <span class="nav-text">4. TeleportHQ（Web）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#佳文推介"><span class="nav-number">2.</span> <span class="nav-text">佳文推介</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-How-Notion-Uses-Notion"><span class="nav-number">2.1.</span> <span class="nav-text">1. How Notion Uses Notion</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-Mac-视觉史-vol-1：从-Macintosh-到-Mac-OS"><span class="nav-number">2.2.</span> <span class="nav-text">2. Mac 视觉史 vol.1：从 Macintosh 到 Mac OS</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#资源与工具"><span class="nav-number">3.</span> <span class="nav-text">资源与工具</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-WinUI"><span class="nav-number">3.1.</span> <span class="nav-text">1. WinUI</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-NotionExpert"><span class="nav-number">3.2.</span> <span class="nav-text">2. NotionExpert</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#每周一书"><span class="nav-number">4.</span> <span class="nav-text">每周一书</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#订阅"><span class="nav-number">5.</span> <span class="nav-text">订阅</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#致谢"><span class="nav-number">6.</span> <span class="nav-text">致谢</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2018 &mdash; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Herbert Chang</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://Herbert.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'https://herbertchang.github.io/2020/05/17/%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A%EF%BC%9A%E7%AC%AC-15-%E6%9C%9F%EF%BC%8820200517%EF%BC%89/';
+          this.page.identifier = '2020/05/17/产品周刊：第-15-期（20200517）/';
+          this.page.title = '产品周刊 | 第 15 期（20200517）';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://Herbert.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
