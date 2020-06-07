@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="产品周刊,产品设计,PM," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="张贺的博客" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="值得关注的产品：TiddlyWiki、Anyline Keyboard、Artify Editor、FastClip；佳文推介：笔记工具「被偷走的十年」、手机设计进化的40年、Product Management Trends and Benchmarks Report 2020；资源与工具：UX Details、轻芒杂志草稿版通讯合辑；每周一书：高居翰《画家生涯：传统中国画家的生活与工作》。">
+<meta name="keywords" content="产品周刊,产品设计,PM">
+<meta property="og:type" content="article">
+<meta property="og:title" content="产品周刊 | 第 18 期（20200607）">
+<meta property="og:url" content="https:&#x2F;&#x2F;herbertchang.github.io&#x2F;2020&#x2F;06&#x2F;07&#x2F;%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A%EF%BC%9A%E7%AC%AC-18-%E6%9C%9F%EF%BC%8820200607%EF%BC%89&#x2F;index.html">
+<meta property="og:site_name" content="张贺的博客">
+<meta property="og:description" content="值得关注的产品：TiddlyWiki、Anyline Keyboard、Artify Editor、FastClip；佳文推介：笔记工具「被偷走的十年」、手机设计进化的40年、Product Management Trends and Benchmarks Report 2020；资源与工具：UX Details、轻芒杂志草稿版通讯合辑；每周一书：高居翰《画家生涯：传统中国画家的生活与工作》。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1591431158346-5519ac42-3a65-499d-b10e-5da53059a191.png#align=left&amp;display=inline&amp;height=612&amp;margin=%5Bobject%20Object%5D&amp;name=Tiddlywiki.png&amp;originHeight=612&amp;originWidth=1018&amp;size=209996&amp;status=done&amp;style=none&amp;width=1018">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1591436441964-290a883d-fdfa-4203-bf22-916545fc2ab6.png#align=left&amp;display=inline&amp;height=606&amp;margin=%5Bobject%20Object%5D&amp;name=Anyline%20Keyboard.png&amp;originHeight=606&amp;originWidth=1219&amp;size=559085&amp;status=done&amp;style=none&amp;width=1219">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1591438994862-102081f4-900f-4a6d-ad97-bcf51e23df36.png#align=left&amp;display=inline&amp;height=614&amp;margin=%5Bobject%20Object%5D&amp;name=artify.png&amp;originHeight=613&amp;originWidth=1036&amp;size=566997&amp;status=done&amp;style=none&amp;width=1036">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1591440617063-b517199b-65d3-4d88-96ca-a09fa7bfc894.png#align=left&amp;display=inline&amp;height=1168&amp;margin=%5Bobject%20Object%5D&amp;name=fastclip.png&amp;originHeight=1168&amp;originWidth=1474&amp;size=349160&amp;status=done&amp;style=none&amp;width=1474">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1591434807161-588c0052-fa18-49b5-b036-027e995e8ddb.png#align=left&amp;display=inline&amp;height=842&amp;margin=%5Bobject%20Object%5D&amp;name=cellphone-40-years.png&amp;originHeight=841&amp;originWidth=524&amp;size=589571&amp;status=done&amp;style=none&amp;width=524">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1591435948834-7c2565f0-0d8e-426e-8ae0-5c6ee08e9568.png#align=left&amp;display=inline&amp;height=855&amp;margin=%5Bobject%20Object%5D&amp;name=TRENDS%20AND%20BENCHMARKS%20IN%20PM%202020.png&amp;originHeight=852&amp;originWidth=1526&amp;size=933058&amp;status=done&amp;style=none&amp;width=1526">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1591432839162-4c9a4ea9-57e0-4098-a036-cfe2e41ee457.png#align=left&amp;display=inline&amp;height=829&amp;margin=%5Bobject%20Object%5D&amp;name=UX-details.png&amp;originHeight=829&amp;originWidth=1371&amp;size=205454&amp;status=done&amp;style=none&amp;width=1371">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;jpeg&#x2F;535404&#x2F;1591440939224-fc1231ed-014d-4fb3-a83d-f0179b6d2883.jpeg#align=left&amp;display=inline&amp;height=332&amp;margin=%5Bobject%20Object%5D&amp;name=huajiashengya.jpg&amp;originHeight=332&amp;originWidth=230&amp;size=13358&amp;status=done&amp;style=none&amp;width=230">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2019&#x2F;jpeg&#x2F;535404&#x2F;1571989117002-cef6be63-7b29-4ac4-a35f-3b5a43e7ce88.jpeg#align=left&amp;display=inline&amp;height=200&amp;margin=%5Bobject%20Object%5D&amp;originHeight=258&amp;originWidth=258&amp;status=done&amp;style=none&amp;width=200">
+<meta property="og:updated_time" content="2020-06-07T02:09:15.734Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1591431158346-5519ac42-3a65-499d-b10e-5da53059a191.png#align=left&amp;display=inline&amp;height=612&amp;margin=%5Bobject%20Object%5D&amp;name=Tiddlywiki.png&amp;originHeight=612&amp;originWidth=1018&amp;size=209996&amp;status=done&amp;style=none&amp;width=1018">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://herbertchang.github.io/2020/06/07/产品周刊：第-18-期（20200607）/"/>
+
+
+
+
+
+  <title>产品周刊 | 第 18 期（20200607） | 张贺的博客</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">张贺的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">若愚若昏</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://herbertchang.github.io/2020/06/07/%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A%EF%BC%9A%E7%AC%AC-18-%E6%9C%9F%EF%BC%8820200607%EF%BC%89/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Herbert Chang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="张贺的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">产品周刊 | 第 18 期（20200607）</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-06-07T08:24:33+08:00">
+                2020-06-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A/" itemprop="url" rel="index">
+                    <span itemprop="name">产品周刊</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2020/06/07/%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A%EF%BC%9A%E7%AC%AC-18-%E6%9C%9F%EF%BC%8820200607%EF%BC%89/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2020/06/07/产品周刊：第-18-期（20200607）/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+              <div class="post-description">
+                  值得关注的产品：TiddlyWiki、Anyline Keyboard、Artify Editor、FastClip；佳文推介：笔记工具「被偷走的十年」、手机设计进化的40年、Product Management Trends and Benchmarks Report 2020；资源与工具：UX Details、轻芒杂志草稿版通讯合辑；每周一书：高居翰《画家生涯：传统中国画家的生活与工作》。
+              </div>
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="值得关注的产品"><a href="#值得关注的产品" class="headerlink" title="值得关注的产品"></a>值得关注的产品</h3><p><a name="lhS0J"></a></p>
+<h4 id="1-TiddlyWiki（Web）"><a href="#1-TiddlyWiki（Web）" class="headerlink" title="1. TiddlyWiki（Web）"></a>1. <a href="https://tiddlywiki.com/" target="_blank" rel="noopener">TiddlyWiki</a>（Web）</h4><p>开源的个人知识管理（PKM）工具软件，仅由单个 HTML 文件组成的非网络应用的 Wiki 程序。由于程序仅使用 HTML、CSS 及 JavaScript 技术，完全不需要任何的数据库（如 MySQL）及动态编程语言，可以满足做笔记（支持 Markdown）、做博客系统等场景需要。由于不依赖网络环境，当然你也不用担心它被墙。在 Notion、Roam Research 风头正劲之时提这款工具，也是再一次用这种看似古老不花哨的技术实现来说明 HTML 本身就是非常好的「双向链」实现方式。我是在 <a href="https://rizime.substack.com/people/8361259--reading" target="_blank" rel="noopener">Λ-Reading</a> 邮件订阅中初次了解这个工具，其作者所写 <a href="https://rizime.substack.com/p/d28" target="_blank" rel="noopener">Tiddlywiki 使用指南</a>可以作为入门指引。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1591431158346-5519ac42-3a65-499d-b10e-5da53059a191.png#align=left&display=inline&height=612&margin=%5Bobject%20Object%5D&name=Tiddlywiki.png&originHeight=612&originWidth=1018&size=209996&status=done&style=none&width=1018" alt="Tiddlywiki.png"></p>
+<blockquote>
+<p>官网 <a href="https://tiddlywiki.com/" target="_blank" rel="noopener">https://tiddlywiki.com</a><br>TiddlyWiki 使用指南 <a href="https://rizime.substack.com/p/d28" target="_blank" rel="noopener">https://rizime.substack.com/p/d28</a><br>TiddlyWiki Tutorial <a href="https://www.youtube.com/playlist?list=PLzZCajspPU_UjFn0uy-J9URz0LP4zhxRK" target="_blank" rel="noopener">https://www.youtube.com/playlist?list=PLzZCajspPU_UjFn0uy-J9URz0LP4zhxRK</a></p>
+</blockquote>
+<p><a name="bTpMN"></a></p>
+<h4 id="2-Anyline-Keyboard（iOS-amp-Android）"><a href="#2-Anyline-Keyboard（iOS-amp-Android）" class="headerlink" title="2. Anyline Keyboard（iOS &amp; Android）"></a>2. <a href="https://anyline.com/anyline-keyboard/" target="_blank" rel="noopener">Anyline Keyboard</a>（iOS &amp; Android）</h4><p>输入法工具，主打卖点是提供拍照输入文字功能。</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1591436441964-290a883d-fdfa-4203-bf22-916545fc2ab6.png#align=left&display=inline&height=606&margin=%5Bobject%20Object%5D&name=Anyline%20Keyboard.png&originHeight=606&originWidth=1219&size=559085&status=done&style=none&width=1219" alt="Anyline Keyboard.png"></p>
+<blockquote>
+<p>官网链接 <a href="https://anyline.com/anyline-keyboard/" target="_blank" rel="noopener">https://anyline.com/anyline-keyboard</a><br>安卓版 <a href="https://play.google.com/store/apps/details?id=com.anyline.keyboard" target="_blank" rel="noopener">https://play.google.com/store/apps/details?id=com.anyline.keyboard</a><br>AppStore <a href="https://apps.apple.com/app/anyline-keyboard/id1511938055" target="_blank" rel="noopener">https://apps.apple.com/app/anyline-keyboard/id1511938055</a></p>
+</blockquote>
+<p><a name="BBxy7"></a></p>
+<h4 id="3-Artify-Editor（Web）"><a href="#3-Artify-Editor（Web）" class="headerlink" title="3. Artify Editor（Web）"></a>3. <a href="https://www.artify.co/" target="_blank" rel="noopener">Artify Editor</a>（Web）</h4><p>Web 端在线设计工具，主要优势在于提供较丰富的线上素材库，支持图层控制、高清 3D 风格、尺寸自适应等特性。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1591438994862-102081f4-900f-4a6d-ad97-bcf51e23df36.png#align=left&display=inline&height=614&margin=%5Bobject%20Object%5D&name=artify.png&originHeight=613&originWidth=1036&size=566997&status=done&style=none&width=1036" alt="artify.png"><br /></p>
+<blockquote>
+<p>官网链接 <a href="https://www.artify.co/" target="_blank" rel="noopener">https://www.artify.co</a><br>功能介绍短片 <a href="https://youtu.be/zCOwhyyGRLc" target="_blank" rel="noopener">https://youtu.be/zCOwhyyGRLc</a></p>
+</blockquote>
+<p><a name="FGhv0"></a></p>
+<h4 id="4-FastClip（macOS）"><a href="#4-FastClip（macOS）" class="headerlink" title="4. FastClip（macOS）"></a>4. <a href="https://fastclip.shenyin.name/" target="_blank" rel="noopener">FastClip</a>（macOS）</h4><p>剪贴板增强工具，将剪贴板中的内容通过特有的算法和文件结构建立索引，支持印象搜索、预览模式等特性。类似工具 Win 平台上有 Ditto、macOS 有 Paste，可比对一下看哪款更适合自己。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1591440617063-b517199b-65d3-4d88-96ca-a09fa7bfc894.png#align=left&display=inline&height=1168&margin=%5Bobject%20Object%5D&name=fastclip.png&originHeight=1168&originWidth=1474&size=349160&status=done&style=none&width=1474" alt="fastclip.png"></p>
+<blockquote>
+<p>官网链接 <a href="https://fastclip.shenyin.name/" target="_blank" rel="noopener">https://fastclip.shenyin.name</a><br>AppStore 下载 <a href="https://apps.apple.com/cn/app/fastclip-endless-clipboard/id1476085650" target="_blank" rel="noopener">https://apps.apple.com/cn/app/fastclip-endless-clipboard/id1476085650</a></p>
+</blockquote>
+<p><a name="4GUbQ"></a></p>
+<h3 id="佳文推介"><a href="#佳文推介" class="headerlink" title="佳文推介"></a>佳文推介</h3><p><a name="BhGcP"></a></p>
+<h4 id="1-从Evernote-到-Bear，笔记工具「被偷走的十年」"><a href="#1-从Evernote-到-Bear，笔记工具「被偷走的十年」" class="headerlink" title="1. 从Evernote 到 Bear，笔记工具「被偷走的十年」"></a>1. <a href="https://medium.com/@dailyio/%E4%BB%8Eevernote-%E5%88%B0-bear-%E7%AC%94%E8%AE%B0%E5%B7%A5%E5%85%B7-%E8%A2%AB%E5%81%B7%E8%B5%B0%E7%9A%84%E5%8D%81%E5%B9%B4-f5b24985569c" target="_blank" rel="noopener">从Evernote 到 Bear，笔记工具「被偷走的十年」</a></h4><p>对笔记类应用演进回顾。为何笔记应用越来越复杂、为何在遍地笔记应用占据市场格局中 Notion 还能重开一片天地，希望能有启发。作者是科技博客作者、服务内容订阅 Dailyio 出品人赵赛坡。<br /></p>
+<blockquote>
+<p>链接 <a href="https://medium.com/@dailyio/%E4%BB%8Eevernote-%E5%88%B0-bear-%E7%AC%94%E8%AE%B0%E5%B7%A5%E5%85%B7-%E8%A2%AB%E5%81%B7%E8%B5%B0%E7%9A%84%E5%8D%81%E5%B9%B4-f5b24985569c" target="_blank" rel="noopener">https://medium.com/@dailyio/%E4%BB%8Eevernote-%E5%88%B0-bear-%E7%AC%94%E8%AE%B0%E5%B7%A5%E5%85%B7-%E8%A2%AB%E5%81%B7%E8%B5%B0%E7%9A%84%E5%8D%81%E5%B9%B4-f5b24985569c</a></p>
+</blockquote>
+<p><a name="M9FMa"></a></p>
+<h4 id="2-手机设计进化的40年"><a href="#2-手机设计进化的40年" class="headerlink" title="2. 手机设计进化的40年"></a>2. <a href="https://mp.weixin.qq.com/s/g8r9ZUiDp0fO3xNaeKOvlA" target="_blank" rel="noopener">手机设计进化的40年</a></h4><p>一篇带广告的访谈，可以了解手机硬件的工业设计，谈到了博朗（Braun）风格、包豪斯设计理念。文章来自「卷宗 <em>Wallpaper_」。Tyler Brûlé 1996 年创办 _Wallpaper</em> 杂志，于 1997 年将其卖给了 Time Warner，在 2007 年又创办了 <em>Monocle。</em><br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1591434807161-588c0052-fa18-49b5-b036-027e995e8ddb.png#align=left&display=inline&height=842&margin=%5Bobject%20Object%5D&name=cellphone-40-years.png&originHeight=841&originWidth=524&size=589571&status=done&style=none&width=524" alt="cellphone-40-years.png"></p>
+<blockquote>
+<p>链接 <a href="https://mp.weixin.qq.com/s/g8r9ZUiDp0fO3xNaeKOvlA" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/g8r9ZUiDp0fO3xNaeKOvlA</a></p>
+</blockquote>
+<p><a name="H6UFi"></a></p>
+<h4 id="3-Product-Management-Trends-and-Benchmarks-Report-2020-by-PMF（En）"><a href="#3-Product-Management-Trends-and-Benchmarks-Report-2020-by-PMF（En）" class="headerlink" title="3. Product Management Trends and Benchmarks Report 2020, by PMF（En）"></a>3. <a href="https://productmanagementfestival.com/wp-content/uploads/2020/05/TrendsBenchmarks_PM20.pdf" target="_blank" rel="noopener">Product Management Trends and Benchmarks Report 2020, by PMF</a>（En）</h4><p>ProductManagementFestival（PMF）出品的产品管理趋势年度报告，以 70 张图表来展示产品行业的 Leadership &amp; Culture、People、Organization、Salaries、Process and Product 等层面数据。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1591435948834-7c2565f0-0d8e-426e-8ae0-5c6ee08e9568.png#align=left&display=inline&height=855&margin=%5Bobject%20Object%5D&name=TRENDS%20AND%20BENCHMARKS%20IN%20PM%202020.png&originHeight=852&originWidth=1526&size=933058&status=done&style=none&width=1526" alt="TRENDS AND BENCHMARKS IN PM 2020.png"></p>
+<blockquote>
+<p>链接 <a href="https://productmanagementfestival.com/wp-content/uploads/2020/05/TrendsBenchmarks_PM20.pdf" target="_blank" rel="noopener">https://productmanagementfestival.com/wp-content/uploads/2020/05/TrendsBenchmarks_PM20.pdf</a></p>
+</blockquote>
+<p><a name="LUn6i"></a></p>
+<h3 id="资源与工具"><a href="#资源与工具" class="headerlink" title="资源与工具"></a>资源与工具</h3><p><a name="IwROd"></a></p>
+<h4 id="1-UX-Details"><a href="#1-UX-Details" class="headerlink" title="1. UX Details"></a>1. <a href="https://uxdetails.com" target="_blank" rel="noopener">UX Details</a></h4><p>由 Shopify 设计师 Martin Sitar 分享和点评产品设计细节的博客。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1591432839162-4c9a4ea9-57e0-4098-a036-cfe2e41ee457.png#align=left&display=inline&height=829&margin=%5Bobject%20Object%5D&name=UX-details.png&originHeight=829&originWidth=1371&size=205454&status=done&style=none&width=1371" alt="UX-details.png"></p>
+<blockquote>
+<p>链接 <a href="https://uxdetails.com/" target="_blank" rel="noopener">https://uxdetails.com</a></p>
+</blockquote>
+<p><a name="ZNgud"></a></p>
+<h4 id="2-轻芒杂志草稿版通讯合辑"><a href="#2-轻芒杂志草稿版通讯合辑" class="headerlink" title="2. 轻芒杂志草稿版通讯合辑"></a>2. <a href="https://www.notion.so/eb3ff11807184c218c8bbb4e05468856" target="_blank" rel="noopener">轻芒杂志草稿版通讯合辑</a></h4><p>轻芒团队在进行轻芒杂志与轻芒阅读的功能合并与新功能研发，称其为「轻芒杂志草稿版」。每周更新一次的邮件通讯是团队与内测用户的一次对话，也可以作为同行观摩轻芒团队设计和打磨产品过程参考。<br /></p>
+<blockquote>
+<p>链接 <a href="https://www.notion.so/eb3ff11807184c218c8bbb4e05468856" target="_blank" rel="noopener">https://www.notion.so/eb3ff11807184c218c8bbb4e05468856</a></p>
+</blockquote>
+<p><a name="JXzW9"></a></p>
+<h3 id="每周一书"><a href="#每周一书" class="headerlink" title="每周一书"></a>每周一书</h3><p>高居翰<a href="https://book.douban.com/subject/10430691/" target="_blank" rel="noopener">《画家生涯：传统中国画家的生活与工作》</a><br />高居翰先生通过画作、信笺、笔记、题跋等细致考察，对中国古代画家、尤其是元明清晚期画家的工作与生活进行描述，打破一些固有文人画完美观念，试图还原画家在面对艺术爱好与复杂现实时的真实情景。比如，作品作为社交的礼物与应酬、画家面对赞助人的复杂心理、卖画赚钱、助手代笔等画家往往羞于直接说出来、画论中也都极少提的情节。关于高居翰先生的介绍可以参考<a href="https://www.yuque.com/herbert-chang/productweekly/issue-10#UXUA7" target="_blank" rel="noopener">产品周刊第十期</a>。<br /><strong><img src="https://cdn.nlark.com/yuque/0/2020/jpeg/535404/1591440939224-fc1231ed-014d-4fb3-a83d-f0179b6d2883.jpeg#align=left&display=inline&height=332&margin=%5Bobject%20Object%5D&name=huajiashengya.jpg&originHeight=332&originWidth=230&size=13358&status=done&style=none&width=230" alt="huajiashengya.jpg"></strong></p>
+<blockquote>
+<p>我的用意不是在倡导重新评估中国的职业画家传统，我更希望表明的是，如果让这种善意的中国神话无止境地持续下去，把需要靠绘画谋生的画家改造成毫无私利之心的业余画家，使之因而受人尊重，对这些画家来说其实并无益处。完全采纳中国上层社会那种厌恶面对画家生涯世俗经济现实的态度也是无益的，我们过去倾向如此，并非源自自身文化中的主流看法，而更多出于不加批判地接受了一位社会历史学家所说的那种「或多或少以怀疑与鄙视的眼光看待商业的正统观念」，这正是该历史学家所列举的「中华帝国晚期恒久不变的特质」之一。</p>
+</blockquote>
+<p><a name="NPQi6"></a></p>
+<h3 id="订阅"><a href="#订阅" class="headerlink" title="订阅"></a>订阅</h3><p>如无意外，本周刊每周日发布，同步更新在 <a href="https://github.com/HerbertChang/pmweekly" target="_blank" rel="noopener">GitHub</a>、<a href="https://weixin.sogou.com/weixin?type=1&s_from=input&query=%E8%8B%A5%E6%84%9A%E8%8B%A5%E6%98%8F&ie=utf8&_sug_=y&_sug_type_=&w=01019900&sut=10610&sst0=1571666684054&lkt=0%2C0%2C0" target="_blank" rel="noopener">微信公众号</a>和<a href="https://yuque.com/herbert-chang/pmweekly/" target="_blank" rel="noopener">语雀</a>。本周刊遵循 CC BY-NC-ND 标准。<br />微信搜索「若愚若昏」，即可订阅。<br /><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/535404/1571989117002-cef6be63-7b29-4ac4-a35f-3b5a43e7ce88.jpeg#align=left&display=inline&height=200&margin=%5Bobject%20Object%5D&originHeight=258&originWidth=258&status=done&style=none&width=200" alt=""><br /></p>
+<p><a name="b4kSE"></a></p>
+<h3 id="致谢"><a href="#致谢" class="headerlink" title="致谢"></a>致谢</h3><p>想法来自阮一峰老师的《<a href="https://github.com/ruanyf/weekly" target="_blank" rel="noopener">科技爱好者周刊</a>》。特此致谢！ </p>
+
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/uploads/wechat-qcode.jpg" alt="Herbert Chang wechat" style="width: 200px; max-width: 100%;"/>
+    <div>欢迎您扫一扫上面的微信公众号，订阅我的博客！</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>转发和赞赏是对俺创作的支持</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/uploads/wechatpay.png" alt="Herbert Chang 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/uploads/alipay.png" alt="Herbert Chang 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A/" rel="tag"># 产品周刊</a>
+          
+            <a href="/tags/%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1/" rel="tag"># 产品设计</a>
+          
+            <a href="/tags/PM/" rel="tag"># PM</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/05/31/%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A%EF%BC%9A%E7%AC%AC-17-%E6%9C%9F%EF%BC%8820200531%EF%BC%89/" rel="next" title="产品周刊 | 第 17 期（20200531）">
+                <i class="fa fa-chevron-left"></i> 产品周刊 | 第 17 期（20200531）
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Herbert Chang</p>
+              <p class="site-description motion-element" itemprop="description">所南心史井中全</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%20%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">20</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-globe"></i>
+                
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://youhan26.github.io/" title="Tony You 的个人博客" target="_blank">Tony You 的个人博客</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://leiquan.website/" title="雷全的个人博客" target="_blank">雷全的个人博客</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#值得关注的产品"><span class="nav-number">1.</span> <span class="nav-text">值得关注的产品</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-TiddlyWiki（Web）"><span class="nav-number">1.1.</span> <span class="nav-text">1. TiddlyWiki（Web）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-Anyline-Keyboard（iOS-amp-Android）"><span class="nav-number">1.2.</span> <span class="nav-text">2. Anyline Keyboard（iOS &amp; Android）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-Artify-Editor（Web）"><span class="nav-number">1.3.</span> <span class="nav-text">3. Artify Editor（Web）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-FastClip（macOS）"><span class="nav-number">1.4.</span> <span class="nav-text">4. FastClip（macOS）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#佳文推介"><span class="nav-number">2.</span> <span class="nav-text">佳文推介</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-从Evernote-到-Bear，笔记工具「被偷走的十年」"><span class="nav-number">2.1.</span> <span class="nav-text">1. 从Evernote 到 Bear，笔记工具「被偷走的十年」</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-手机设计进化的40年"><span class="nav-number">2.2.</span> <span class="nav-text">2. 手机设计进化的40年</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-Product-Management-Trends-and-Benchmarks-Report-2020-by-PMF（En）"><span class="nav-number">2.3.</span> <span class="nav-text">3. Product Management Trends and Benchmarks Report 2020, by PMF（En）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#资源与工具"><span class="nav-number">3.</span> <span class="nav-text">资源与工具</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-UX-Details"><span class="nav-number">3.1.</span> <span class="nav-text">1. UX Details</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-轻芒杂志草稿版通讯合辑"><span class="nav-number">3.2.</span> <span class="nav-text">2. 轻芒杂志草稿版通讯合辑</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#每周一书"><span class="nav-number">4.</span> <span class="nav-text">每周一书</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#订阅"><span class="nav-number">5.</span> <span class="nav-text">订阅</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#致谢"><span class="nav-number">6.</span> <span class="nav-text">致谢</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2018 &mdash; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Herbert Chang</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://Herbert.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'https://herbertchang.github.io/2020/06/07/%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A%EF%BC%9A%E7%AC%AC-18-%E6%9C%9F%EF%BC%8820200607%EF%BC%89/';
+          this.page.identifier = '2020/06/07/产品周刊：第-18-期（20200607）/';
+          this.page.title = '产品周刊 | 第 18 期（20200607）';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://Herbert.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
