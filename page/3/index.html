@@ -84,7 +84,7 @@
 <meta name="description" content="所南心史井中全">
 <meta property="og:type" content="website">
 <meta property="og:title" content="张贺的博客">
-<meta property="og:url" content="https:&#x2F;&#x2F;herbertchang.github.io&#x2F;tags&#x2F;PM&#x2F;page&#x2F;2&#x2F;index.html">
+<meta property="og:url" content="https:&#x2F;&#x2F;herbertchang.github.io&#x2F;page&#x2F;3&#x2F;index.html">
 <meta property="og:site_name" content="张贺的博客">
 <meta property="og:description" content="所南心史井中全">
 <meta property="og:locale" content="zh-Hans">
@@ -118,13 +118,13 @@
 
 
 
-  <link rel="canonical" href="https://herbertchang.github.io/tags/PM/page/2/"/>
+  <link rel="canonical" href="https://herbertchang.github.io/page/3/"/>
 
 
 
 
 
-  <title>标签: PM | 张贺的博客</title>
+  <title>张贺的博客</title>
   
 
 
@@ -143,7 +143,8 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left 
+  page-home">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -246,281 +247,175 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
 
   
   
   
-  <div class="post-block tag">
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>PM<small>标签</small>
-        </h1>
-      </div>
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://herbertchang.github.io/2019/06/01/%E4%B8%80%E6%96%87%E7%9C%8B%E6%87%82%E5%BC%80%E6%BA%90%E5%B7%A5%E4%BD%9C%E6%B5%81%E5%BC%95%E6%93%8E%20Flowable/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Herbert Chang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="张贺的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/06/01/%E4%B8%80%E6%96%87%E7%9C%8B%E6%87%82%E5%BC%80%E6%BA%90%E5%B7%A5%E4%BD%9C%E6%B5%81%E5%BC%95%E6%93%8E%20Flowable/" itemprop="url">一文看懂开源工作流引擎 Flowable</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-06-01T20:00:04+08:00">
+                2019-06-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1/" itemprop="url" rel="index">
+                    <span itemprop="name">产品设计</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/06/01/%E4%B8%80%E6%96%87%E7%9C%8B%E6%87%82%E5%BC%80%E6%BA%90%E5%B7%A5%E4%BD%9C%E6%B5%81%E5%BC%95%E6%93%8E%20Flowable/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2019/06/01/一文看懂开源工作流引擎 Flowable/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
 
       
         
+          
+          2020-05-13 按：本文写作完成于 2019 年 6 月 1 日，当时 Flowable 版本号为 V6.4.1。2020 年 3 月，Flowable 发布 V6.5.1 版本。Flowable 官方网站进行了 flowable.org 域名与 flowable.com 域名的合并，原官方文档新地址为 https://flowable.com/open-source/docs/。
+一、工作流引擎使用场景工作流在企业管理系统中是高频使用的功能，一个最常见的例子是请假加班申请与审批的过程。事实上，工作流引擎能支持的业务场景远远不止单据审批，几乎所有涉及到业务流转、多人按流程完成工作的场景背后都可以通过工作流引擎作为支撑。基于工作流引擎，可以搭建客户关系管理系统（CRM）、运输管理系统（TMS）、仓储管理系统（WMS）、财务费用系统等多种复杂业务系统。对于达到一定规模的企业，良好的 BPM（业务流程管理，Business Process Management）体系可以支持创建公司内横跨不同部门的复杂业务流程，既提高工作效率、又可推动企业规范化发展。图1  业务流转示意图（图片来源：www.flowable.com）
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2020/03/29/%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A%EF%BC%9A%E7%AC%AC-9-%E6%9C%9F%EF%BC%8820200329%EF%BC%89/" itemprop="url">
-              
-                <span itemprop="name">产品周刊：第 9 期（20200329）</span>
-              
+二、Flowable 是什么Flowable 是一个使用 Java 编写的轻量级业务流程引擎，使用 Apache V2 license 协议开源。2016 年 10
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/06/01/%E4%B8%80%E6%96%87%E7%9C%8B%E6%87%82%E5%BC%80%E6%BA%90%E5%B7%A5%E4%BD%9C%E6%B5%81%E5%BC%95%E6%93%8E%20Flowable/#more" rel="contents">
+              阅读全文 &raquo;
             </a>
+          </div>
+          <!--/noindex-->
         
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2020-03-29T22:13:15+08:00"
-              content="2020-03-29" >
-          03-29
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2020/03/22/%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A%EF%BC%9A%E7%AC%AC-8-%E6%9C%9F%EF%BC%8820200322%EF%BC%89%20/" itemprop="url">
-              
-                <span itemprop="name">产品周刊 | 第 8 期（20200322）</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2020-03-22T19:02:08+08:00"
-              content="2020-03-22" >
-          03-22
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/12/02/%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A%EF%BC%9A%E7%AC%AC-7-%E6%9C%9F%EF%BC%8820191201%EF%BC%89/" itemprop="url">
-              
-                <span itemprop="name">产品周刊：第 7 期（20191201）</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-12-02T00:00:58+08:00"
-              content="2019-12-02" >
-          12-02
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/11/24/%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A%EF%BC%9A%E7%AC%AC-6-%E6%9C%9F%EF%BC%8820191124%EF%BC%89/" itemprop="url">
-              
-                <span itemprop="name">产品周刊：第 6 期（20191124）</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-11-24T20:03:32+08:00"
-              content="2019-11-24" >
-          11-24
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/11/17/%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A%EF%BC%9A%E7%AC%AC-5-%E6%9C%9F%EF%BC%8820191117%EF%BC%89/" itemprop="url">
-              
-                <span itemprop="name">产品周刊：第 5 期（20191117）</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-11-17T21:58:30+08:00"
-              content="2019-11-17" >
-          11-17
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/11/10/%E4%BA%A7%E5%93%81%E7%88%B1%E5%A5%BD%E8%80%85%E5%91%A8%E5%88%8A%EF%BC%9A%E7%AC%AC-4-%E6%9C%9F%EF%BC%8820191110%EF%BC%89/" itemprop="url">
-              
-                <span itemprop="name">产品爱好者周刊：第 4 期（20191110）</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-11-10T11:09:14+08:00"
-              content="2019-11-10" >
-          11-10
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/11/03/%E4%BA%A7%E5%93%81%E7%88%B1%E5%A5%BD%E8%80%85%E5%91%A8%E5%88%8A%EF%BC%9A%E7%AC%AC-3-%E6%9C%9F%EF%BC%8820191103%EF%BC%89/" itemprop="url">
-              
-                <span itemprop="name">产品爱好者周刊：第 3 期（20191103）</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-11-03T21:57:43+08:00"
-              content="2019-11-03" >
-          11-03
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/10/27/%E4%BA%A7%E5%93%81%E7%88%B1%E5%A5%BD%E8%80%85%E5%91%A8%E5%88%8A%EF%BC%9A%E7%AC%AC%202%20%E6%9C%9F%EF%BC%8820191027%EF%BC%89/" itemprop="url">
-              
-                <span itemprop="name">产品爱好者周刊：第 2 期（20191027）</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-10-27T21:37:40+08:00"
-              content="2019-10-27" >
-          10-27
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/10/20/%E4%BA%A7%E5%93%81%E7%88%B1%E5%A5%BD%E8%80%85%E5%91%A8%E5%88%8A%EF%BC%9A%E7%AC%AC%201%20%E6%9C%9F%EF%BC%8820191020%EF%BC%89/" itemprop="url">
-              
-                <span itemprop="name">产品爱好者周刊：第 1 期（20191020）</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-10-20T23:39:50+08:00"
-              content="2019-10-20" >
-          10-20
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
       
     </div>
+    
+    
+    
 
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
   </div>
   
   
   
+  </article>
+
+
+    
+  </section>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/tags/PM/">&lt;i class=&quot;fa fa-angle-left&quot;&gt;&lt;&#x2F;i&gt;</a><a class="page-number" href="/tags/PM/">1</a><span class="page-number current">2</span>
+    <a class="extend prev" rel="prev" href="/page/2/">&lt;i class=&quot;fa fa-angle-left&quot;&gt;&lt;&#x2F;i&gt;</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span>
   </nav>
 
 
