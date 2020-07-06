@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="产品周刊,产品设计,PM," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="张贺的博客" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="值得关注的产品：Amazon Honeycode、Taplink、Fluently；佳文推介：《RSS 二十年》《Why Figma Wins》《卡辛斯基：论工业社会及其未来》；资源与工具：WWDC 2020 线上发布会 Keynote、ProtoPie 5.0更新；每周一书：费兰特《我的天才女友》。">
+<meta name="keywords" content="产品周刊,产品设计,PM">
+<meta property="og:type" content="article">
+<meta property="og:title" content="产品周刊 | 第 21 期（20200628）">
+<meta property="og:url" content="https:&#x2F;&#x2F;herbertchang.github.io&#x2F;2020&#x2F;06&#x2F;28&#x2F;%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A%EF%BC%9A%E7%AC%AC-21-%E6%9C%9F%EF%BC%8820200628%EF%BC%89&#x2F;index.html">
+<meta property="og:site_name" content="张贺的博客">
+<meta property="og:description" content="值得关注的产品：Amazon Honeycode、Taplink、Fluently；佳文推介：《RSS 二十年》《Why Figma Wins》《卡辛斯基：论工业社会及其未来》；资源与工具：WWDC 2020 线上发布会 Keynote、ProtoPie 5.0更新；每周一书：费兰特《我的天才女友》。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1593251195708-058fd94e-7652-477d-aa19-dffd0ff09f6d.png#align=left&amp;display=inline&amp;height=636&amp;margin=%5Bobject%20Object%5D&amp;name=Amazon-Honeycode.PNG&amp;originHeight=636&amp;originWidth=1242&amp;size=412453&amp;status=done&amp;style=none&amp;width=1242">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1593251304919-667fbc00-62d3-4c3e-91e8-5b8ecf969f3b.png#align=left&amp;display=inline&amp;height=781&amp;margin=%5Bobject%20Object%5D&amp;name=honeycode_bld_main_1.png&amp;originHeight=781&amp;originWidth=800&amp;size=71940&amp;status=done&amp;style=none&amp;width=800">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1593264922034-0a5b86da-b9aa-452f-bbcf-9118f04e010a.png#align=left&amp;display=inline&amp;height=612&amp;margin=%5Bobject%20Object%5D&amp;name=Taplink.png&amp;originHeight=612&amp;originWidth=1023&amp;size=421352&amp;status=done&amp;style=none&amp;width=1023">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;jpeg&#x2F;535404&#x2F;1593269924708-9e421f3d-d070-4035-b6f6-64916ff39ec2.jpeg#align=left&amp;display=inline&amp;height=1199&amp;margin=%5Bobject%20Object%5D&amp;name=Fluently--microtranslate_small.jpg&amp;originHeight=1199&amp;originWidth=1920&amp;size=311798&amp;status=done&amp;style=none&amp;width=1920">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1593269356464-ff488d90-c1fb-431e-9978-50ca938d4276.png#align=left&amp;display=inline&amp;height=280&amp;margin=%5Bobject%20Object%5D&amp;name=Why-Figma-Wins.png&amp;originHeight=280&amp;originWidth=800&amp;size=24183&amp;status=done&amp;style=none&amp;width=800">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1593266099586-d2d39c57-4146-4331-93c6-bfab753e42a4.png#align=left&amp;display=inline&amp;height=855&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=855&amp;originWidth=1147&amp;size=226056&amp;status=done&amp;style=none&amp;width=1147">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1593270643947-22c88a51-87e0-402c-9cb3-c302a560d772.png#align=left&amp;display=inline&amp;height=605&amp;margin=%5Bobject%20Object%5D&amp;name=wodetiancainvyou.png&amp;originHeight=838&amp;originWidth=554&amp;size=531904&amp;status=done&amp;style=none&amp;width=400">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2019&#x2F;jpeg&#x2F;535404&#x2F;1571989117002-cef6be63-7b29-4ac4-a35f-3b5a43e7ce88.jpeg#align=left&amp;display=inline&amp;height=200&amp;margin=%5Bobject%20Object%5D&amp;originHeight=258&amp;originWidth=258&amp;status=done&amp;style=none&amp;width=200">
+<meta property="og:updated_time" content="2020-07-06T15:38:33.983Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1593251195708-058fd94e-7652-477d-aa19-dffd0ff09f6d.png#align=left&amp;display=inline&amp;height=636&amp;margin=%5Bobject%20Object%5D&amp;name=Amazon-Honeycode.PNG&amp;originHeight=636&amp;originWidth=1242&amp;size=412453&amp;status=done&amp;style=none&amp;width=1242">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://herbertchang.github.io/2020/06/28/产品周刊：第-21-期（20200628）/"/>
+
+
+
+
+
+  <title>产品周刊 | 第 21 期（20200628） | 张贺的博客</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">张贺的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">若愚若昏</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://herbertchang.github.io/2020/06/28/%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A%EF%BC%9A%E7%AC%AC-21-%E6%9C%9F%EF%BC%8820200628%EF%BC%89/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Herbert Chang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="张贺的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">产品周刊 | 第 21 期（20200628）</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-06-28T12:53:26+08:00">
+                2020-06-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A/" itemprop="url" rel="index">
+                    <span itemprop="name">产品周刊</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2020/06/28/%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A%EF%BC%9A%E7%AC%AC-21-%E6%9C%9F%EF%BC%8820200628%EF%BC%89/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2020/06/28/产品周刊：第-21-期（20200628）/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+              <div class="post-description">
+                  值得关注的产品：Amazon Honeycode、Taplink、Fluently；佳文推介：《RSS 二十年》《Why Figma Wins》《卡辛斯基：论工业社会及其未来》；资源与工具：WWDC 2020 线上发布会 Keynote、ProtoPie 5.0更新；每周一书：费兰特《我的天才女友》。
+              </div>
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <meta name="referrer" content="no-referrer" />
+### 值得关注的产品
+
+<p><a name="lhS0J"></a></p>
+<h4 id="1-Amazon-Honeycode（Web-amp-Android-amp-iOS）"><a href="#1-Amazon-Honeycode（Web-amp-Android-amp-iOS）" class="headerlink" title="1. Amazon Honeycode（Web &amp; Android &amp; iOS）"></a>1. <a href="https://www.honeycode.aws/features" target="_blank" rel="noopener">Amazon Honeycode</a>（Web &amp; Android &amp; iOS）</h4><p>Amazon AWS 推出 No-Code 构建产品的服务。使用大致流程如下：通过图形化界面，建立初始化数据表和用户界面、再将二者关联起来，并设置显示范围与跳转条件等参数。免费版可以创建无限个数据表、每个表最多 2500 行。可用于做简单的增删改查类应用。Amazon 官方提供了一系列<a href="https://www.honeycode.aws/templates/templates-all" target="_blank" rel="noopener">现成的模板</a>，可以借助模板快速搭建使用。No-Code 类型的产品本周刊<a href="https://www.yuque.com/herbert-chang/productweekly/issue-11#alISD" target="_blank" rel="noopener">第 11 期</a>、<a href="https://www.yuque.com/herbert-chang/productweekly/issue-15#FGhv0" target="_blank" rel="noopener">第 15 期</a>等均有介绍。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1593251195708-058fd94e-7652-477d-aa19-dffd0ff09f6d.png#align=left&display=inline&height=636&margin=%5Bobject%20Object%5D&name=Amazon-Honeycode.PNG&originHeight=636&originWidth=1242&size=412453&status=done&style=none&width=1242" alt="Amazon-Honeycode.PNG"><br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1593251304919-667fbc00-62d3-4c3e-91e8-5b8ecf969f3b.png#align=left&display=inline&height=781&margin=%5Bobject%20Object%5D&name=honeycode_bld_main_1.png&originHeight=781&originWidth=800&size=71940&status=done&style=none&width=800" alt="honeycode_bld_main_1.png"></p>
+<blockquote>
+<p>图文介绍 <a href="https://aws.amazon.com/cn/blogs/aws/introducing-amazon-honeycode-build-web-mobile-apps-without-writing-code/" target="_blank" rel="noopener">https://aws.amazon.com/cn/blogs/aws/introducing-amazon-honeycode-build-web-mobile-apps-without-writing-code/</a><br>视频介绍 <a href="https://youtu.be/vMR2KOJUEr8" target="_blank" rel="noopener">https://youtu.be/vMR2KOJUEr8</a><br>Honeycode 模板 <a href="https://www.honeycode.aws/templates/templates-all" target="_blank" rel="noopener">https://www.honeycode.aws/templates/templates-all</a><br>iOS 下载 <a href="https://apps.apple.com/app/id1502619411" target="_blank" rel="noopener">https://apps.apple.com/app/id1502619411</a><br>Android 下载 <a href="https://play.google.com/store/apps/details?id=com.amazon.aws.honeycode" target="_blank" rel="noopener">https://play.google.com/store/apps/details?id=com.amazon.aws.honeycode</a></p>
+</blockquote>
+<p><a name="bTpMN"></a></p>
+<h4 id="2-Taplink-（Web）"><a href="#2-Taplink-（Web）" class="headerlink" title="2. Taplink （Web）"></a>2. <a href="https://taplink.at/en/" target="_blank" rel="noopener">Taplink （Web）</a></h4><p>制作 Instagram 精美 landing-page 的工具，便于做社交网络推广。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1593264922034-0a5b86da-b9aa-452f-bbcf-9118f04e010a.png#align=left&display=inline&height=612&margin=%5Bobject%20Object%5D&name=Taplink.png&originHeight=612&originWidth=1023&size=421352&status=done&style=none&width=1023" alt="Taplink.png"></p>
+<blockquote>
+<p>官网 <a href="https://taplink.at/en/" target="_blank" rel="noopener">https://taplink.at/en/</a></p>
+</blockquote>
+<p><a name="BBxy7"></a></p>
+<h4 id="3-Fluently（Web）"><a href="#3-Fluently（Web）" class="headerlink" title="3. Fluently（Web）"></a>3. <a href="https://fluently.so/" target="_blank" rel="noopener">Fluently</a>（Web）</h4><p>支持多语言写作的在线文本编辑器，带有内置翻译与辞典功能，支持多人协作、新旧版本比对。允许导入/导出的文件类型包括 doc、docx、rtf、txt、html、pdf、md 等。<br /><img src="https://cdn.nlark.com/yuque/0/2020/jpeg/535404/1593269924708-9e421f3d-d070-4035-b6f6-64916ff39ec2.jpeg#align=left&display=inline&height=1199&margin=%5Bobject%20Object%5D&name=Fluently--microtranslate_small.jpg&originHeight=1199&originWidth=1920&size=311798&status=done&style=none&width=1920" alt="Fluently--microtranslate_small.jpg"></p>
+<blockquote>
+<p>官网 <a href="https://fluently.so/" target="_blank" rel="noopener">https://fluently.so</a><br>视频简介 <a href="https://youtu.be/Hu9z1AoHQ2o" target="_blank" rel="noopener">https://youtu.be/Hu9z1AoHQ2o</a></p>
+</blockquote>
+<p><a name="4GUbQ"></a></p>
+<h3 id="佳文推介"><a href="#佳文推介" class="headerlink" title="佳文推介"></a>佳文推介</h3><p><a name="BhGcP"></a></p>
+<h4 id="1-RSS-二十年"><a href="#1-RSS-二十年" class="headerlink" title="1. RSS 二十年"></a>1. <a href="https://kyth.hedwig.pub/i/rss-er-shi-nian" target="_blank" rel="noopener">RSS 二十年</a></h4><p>即刻产品经理 Kyth 对 RSS 的回顾与理解，这篇文章对于 RSS 的理解与笔者曾经对 RSS 的思考有很多重合。RSS 的遗产至今仍在许多层面展示其影响力，比如 Podcast、Newsletter 的形态乃至反 Web 的微信做的订阅号（微信订阅号刨掉今年上线的信息流之外是有着相当多 RSS 特性残存的），飞书的国际版 Lark 仍允许添加 RSS 作为阅读源。当然，我还希望读者能去看一看《<a href="https://www.bilibili.com/video/BV1rx411V75r" target="_blank" rel="noopener">互联网之子</a>》这部讲述 Aaron Swartz 一生的纪录片（Swartz 在 14 岁时参与编写 RSS1.0 版本的协议制定并且是 Markdown 主要贡献者之一）。</p>
+<blockquote>
+<p>2006 年 9 月 6 日是互联网历史上极其重要的一天，这一天 Facebook 推出了 News Feed 功能。在推出的头一个月，Facebook 的老用户甚至还持续到公司门口抗议，但很快大家就没那么在乎隐私了，全球人民都上瘾了。RSS 的重点在推送和聚合，社交网络是究极的推送和聚合。Web2.0 的重点是 UGC ，社交网络是究极的 UGC。 RSS 产品无法做到的触达用户群和方便好用，社交网络帮你做到了极致。</p>
+</blockquote>
+<blockquote>
+<p>原文链接 <a href="https://kyth.hedwig.pub/i/rss-er-shi-nian" target="_blank" rel="noopener">https://kyth.hedwig.pub/i/rss-er-shi-nian</a><br>互联网之子 The Internet’s Own Boy: The Story of Aaron Swartz <a href="https://www.bilibili.com/video/BV1rx411V75r" target="_blank" rel="noopener">https://www.bilibili.com/video/BV1rx411V75r</a></p>
+</blockquote>
+<blockquote>
+</blockquote>
+<p><a name="hVW6u"></a></p>
+<h4 id="2-Why-Figma-Wins（En）"><a href="#2-Why-Figma-Wins（En）" class="headerlink" title="2. Why Figma Wins（En）"></a>2. <a href="https://kwokchain.com/2020/06/19/why-figma-wins/" target="_blank" rel="noopener">Why Figma Wins</a>（En）</h4><p>分析 Figma 产品设计的优点，比如加强协作特性、优化协作工作流、产品不止为设计师设计等。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1593269356464-ff488d90-c1fb-431e-9978-50ca938d4276.png#align=left&display=inline&height=280&margin=%5Bobject%20Object%5D&name=Why-Figma-Wins.png&originHeight=280&originWidth=800&size=24183&status=done&style=none&width=800" alt="Why-Figma-Wins.png"></p>
+<blockquote>
+<p>The best tool for individuals may also be the best for the entire team. But it’s the latter that matters. And beyond some level of enhancing individual productivity, it’s the team aspects that increasingly matter. Word processing is a good example of this. There used to be lots of experimentation and customization around individual features like typesetting. But once this was good enough, the focus has shifted towards collaboration. And for most use cases, few care about typesetting today. Increasingly our tools must understand and align with how we collaborate. This was less important when collaboration was logistically difficult and prohibitively costly, but as collaboration becomes easier its importance has risen. People’s work is less siloed—and their tools must reflect this.<br>The best tools enable collaboration that was previously unthinkable.</p>
+</blockquote>
+<blockquote>
+<p>原文链接 <a href="https://kwokchain.com/2020/06/19/why-figma-wins/" target="_blank" rel="noopener">https://kwokchain.com/2020/06/19/why-figma-wins</a></p>
+</blockquote>
+<p><a name="crRSH"></a></p>
+<h4 id="3-卡辛斯基：论工业社会及其未来"><a href="#3-卡辛斯基：论工业社会及其未来" class="headerlink" title="3. 卡辛斯基：论工业社会及其未来"></a>3. <a href="https://z.arlmy.me/Wiki/library/Original_Kaczynski_IndustrialSocietyAndItsFuture.html" target="_blank" rel="noopener">卡辛斯基：论工业社会及其未来</a></h4><p>大学炸弹客泰德·卡辛斯基 1995 年发表的《论工业社会及其未来》英中对照全文。中文译文基于 1996 年中国文史出版社《轰炸文明——发往人类未来的死亡通知单》，原译者王小东。对于工业现代性的反思在哲学、社会学与政治哲学研究的圈子里早已是显学，然而科技行业从业者对此知之甚少（特别是国内大学教育职校化缺乏通识理念）。在技术已然成为新兴的权力形态并对现实世界产生深远影响的时代，有必要认真思考技术应用的负面效果并在产品设计中考虑不要使糟糕的世界变得更糟糕。再看看我们互联网公司在做什么，身怀利器杀心自起、尽一切可能盘剥人本身（详见《<a href="https://www.douban.com/note/768095801/" target="_blank" rel="noopener">国内互不联网公司的调性</a>》一文）。</p>
+<blockquote>
+<p>他认为科技成长对社会所带来的影响是负面的，不只是对大自然的破坏，也是对人类的心灵层面折磨。因此，从1978年到1995年，为了试图减缓科技的发展，卡辛斯基寄了16枚炸弹到不同大学以及航空公司，一共炸死了三人；炸伤23人。在如此泯灭人心的行为背后，数学天才卡辛斯基究竟是为何踏上这条害人不利己的不归路？卡辛斯基在1995年于《纽约时报》（The New York Times）和《华盛顿邮报》（The Washington Post）发布论文「论工业社会及其未来」（Industrial Society and Its Future），在长达3万5000字的论文中，卡辛斯基的主旨是「科技的发展造成人类心灵的折磨、社群的分化以及自然的毁灭」。</p>
+</blockquote>
+<blockquote>
+<p>原文链接 <a href="https://z.arlmy.me/Wiki/library/Original_Kaczynski_IndustrialSocietyAndItsFuture.html" target="_blank" rel="noopener">https://z.arlmy.me/Wiki/library/Original_Kaczynski_IndustrialSocietyAndItsFuture.html</a><br>為了減緩科技對人類的心靈折磨，哈佛數學天才變成連環炸彈恐怖分子 <a href="https://www.thenewslens.com/article/130476" target="_blank" rel="noopener">https://www.thenewslens.com/article/130476</a><br>国内互不联网公司的调性，一次性说完好了 <a href="https://www.douban.com/note/768095801/" target="_blank" rel="noopener">https://www.douban.com/note/768095801</a></p>
+</blockquote>
+<br />
+<a name="jzA6n"></a>
+
+<h3 id="资源与工具"><a href="#资源与工具" class="headerlink" title="资源与工具"></a>资源与工具</h3><p><a name="IwROd"></a></p>
+<h4 id="1-WWDC-2020-线上发布会-Keynote"><a href="#1-WWDC-2020-线上发布会-Keynote" class="headerlink" title="1. WWDC 2020 线上发布会 Keynote"></a>1. <a href="https://youtu.be/GEZhD3J89ZE" target="_blank" rel="noopener">WWDC 2020 线上发布会 Keynote</a></h4><p>近期被 WWDC 的消息刷屏。今年的特殊情况在于纯线上发布，所以 Keynote 和视频制作都很精致了。</p>
+<blockquote>
+<p>链接 <a href="https://youtu.be/GEZhD3J89ZE" target="_blank" rel="noopener">https://youtu.be/GEZhD3J89ZE</a><br>Design@WWDC <a href="https://developer.apple.com/news/?id=1n0fs0pi" target="_blank" rel="noopener">https://developer.apple.com/news/?id=1n0fs0pi</a></p>
+</blockquote>
+<p><a name="ZNgud"></a></p>
+<h4 id="2-ProtoPie-5-0-更新"><a href="#2-ProtoPie-5-0-更新" class="headerlink" title="2. ProtoPie 5.0 更新"></a>2. <a href="https://www.protopie.io/promotions/protopie-version-5-launch" target="_blank" rel="noopener">ProtoPie 5.0 更新</a></h4><p>原型与交互工具 ProtoPie 发布 5.0 版本，新特性有：</p>
+<ul>
+<li>快速替换组件</li>
+<li>组件说明文档</li>
+<li>自动生成交互开发文档（仅支持协作版和企业版）</li>
+<li>团队交互组件库（仅支持协作版和企业版）</li>
+</ul>
+<p>学生用户可以通过 edu 邮箱和身份证明申请一年免费使用。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1593266099586-d2d39c57-4146-4331-93c6-bfab753e42a4.png#align=left&display=inline&height=855&margin=%5Bobject%20Object%5D&name=image.png&originHeight=855&originWidth=1147&size=226056&status=done&style=none&width=1147" alt="image.png"></p>
+<blockquote>
+<p>官方介绍 <a href="https://www.protopie.io/promotions/protopie-version-5-launch?ref=producthunt" target="_blank" rel="noopener">https://www.protopie.io/promotions/protopie-version-5-launch</a><br>Introducing ProtoPie <a href="https://youtu.be/65wQKjKucRE" target="_blank" rel="noopener">https://youtu.be/65wQKjKucRE</a><br>ProtoPie 5.0更新: 助力团队协作效率 <a href="https://mp.weixin.qq.com/s/0dwrwPqlrJ20GDNggZD-nQ" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/0dwrwPqlrJ20GDNggZD-nQ</a></p>
+</blockquote>
+<p><a name="JXzW9"></a></p>
+<h3 id="每周一书"><a href="#每周一书" class="headerlink" title="每周一书"></a>每周一书</h3><p>埃莱娜·费兰特《<a href="https://book.douban.com/subject/26878124/" target="_blank" rel="noopener">我的天才女友：那不勒斯四部曲 01</a>》<br />埃莱娜·费兰特在 2011～2014 年之间写作的「那不勒斯四部曲」已被翻译成近 40 种语言，四本书全部登上了《纽约时报》的畅销书榜，在全球售出五六百万册（2018 年数据）。知名文学杂志《格兰塔》甚至说「如果你还没读过费兰特，就好比你在1856年还没读过《包法利夫人》」。「那不勒斯四部曲」的视角是女性化的、十分敏感而犀利，读这个系列过程中我不断想起我的外祖母、母亲以及我的姐姐她们在生活中经历的种种磨难，尽是男性极少感同身受的隐秘体验。<br />三联生活周刊如是评论：「当我们跟随这四部小说，《我的天才女友》《新名字的故事》《离开的，留下的》及《失踪的孩子》，在书中与出生在那不勒斯贫困区的主人公莉拉和莱农，从童年步入无所畏惧的青春，由少女变作人母，经历痛苦、背叛、挫败，最终走向晚年。当我们以近乎全知的视角观察了这历经半个世纪的成长与自我求索之后，很难从阅读的震颤中走出。费兰特对女性友谊、女性人生的深刻复杂性之探索和挖掘，是以往的文学作品中未曾出现的，这使得『那不勒斯四部曲』被归纳为讲述女性友谊的小说，或定义成女权主义的作品都是过于简化的。每一个评论者都在试图收获更多：女性的成长和反抗、知识的力量和局限、人与其自身起源之间的撕扯等等。」</p>
+<blockquote>
+<p>我们就是庶民，庶民就是争抢食物和酒，就是为了上菜的先后次序、服务好坏而争吵，就是那面肮脏的地步——服务员正在上面走来走去，就是那些越来越粗俗的祝酒词。庶民就是我的母亲，她喝了酒，现在整个背都靠着我父亲的肩膀上。我父亲一本正经，我母亲张着大嘴在笑，因为佛罗伦萨的古董商人讲了一个淫秽的段子。</p>
+</blockquote>
+<blockquote>
+<p>我一点都不怀念我们的童年，因为我们的童年充满了暴力。在我们身上，在家里，在外面，每天都会发生各种事情。但我记得，我那时从来没觉得我们遭遇的生活很糟糕，生活就是这样摸着很正常。我们在成长的过程中习得的一个责任就是，在别人使我们的生活变得艰难之前，我们不得不使他们的生活更加艰难。</p>
+</blockquote>
+<p><a href="https://u.jd.com/BLvPow" target="_blank" rel="noopener"><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1593270643947-22c88a51-87e0-402c-9cb3-c302a560d772.png#align=left&display=inline&height=605&margin=%5Bobject%20Object%5D&name=wodetiancainvyou.png&originHeight=838&originWidth=554&size=531904&status=done&style=none&width=400" alt="wodetiancainvyou.png"></a></p>
+<blockquote>
+<p>购买链接 <a href="https://u.jd.com/BLvPow" target="_blank" rel="noopener">https://u.jd.com/BLvPow</a><br>豆瓣书目 <a href="https://book.douban.com/subject/26878124/" target="_blank" rel="noopener">https://book.douban.com/subject/26878124</a><br>《纽约书评》“杰出、神秘的意大利作家”by Rachel Donadio <a href="https://book.douban.com/review/8245467/" target="_blank" rel="noopener">https://book.douban.com/review/8245467</a><br>书与人：生长在那不勒斯的女性史诗 <a href="http://www.lifeweek.com.cn/2018/0829/50936.shtml" target="_blank" rel="noopener">http://www.lifeweek.com.cn/2018/0829/50936.shtml</a><br>《剩余价值》播客——【024】知识分子的情爱：当性别、知识和权力纠缠 <a href="https://www.surplusvalue.club/intellectual" target="_blank" rel="noopener">https://www.surplusvalue.club/intellectual</a></p>
+</blockquote>
+<p><a name="NPQi6"></a></p>
+<h3 id="订阅"><a href="#订阅" class="headerlink" title="订阅"></a>订阅</h3><p>如无意外，本周刊每周日发布，同步更新在 <a href="https://github.com/HerbertChang/pmweekly" target="_blank" rel="noopener">GitHub</a>、<a href="https://weixin.sogou.com/weixin?type=1&s_from=input&query=%E8%8B%A5%E6%84%9A%E8%8B%A5%E6%98%8F&ie=utf8&_sug_=y&_sug_type_=&w=01019900&sut=10610&sst0=1571666684054&lkt=0%2C0%2C0" target="_blank" rel="noopener">微信公众号</a>、<a href="https://yuque.com/herbert-chang/pmweekly/" target="_blank" rel="noopener">语雀</a>和<a href="https://productweekly.substack.com/" target="_blank" rel="noopener">邮件订阅组</a>。本周刊遵循 CC BY-NC-ND 标准。本周刊推出邮件订阅服务，提供更好的阅读体验，请访问 <a href="https://productweekly.substack.com/" target="_blank" rel="noopener">https://productweekly.substack.com/</a> 开启订阅。<br />微信搜索「若愚若昏」，可关注我的微信公众号。<br /><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/535404/1571989117002-cef6be63-7b29-4ac4-a35f-3b5a43e7ce88.jpeg#align=left&display=inline&height=200&margin=%5Bobject%20Object%5D&originHeight=258&originWidth=258&status=done&style=none&width=200" alt=""><br /></p>
+<p><a name="b4kSE"></a></p>
+<h3 id="致谢"><a href="#致谢" class="headerlink" title="致谢"></a>致谢</h3><p>想法来自阮一峰老师的《<a href="https://github.com/ruanyf/weekly" target="_blank" rel="noopener">科技爱好者周刊</a>》。特此致谢！  </p>
+
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/uploads/wechat-qcode.jpg" alt="Herbert Chang wechat" style="width: 200px; max-width: 100%;"/>
+    <div>欢迎您扫一扫上面的微信公众号，订阅我的博客！</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>转发和赞赏是对俺创作的支持</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/uploads/wechatpay.png" alt="Herbert Chang 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/uploads/alipay.png" alt="Herbert Chang 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A/" rel="tag"># 产品周刊</a>
+          
+            <a href="/tags/%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1/" rel="tag"># 产品设计</a>
+          
+            <a href="/tags/PM/" rel="tag"># PM</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/06/21/%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A%EF%BC%9A%E7%AC%AC-20-%E6%9C%9F%EF%BC%8820200621%EF%BC%89/" rel="next" title="产品周刊 | 第 20 期（20200621）">
+                <i class="fa fa-chevron-left"></i> 产品周刊 | 第 20 期（20200621）
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/07/05/%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A%EF%BC%9A%E7%AC%AC-22-%E6%9C%9F%EF%BC%8820200705%EF%BC%89/" rel="prev" title="产品周刊 | 第 22 期（20200705）">
+                产品周刊 | 第 22 期（20200705） <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Herbert Chang</p>
+              <p class="site-description motion-element" itemprop="description">所南心史井中全</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%20%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">24</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-globe"></i>
+                
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://youhan26.github.io/" title="Tony You 的个人博客" target="_blank">Tony You 的个人博客</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://leiquan.website/" title="雷全的个人博客" target="_blank">雷全的个人博客</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-Amazon-Honeycode（Web-amp-Android-amp-iOS）"><span class="nav-number">1.</span> <span class="nav-text">1. Amazon Honeycode（Web &amp; Android &amp; iOS）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-Taplink-（Web）"><span class="nav-number">2.</span> <span class="nav-text">2. Taplink （Web）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-Fluently（Web）"><span class="nav-number">3.</span> <span class="nav-text">3. Fluently（Web）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#佳文推介"><span class="nav-number"></span> <span class="nav-text">佳文推介</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-RSS-二十年"><span class="nav-number">1.</span> <span class="nav-text">1. RSS 二十年</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-Why-Figma-Wins（En）"><span class="nav-number">2.</span> <span class="nav-text">2. Why Figma Wins（En）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-卡辛斯基：论工业社会及其未来"><span class="nav-number">3.</span> <span class="nav-text">3. 卡辛斯基：论工业社会及其未来</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#资源与工具"><span class="nav-number"></span> <span class="nav-text">资源与工具</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-WWDC-2020-线上发布会-Keynote"><span class="nav-number">1.</span> <span class="nav-text">1. WWDC 2020 线上发布会 Keynote</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-ProtoPie-5-0-更新"><span class="nav-number">2.</span> <span class="nav-text">2. ProtoPie 5.0 更新</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#每周一书"><span class="nav-number"></span> <span class="nav-text">每周一书</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#订阅"><span class="nav-number"></span> <span class="nav-text">订阅</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#致谢"><span class="nav-number"></span> <span class="nav-text">致谢</span></a></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2018 &mdash; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Herbert Chang</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://Herbert.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'https://herbertchang.github.io/2020/06/28/%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A%EF%BC%9A%E7%AC%AC-21-%E6%9C%9F%EF%BC%8820200628%EF%BC%89/';
+          this.page.identifier = '2020/06/28/产品周刊：第-21-期（20200628）/';
+          this.page.title = '产品周刊 | 第 21 期（20200628）';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://Herbert.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
