@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="产品周刊,产品设计,PM," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="张贺的博客" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="值得关注的产品：Tap,Tap、Previewed、图压；佳文推介：《如何进行设计评审》、《Velocity：The Often-Overlooked Secret to Product Manager Success》；资源与工具：NoCode工具集、镝数聚；每周一书：《计算机简史》。">
+<meta name="keywords" content="产品周刊,产品设计,PM">
+<meta property="og:type" content="article">
+<meta property="og:title" content="产品周刊 ProductWeekly | 第 27 期（20200810）">
+<meta property="og:url" content="https:&#x2F;&#x2F;herbertchang.github.io&#x2F;2020&#x2F;08&#x2F;10&#x2F;Product-Weekly-issue-27-20200810&#x2F;index.html">
+<meta property="og:site_name" content="张贺的博客">
+<meta property="og:description" content="值得关注的产品：Tap,Tap、Previewed、图压；佳文推介：《如何进行设计评审》、《Velocity：The Often-Overlooked Secret to Product Manager Success》；资源与工具：NoCode工具集、镝数聚；每周一书：《计算机简史》。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1596944069587-181a3a93-beaa-4f5a-a63d-fb3d01d88a05.png#align=left&amp;display=inline&amp;height=771&amp;margin=%5Bobject%20Object%5D&amp;name=tap-tap-1.PNG&amp;originHeight=771&amp;originWidth=889&amp;size=197506&amp;status=done&amp;style=none&amp;width=889">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1596944074411-43fc2d5c-0417-4dc9-9e0f-8893f2ad7bb0.png#align=left&amp;display=inline&amp;height=764&amp;margin=%5Bobject%20Object%5D&amp;name=tap-tap-2.PNG&amp;originHeight=764&amp;originWidth=887&amp;size=181833&amp;status=done&amp;style=none&amp;width=887">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1596952504970-6bfdb35b-2866-4770-b712-fe0af1ea5f2b.png#align=left&amp;display=inline&amp;height=891&amp;margin=%5Bobject%20Object%5D&amp;name=previewed-app.PNG&amp;originHeight=891&amp;originWidth=1857&amp;size=1024043&amp;status=done&amp;style=none&amp;width=1857">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;gif&#x2F;535404&#x2F;1596954175391-48ff8061-377b-4efe-b6d3-d378d0491c6a.gif#align=left&amp;display=inline&amp;height=380&amp;margin=%5Bobject%20Object%5D&amp;name=previewed-app-2.gif&amp;originHeight=380&amp;originWidth=676&amp;size=612653&amp;status=done&amp;style=none&amp;width=676">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1596950224859-2eae75b7-4c22-4f79-aae6-ff1b80a187d4.png#align=left&amp;display=inline&amp;height=534&amp;margin=%5Bobject%20Object%5D&amp;name=tuya-interface.png&amp;originHeight=534&amp;originWidth=638&amp;size=58089&amp;status=done&amp;style=none&amp;width=638">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1596950917208-1d5eaebe-2adf-4894-b9eb-711f84363703.png#align=left&amp;display=inline&amp;height=883&amp;margin=%5Bobject%20Object%5D&amp;name=how-to-design-Critiques.png&amp;originHeight=883&amp;originWidth=1898&amp;size=176543&amp;status=done&amp;style=none&amp;width=1898">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1596945763828-225b17ed-b531-4a76-937c-4dc588ca8c21.png#align=left&amp;display=inline&amp;height=887&amp;margin=%5Bobject%20Object%5D&amp;name=nocode-tool-list.PNG&amp;originHeight=887&amp;originWidth=1331&amp;size=67882&amp;status=done&amp;style=none&amp;width=1331">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1596951829184-e1dcc36e-03e8-43c3-8ed0-7154af3470bc.png#align=left&amp;display=inline&amp;height=865&amp;margin=%5Bobject%20Object%5D&amp;name=dy-data.PNG&amp;originHeight=865&amp;originWidth=1658&amp;size=321842&amp;status=done&amp;style=none&amp;width=1658">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1596954770132-d67a2521-76a0-4a53-8f78-836638076fb7.png#align=left&amp;display=inline&amp;height=540&amp;margin=%5Bobject%20Object%5D&amp;name=book-brief-history-of-computer.PNG&amp;originHeight=897&amp;originWidth=664&amp;size=807826&amp;status=done&amp;style=none&amp;width=400">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1595080759715-5e73085e-7d82-4506-930e-97507f80e022.png#align=left&amp;display=inline&amp;height=155&amp;margin=%5Bobject%20Object%5D&amp;name=%E6%89%AB%E7%A0%81_%E6%90%9C%E7%B4%A2%E8%81%94%E5%90%88%E4%BC%A0%E6%92%AD%E6%A0%B7%E5%BC%8F-%E7%99%BD%E8%89%B2%E7%89%88.png&amp;originHeight=624&amp;originWidth=1710&amp;size=4268298&amp;status=done&amp;style=none&amp;width=425">
+<meta property="og:updated_time" content="2020-08-16T11:02:50.237Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1596944069587-181a3a93-beaa-4f5a-a63d-fb3d01d88a05.png#align=left&amp;display=inline&amp;height=771&amp;margin=%5Bobject%20Object%5D&amp;name=tap-tap-1.PNG&amp;originHeight=771&amp;originWidth=889&amp;size=197506&amp;status=done&amp;style=none&amp;width=889">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://herbertchang.github.io/2020/08/10/Product-Weekly-issue-27-20200810/"/>
+
+
+
+
+
+  <title>产品周刊 ProductWeekly | 第 27 期（20200810） | 张贺的博客</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">张贺的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">若愚若昏</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://herbertchang.github.io/2020/08/10/Product-Weekly-issue-27-20200810/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Herbert Chang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="张贺的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">产品周刊 ProductWeekly | 第 27 期（20200810）</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-08-10T00:23:47+08:00">
+                2020-08-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A/" itemprop="url" rel="index">
+                    <span itemprop="name">产品周刊</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2020/08/10/Product-Weekly-issue-27-20200810/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2020/08/10/Product-Weekly-issue-27-20200810/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+              <div class="post-description">
+                  值得关注的产品：Tap,Tap、Previewed、图压；佳文推介：《如何进行设计评审》、《Velocity：The Often-Overlooked Secret to Product Manager Success》；资源与工具：NoCode工具集、镝数聚；每周一书：《计算机简史》。
+              </div>
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <meta name="referrer" content="no-referrer" />
+<br />按：大约十年前我刚上大学那会，网络上对北邮方校长普遍一片骂声。教科书尚且告诉人们大清国闭关锁国自绝于世界潮流最后走向灭亡，然而如今已遍地都是对墙欢呼歌颂的另一种风向。从建墙算起不过十几年，信息墙对网民心智的影响可以说日渐明显。要记住：做出什么样的选择，将得到与之德行匹配的结果，YOU DESERVE IT！<br />![photo_2020-08-09_14-56-24.jpg](https://cdn.nlark.com/yuque/0/2020/jpeg/535404/1596956247178-7836973c-0004-4091-b43c-d0c1b6a3f666.jpeg#align=left&display=inline&height=822&margin=%5Bobject%20Object%5D&name=photo_2020-08-09_14-56-24.jpg&originHeight=822&originWidth=848&size=152889&status=done&style=none&width=848)
+
+<h3 id="值得关注的产品"><a href="#值得关注的产品" class="headerlink" title="值得关注的产品"></a>值得关注的产品</h3><h4 id="1-Tap-Tap（Android）"><a href="#1-Tap-Tap（Android）" class="headerlink" title="1. Tap, Tap（Android）"></a>1. <a href="https://github.com/KieronQuinn/TapTap/releases" target="_blank" rel="noopener">Tap, Tap</a>（Android）</h4><p>「Tap, Tap」通过双击手机背面的方式来执行特定操作，为安卓平台提供了新的交互方式（iOS 14也提供了轻点背面两下的交互新操作）。「Tap, Tap」主页面设置项分为手势、动作、门槛和反馈：手势项中设置灵敏度和设备模型，动作项中设置双击背面触发的操作（细分为启动、工具、动作和高级操作四项），门槛项为防止误激活的一些场景，反馈项提供交互反馈选择。界面采用 Material Design 2.0 风格。目前该应用版本号为 Alpha 0.5，界面汉化尚有瑕疵，感兴趣的读者可在 <a href="https://github.com/KieronQuinn/TapTap/" target="_blank" rel="noopener">GitHub 上为项目做贡献</a>。</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1596944069587-181a3a93-beaa-4f5a-a63d-fb3d01d88a05.png#align=left&display=inline&height=771&margin=%5Bobject%20Object%5D&name=tap-tap-1.PNG&originHeight=771&originWidth=889&size=197506&status=done&style=none&width=889" alt="tap-tap-1.PNG">)<img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1596944074411-43fc2d5c-0417-4dc9-9e0f-8893f2ad7bb0.png#align=left&display=inline&height=764&margin=%5Bobject%20Object%5D&name=tap-tap-2.PNG&originHeight=764&originWidth=887&size=181833&status=done&style=none&width=887" alt="tap-tap-2.PNG"></p>
+<blockquote>
+<p>GitHub 项目地址 <a href="https://github.com/KieronQuinn/TapTap/releases" target="_blank" rel="noopener">https://github.com/KieronQuinn/TapTap/releases</a><br>点两下手机后盖能做哪些事？ <a href="https://sspai.com/post/61948" target="_blank" rel="noopener">https://sspai.com/post/61948</a></p>
+</blockquote>
+<h4 id="2-Previewed（Web）"><a href="#2-Previewed（Web）" class="headerlink" title="2. Previewed（Web）"></a>2. <a href="https://previewed.app/" target="_blank" rel="noopener">Previewed</a>（Web）</h4><p>如何制作精美的应用商店截图和应用演示视频？Previewed 通过不同机型模板和视频制作辅助来实现这个目的，受到开发者广泛好评。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1596952504970-6bfdb35b-2866-4770-b712-fe0af1ea5f2b.png#align=left&display=inline&height=891&margin=%5Bobject%20Object%5D&name=previewed-app.PNG&originHeight=891&originWidth=1857&size=1024043&status=done&style=none&width=1857" alt="previewed-app.PNG"><br /><img src="https://cdn.nlark.com/yuque/0/2020/gif/535404/1596954175391-48ff8061-377b-4efe-b6d3-d378d0491c6a.gif#align=left&display=inline&height=380&margin=%5Bobject%20Object%5D&name=previewed-app-2.gif&originHeight=380&originWidth=676&size=612653&status=done&style=none&width=676" alt="previewed-app-2.gif"></p>
+<blockquote>
+<p>官网 <a href="https://previewed.app/" target="_blank" rel="noopener">https://previewed.app</a><br>使用指南 <a href="https://youtu.be/LGCcIsCDGkU" target="_blank" rel="noopener">https://youtu.be/LGCcIsCDGkU</a></p>
+</blockquote>
+<h4 id="3-图压（Windows）"><a href="#3-图压（Windows）" class="headerlink" title="3. 图压（Windows）"></a>3. <a href="https://tuya.xinxiao.tech/" target="_blank" rel="noopener">图压</a>（Windows）</h4><p>新小科技发布的一款全新图片压缩软件，图片处理在本地完成，支持一次处理大量图片，支持 JPG/PNG/GIF/SVG 等多种图片格式进行压缩、 支持设定压缩后输出的图片文件大小和目标图片的宽高尺寸。详细测评可参考<a href="https://sspai.com/post/61952" target="_blank" rel="noopener">少数派的体验报告</a>。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1596950224859-2eae75b7-4c22-4f79-aae6-ff1b80a187d4.png#align=left&display=inline&height=534&margin=%5Bobject%20Object%5D&name=tuya-interface.png&originHeight=534&originWidth=638&size=58089&status=done&style=none&width=638" alt="tuya-interface.png"></p>
+<blockquote>
+<p>官网 <a href="https://tuya.xinxiao.tech/" target="_blank" rel="noopener">https://tuya.xinxiao.tech</a><br>免费且强大的图片压缩新选择——《图压》App 快速体验报告 <a href="https://sspai.com/post/61952" target="_blank" rel="noopener">https://sspai.com/post/61952</a></p>
+</blockquote>
+<h3 id="佳文推介"><a href="#佳文推介" class="headerlink" title="佳文推介"></a>佳文推介</h3><h4 id="1-如何进行设计评审"><a href="#1-如何进行设计评审" class="headerlink" title="1. 如何进行设计评审"></a>1. <a href="https://ifreegroup.design/Design-Critiques-1a7daf8c02124d80b6b3b70d0aa3b8f2#9528d1e5795344c5a40f3133cedf2c29" target="_blank" rel="noopener">如何进行设计评审</a></h4><p>原文来自 Figma 的 Design Critique，介绍设计评审的六种方式：标准模式、工作坊、搭档设计、安静评审、纸张打印、FYI 供参考，并给出高效地进行设计评审的10个小技巧。本文内容所提及的工具均可在 Figma 社区上获得并复制使用。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1596950917208-1d5eaebe-2adf-4894-b9eb-711f84363703.png#align=left&display=inline&height=883&margin=%5Bobject%20Object%5D&name=how-to-design-Critiques.png&originHeight=883&originWidth=1898&size=176543&status=done&style=none&width=1898" alt="how-to-design-Critiques.png"></p>
+<blockquote>
+<p>原文链接 <a href="https://ifreegroup.design/Design-Critiques-1a7daf8c02124d80b6b3b70d0aa3b8f2#9528d1e5795344c5a40f3133cedf2c29" target="_blank" rel="noopener">https://ifreegroup.design/Design-Critiques-1a7daf8c02124d80b6b3b70d0aa3b8f2#9528d1e5795344c5a40f3133cedf2c29</a></p>
+</blockquote>
+<h4 id="2-Velocity-The-Often-Overlooked-Secret-to-Product-Manager-Success-En"><a href="#2-Velocity-The-Often-Overlooked-Secret-to-Product-Manager-Success-En" class="headerlink" title="2. Velocity: The Often-Overlooked Secret to Product Manager Success (En)"></a>2. <a href="https://medium.com/@weisner/velocity-the-often-overlooked-secret-to-product-manager-success-87d0ed093e8f" target="_blank" rel="noopener">Velocity: The Often-Overlooked Secret to Product Manager Success</a> (En)</h4><p>敏捷开发中讲「价值驱动」，然而国内大多数公司都在疯狂加班而非切实提高管理水平。价值驱动要求既非完全的自上而下/自下而上的管理形式，需要从个体、团队、组织等多个层次来逐步形成自组织化的运转。如何量化产出、提高价值产出效率，作者讲了一些经验。</p>
+<blockquote>
+<p>Increasing velocity does not mean just producing more stuff, more features, more whatever. It does not mean more hours. It means finding ways to do the right things in the right order, removing obstacles, and supporting teams in a way that leads to more and more value being produced.</p>
+</blockquote>
+<blockquote>
+<p>原文链接 <a href="https://medium.com/@weisner/velocity-the-often-overlooked-secret-to-product-manager-success-87d0ed093e8f" target="_blank" rel="noopener">https://medium.com/@weisner/velocity-the-often-overlooked-secret-to-product-manager-success-87d0ed093e8f</a></p>
+</blockquote>
+<h3 id="资源与工具"><a href="#资源与工具" class="headerlink" title="资源与工具"></a>资源与工具</h3><h4 id="1-NoCode-工具集"><a href="#1-NoCode-工具集" class="headerlink" title="1. NoCode 工具集"></a>1. <a href="https://welovenocode.com/nocodelist" target="_blank" rel="noopener">NoCode 工具集</a></h4><p><a href="https://welovenocode.com/nocodelist" target="_blank" rel="noopener">WeLoveNoCode</a> 网站发布了 NoCode 工具集，涵盖超过 200 个 NoCode 类产品。类似聚合站点还有 <a href="https://nocodelist.co/" target="_blank" rel="noopener">NoCodeList</a>。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1596945763828-225b17ed-b531-4a76-937c-4dc588ca8c21.png#align=left&display=inline&height=887&margin=%5Bobject%20Object%5D&name=nocode-tool-list.PNG&originHeight=887&originWidth=1331&size=67882&status=done&style=none&width=1331" alt="nocode-tool-list.PNG"><br /></p>
+<blockquote>
+<p>NoCode Tool List by WeLoveNoCode <a href="https://welovenocode.com/nocodelist" target="_blank" rel="noopener">https://welovenocode.com/nocodelist</a><br>NoCodeList <a href="https://nocodelist.co/" target="_blank" rel="noopener">https://nocodelist.co</a></p>
+</blockquote>
+<h4 id="2-镝数聚"><a href="#2-镝数聚" class="headerlink" title="2. 镝数聚"></a>2. <a href="http://dydata.io/" target="_blank" rel="noopener">镝数聚</a></h4><p>镝次元数据科技原数据查找产品独立出来成为镝数聚dydata.io，在线可视化工具产品升级为镝数图表dycharts.com。国内数据报告质量参差不齐，使用前务必先甄别下数据来源和采样调查可信度。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1596951829184-e1dcc36e-03e8-43c3-8ed0-7154af3470bc.png#align=left&display=inline&height=865&margin=%5Bobject%20Object%5D&name=dy-data.PNG&originHeight=865&originWidth=1658&size=321842&status=done&style=none&width=1658" alt="dy-data.PNG"></p>
+<blockquote>
+<p>链接 <a href="http://dydata.io/" target="_blank" rel="noopener">http://dydata.io</a></p>
+</blockquote>
+<h3 id="每周一书"><a href="#每周一书" class="headerlink" title="每周一书"></a>每周一书</h3><p>马丁·坎贝尔–凯利、威廉·阿斯普雷《<a href="https://book.douban.com/subject/35043034/" target="_blank" rel="noopener">计算机简史（第三版）</a>》<br />首先要吐槽一下这个中文翻译书名太烦人了——自从《人类简史》大火之后，出版社对某些通史读物似乎只会起名叫「xx简史」，拜托有点创意行不行！英文版原书名《Computer: A History of the Information Machine》中「Information Machine」一词大有深意：书中介绍计算机早期历史几乎都在围绕信息处理进行，从人口统计用的打孔卡机到办公需要催生的商业需求皆是如此，当然也很容易让人联想到信息论范畴。好在此书的内容翻译在同类图书内堪称难得的晓畅，且经过余晟老师审校。提供详尽的注释、译名对照和参考资料共 70 页，对互联网考古史有兴趣的读者自可在书中找到趣味。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1596954770132-d67a2521-76a0-4a53-8f78-836638076fb7.png#align=left&display=inline&height=540&margin=%5Bobject%20Object%5D&name=book-brief-history-of-computer.PNG&originHeight=897&originWidth=664&size=807826&status=done&style=none&width=400" alt="book-brief-history-of-computer.PNG"></p>
+<blockquote>
+<p>外界往往将个人计算机的发展描述为「怪才的成就」——年轻的业余技术爱好者以他们的执着追求和技术才智，完成了所谓专家认为的不可能之事。大卫战胜歌利亚的神话故事虽有可取之处，但了解个人计算机诞生的众多发展脉络仍然至关重要。到 20 世纪 70 年代，无论是易于使用的计算机语言（如 BASIC）得到广泛应用，还是小型计算机使人们对更为个性化的交互式计算机体验产生了新的期望，抑或硅谷半导体制造商推出的新产品如潮水般涌来，以及风险投资者提供的融资机会——这些发展汇集了制造第一种真正面向大众市场的电子计算机所需的几乎全部要素。这种技术在何时何地出现，以及为什么会如此迅速得到应用，都绝非巧合。</p>
+</blockquote>
+<blockquote>
+<p>豆瓣图书地址 <a href="https://book.douban.com/subject/35043034/" target="_blank" rel="noopener">https://book.douban.com/subject/35043034</a></p>
+</blockquote>
+<h3 id="订阅"><a href="#订阅" class="headerlink" title="订阅"></a>订阅</h3><p>如无意外，本周刊每周更新，发布在 <a href="https://github.com/HerbertChang/pmweekly" target="_blank" rel="noopener">GitHub</a>、<a href="https://weixin.sogou.com/weixin?type=1&s_from=input&query=%E8%8B%A5%E6%84%9A%E8%8B%A5%E6%98%8F&ie=utf8&_sug_=y&_sug_type_=&w=01019900&sut=10610&sst0=1571666684054&lkt=0%2C0%2C0" target="_blank" rel="noopener">微信公众号</a>、<a href="https://yuque.com/herbert-chang/pmweekly/" target="_blank" rel="noopener">语雀</a>和<a href="https://productweekly.substack.com/" target="_blank" rel="noopener">邮件订阅组</a>。本周刊遵循 CC BY-NC-ND 标准。本周刊推出邮件订阅服务，提供更好的阅读体验，请访问 <a href="https://productweekly.substack.com/" target="_blank" rel="noopener">https://productweekly.substack.com/</a> 开启订阅，推荐使用 Gmail、Protonmail、iCloud 等国外邮件服务来进行订阅。如果觉得「产品周刊 Product Weekly」有价值，请分享给你的朋友或社交网络。欢迎将建议、内容分享和产品/设计岗位内推需求发送给我。微信搜索「若愚若昏」，可关注我的微信公众号。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1595080759715-5e73085e-7d82-4506-930e-97507f80e022.png#align=left&display=inline&height=155&margin=%5Bobject%20Object%5D&name=%E6%89%AB%E7%A0%81_%E6%90%9C%E7%B4%A2%E8%81%94%E5%90%88%E4%BC%A0%E6%92%AD%E6%A0%B7%E5%BC%8F-%E7%99%BD%E8%89%B2%E7%89%88.png&originHeight=624&originWidth=1710&size=4268298&status=done&style=none&width=425" alt="扫码_搜索联合传播样式-白色版.png"></p>
+<h3 id="推荐"><a href="#推荐" class="headerlink" title="推荐"></a>推荐</h3><ul>
+<li><a href="https://pmthinking.us11.list-manage.com/track/click?u=c4dcdf8a6b76265256adf8255&id=a540a873a8&e=5f9cbb74d3" target="_blank" rel="noopener">黄埔犬校</a>：纯银的黄埔犬校内容精选 </li>
+<li><a href="https://www.notion.so/PRODUCT-THINKING-a601a12335044f349a22caf57f274c27" target="_blank" rel="noopener">产品沉思录精选</a>：少楠（Plidezus）的产品知识库</li>
+<li><a href="https://yitianshijie.net/" target="_blank" rel="noopener">一天世界</a>：IPN 李如一的博客</li>
+<li><a href="https://wanqu.co/" target="_blank" rel="noopener">湾区日报</a>：关注创业与技术，by maker，for makers</li>
+<li><a href="https://pmthinking.us11.list-manage.com/track/click?u=c4dcdf8a6b76265256adf8255&id=2049427034&e=5f9cbb74d3" target="_blank" rel="noopener">刻意体会</a>：即刻产品汪 Kyth 的自留地</li>
+<li><a href="https://pmthinking.us11.list-manage.com/track/click?u=c4dcdf8a6b76265256adf8255&id=f60bfc9cb9&e=5f9cbb74d3" target="_blank" rel="noopener">Λ-Reading</a>：每天 2 分钟，扩展认知边界</li>
+<li><a href="https://assets.iois.me/uzjhgqzglpa.html" target="_blank" rel="noopener">Deep Reading 精选</a>：在事实之上，构建一个关于观点（洞察）与故事的筛选机制</li>
+<li><a href="https://github.com/Newslab2020/Contents/blob/master/wechataccount.md" target="_blank" rel="noopener">新闻实验室微信公众号文章备份</a>：优化媒体食谱，提高媒介素养</li>
+<li><a href="https://notion.cx/" target="_blank" rel="noopener">Notion 中文社区</a>：Better Life, Better Work</li>
+<li><a href="https://www.notion.so/da53956e706a4b0c8aabb757c0259382" target="_blank" rel="noopener">数据产品的日常</a>：数据 PM 资料库</li>
+<li><a href="http://elproducto.eu/" target="_blank" rel="noopener">el producto</a>：Tech &amp; Product Management News and Thoughts</li>
+<li><a href="https://clearbox.substack.com/" target="_blank" rel="noopener">透明盒子计划</a>：非虚构类书籍阅读笔记</li>
+<li><a href="https://news.dex.group/f3b9324ec1c545f3a7ad31d71da1fc38?v=13a31b332fd8465a9bb81d92748643b4" target="_blank" rel="noopener">DEX 周刊</a>：DEX 旗下关于产品、设计和开发的邮件订阅列表</li>
+<li><a href="https://www.notion.so/blog-by-liqi-io-4bdf37d4fb3443b4b6dbed8317450307" target="_blank" rel="noopener">独立 blog 订阅列表 by 利器 liqi.io</a>：中文独立博客列表</li>
+</ul>
+
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/uploads/wechat-qcode.jpg" alt="Herbert Chang wechat" style="width: 200px; max-width: 100%;"/>
+    <div>欢迎您扫一扫上面的微信公众号，订阅我的博客！</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>转发和赞赏是对俺创作的支持</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/uploads/wechatpay.png" alt="Herbert Chang 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/uploads/alipay.png" alt="Herbert Chang 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A/" rel="tag"># 产品周刊</a>
+          
+            <a href="/tags/%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1/" rel="tag"># 产品设计</a>
+          
+            <a href="/tags/PM/" rel="tag"># PM</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/08/02/Product-Weekly-issue-26-20200803/" rel="next" title="产品周刊 ProductWeekly | 第 26 期（20200803）">
+                <i class="fa fa-chevron-left"></i> 产品周刊 ProductWeekly | 第 26 期（20200803）
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/08/16/Product-Weekly-issue-28-20200817/" rel="prev" title="产品周刊 ProductWeekly | 第 28 期（20200817）">
+                产品周刊 ProductWeekly | 第 28 期（20200817） <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Herbert Chang</p>
+              <p class="site-description motion-element" itemprop="description">所南心史井中全</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%20%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">30</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-globe"></i>
+                
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://youhan26.github.io/" title="Tony You 的个人博客" target="_blank">Tony You 的个人博客</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://leiquan.website/" title="雷全的个人博客" target="_blank">雷全的个人博客</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#值得关注的产品"><span class="nav-number">1.</span> <span class="nav-text">值得关注的产品</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-Tap-Tap（Android）"><span class="nav-number">1.1.</span> <span class="nav-text">1. Tap, Tap（Android）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-Previewed（Web）"><span class="nav-number">1.2.</span> <span class="nav-text">2. Previewed（Web）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-图压（Windows）"><span class="nav-number">1.3.</span> <span class="nav-text">3. 图压（Windows）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#佳文推介"><span class="nav-number">2.</span> <span class="nav-text">佳文推介</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-如何进行设计评审"><span class="nav-number">2.1.</span> <span class="nav-text">1. 如何进行设计评审</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-Velocity-The-Often-Overlooked-Secret-to-Product-Manager-Success-En"><span class="nav-number">2.2.</span> <span class="nav-text">2. Velocity: The Often-Overlooked Secret to Product Manager Success (En)</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#资源与工具"><span class="nav-number">3.</span> <span class="nav-text">资源与工具</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-NoCode-工具集"><span class="nav-number">3.1.</span> <span class="nav-text">1. NoCode 工具集</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-镝数聚"><span class="nav-number">3.2.</span> <span class="nav-text">2. 镝数聚</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#每周一书"><span class="nav-number">4.</span> <span class="nav-text">每周一书</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#订阅"><span class="nav-number">5.</span> <span class="nav-text">订阅</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#推荐"><span class="nav-number">6.</span> <span class="nav-text">推荐</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2018 &mdash; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Herbert Chang</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://Herbert.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'https://herbertchang.github.io/2020/08/10/Product-Weekly-issue-27-20200810/';
+          this.page.identifier = '2020/08/10/Product-Weekly-issue-27-20200810/';
+          this.page.title = '产品周刊 ProductWeekly | 第 27 期（20200810）';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://Herbert.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
