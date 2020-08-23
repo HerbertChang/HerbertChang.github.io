@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="产品周刊,产品设计,PM," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="张贺的博客" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="值得关注的产品：简悦2.0、Craft Docs、Podcastle；佳文推介：《中国出海公司可以从 TikTok 身上学到什么？》《People Die, but Long Live GitHub》《Digital business model archetypes》；资源与工具：RSS 订阅源、Figma 社区；每周一书：《告别皇帝的中国》。">
+<meta name="keywords" content="产品周刊,产品设计,PM">
+<meta property="og:type" content="article">
+<meta property="og:title" content="产品周刊 ProductWeekly | 第 29 期（20200824）">
+<meta property="og:url" content="https:&#x2F;&#x2F;herbertchang.github.io&#x2F;2020&#x2F;08&#x2F;23&#x2F;Product-Weekly-issue-29-20200824&#x2F;index.html">
+<meta property="og:site_name" content="张贺的博客">
+<meta property="og:description" content="值得关注的产品：简悦2.0、Craft Docs、Podcastle；佳文推介：《中国出海公司可以从 TikTok 身上学到什么？》《People Die, but Long Live GitHub》《Digital business model archetypes》；资源与工具：RSS 订阅源、Figma 社区；每周一书：《告别皇帝的中国》。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1598163517970-536654b4-9b56-4272-b9c1-f5981ba76607.png#align=left&amp;display=inline&amp;height=679&amp;margin=%5Bobject%20Object%5D&amp;name=jianyue-feature_read_mode.png&amp;originHeight=679&amp;originWidth=1000&amp;size=9913&amp;status=done&amp;style=none&amp;width=1000">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;jpeg&#x2F;535404&#x2F;1598149814697-89887497-0418-402a-99a6-181699aba997.jpeg#align=left&amp;display=inline&amp;height=648&amp;margin=%5Bobject%20Object%5D&amp;name=Craft-Docs-1.jpg&amp;originHeight=648&amp;originWidth=1200&amp;size=132444&amp;status=done&amp;style=none&amp;width=1200">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;jpeg&#x2F;535404&#x2F;1598149815973-4878c26d-e360-4075-b9ee-e205c8259863.jpeg#align=left&amp;display=inline&amp;height=648&amp;margin=%5Bobject%20Object%5D&amp;name=Craft-Docs-2.jpg&amp;originHeight=648&amp;originWidth=1200&amp;size=105561&amp;status=done&amp;style=none&amp;width=1200">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1598161661698-f4c3098f-6a75-40eb-87e2-c27bb5a9f342.png#align=left&amp;display=inline&amp;height=492&amp;margin=%5Bobject%20Object%5D&amp;name=podcastle.PNG&amp;originHeight=492&amp;originWidth=798&amp;size=296920&amp;status=done&amp;style=none&amp;width=798">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1598165714901-d48cc58b-c18a-4a07-aa1e-753ce1e50d28.png#align=left&amp;display=inline&amp;height=977&amp;margin=%5Bobject%20Object%5D&amp;name=Digital-Business-Model-Archetypes.png&amp;originHeight=977&amp;originWidth=1890&amp;size=264688&amp;status=done&amp;style=none&amp;width=1890">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1598166234103-47e20cf3-e65d-4eb4-aa08-dfbb6414fd24.png#align=left&amp;display=inline&amp;height=881&amp;margin=%5Bobject%20Object%5D&amp;name=Figma-Community.PNG&amp;originHeight=881&amp;originWidth=1634&amp;size=554905&amp;status=done&amp;style=none&amp;width=1634">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1598164167950-72f89ccf-2edd-4b69-a996-9e57330e9dd0.png#align=left&amp;display=inline&amp;height=390&amp;margin=%5Bobject%20Object%5D&amp;name=book-gaobiehuangdi.PNG&amp;originHeight=809&amp;originWidth=622&amp;size=593479&amp;status=done&amp;style=none&amp;width=300">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1595080759715-5e73085e-7d82-4506-930e-97507f80e022.png#align=left&amp;display=inline&amp;height=155&amp;margin=%5Bobject%20Object%5D&amp;name=%E6%89%AB%E7%A0%81_%E6%90%9C%E7%B4%A2%E8%81%94%E5%90%88%E4%BC%A0%E6%92%AD%E6%A0%B7%E5%BC%8F-%E7%99%BD%E8%89%B2%E7%89%88.png&amp;originHeight=624&amp;originWidth=1710&amp;size=4268298&amp;status=done&amp;style=none&amp;width=425">
+<meta property="og:updated_time" content="2020-08-23T07:52:01.730Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1598163517970-536654b4-9b56-4272-b9c1-f5981ba76607.png#align=left&amp;display=inline&amp;height=679&amp;margin=%5Bobject%20Object%5D&amp;name=jianyue-feature_read_mode.png&amp;originHeight=679&amp;originWidth=1000&amp;size=9913&amp;status=done&amp;style=none&amp;width=1000">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://herbertchang.github.io/2020/08/23/Product-Weekly-issue-29-20200824/"/>
+
+
+
+
+
+  <title>产品周刊 ProductWeekly | 第 29 期（20200824） | 张贺的博客</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">张贺的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">若愚若昏</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://herbertchang.github.io/2020/08/23/Product-Weekly-issue-29-20200824/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Herbert Chang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="张贺的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">产品周刊 ProductWeekly | 第 29 期（20200824）</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-08-23T15:51:15+08:00">
+                2020-08-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A/" itemprop="url" rel="index">
+                    <span itemprop="name">产品周刊</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2020/08/23/Product-Weekly-issue-29-20200824/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2020/08/23/Product-Weekly-issue-29-20200824/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+              <div class="post-description">
+                  值得关注的产品：简悦2.0、Craft Docs、Podcastle；佳文推介：《中国出海公司可以从 TikTok 身上学到什么？》《People Die, but Long Live GitHub》《Digital business model archetypes》；资源与工具：RSS 订阅源、Figma 社区；每周一书：《告别皇帝的中国》。
+              </div>
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <meta name="referrer" content="no-referrer" />
+<br />
+
+<h3 id="值得关注的产品"><a href="#值得关注的产品" class="headerlink" title="值得关注的产品"></a>值得关注的产品</h3><h4 id="1-简悦2-0（Chrome-插件-amp-iOS）"><a href="#1-简悦2-0（Chrome-插件-amp-iOS）" class="headerlink" title="1. 简悦2.0（Chrome 插件 &amp; iOS）"></a>1. <a href="https://simpread.pro/" target="_blank" rel="noopener">简悦2.0</a>（Chrome 插件 &amp; iOS）</h4><p>简悦作为浏览器扩展主要提供无干扰的沉浸式阅读体验，通过将网页标题、描述、正文、图片/视频等资源提取生成符合中文阅读习惯的页面，具有零干扰、沉浸式特点，适合深入阅读。简悦 2.0 采用全新的词法分析引擎，不仅能识别出 Wordpress、Hexo、Ghost、Discuz 等网站，只要是结构良好的页面均可自动生成阅读模式。同时支持Pocket、Notion、印象笔记等生产力工具和多种文件导出方式。免费版提供约 90% 的功能，高级账户功能（标注、稍后读和未来新功能）可通过<a href="http://simpread.pro/pro" target="_blank" rel="noopener">付费订阅</a>使用。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1598163517970-536654b4-9b56-4272-b9c1-f5981ba76607.png#align=left&display=inline&height=679&margin=%5Bobject%20Object%5D&name=jianyue-feature_read_mode.png&originHeight=679&originWidth=1000&size=9913&status=done&style=none&width=1000" alt="jianyue-feature_read_mode.png"></p>
+<blockquote>
+<p>官网 <a href="https://simpread.pro/" target="_blank" rel="noopener">simpread.pro</a><br>简悦高级账户 <a href="https://simpread.pro/pro.html" target="_blank" rel="noopener">simpread.pro/pro</a><br>简悦 iOS with JSBox <a href="http://ksria.com/simpread/docs/#/JSBox" target="_blank" rel="noopener">ksria.com/simpread/docs/#/JSBox</a><br>Chrome应用商店下载 <a href="https://chrome.google.com/webstore/detail/simpread-reader-view/ijllcpnolfcooahcekpamkbidhejabll" target="_blank" rel="noopener">chrome.google.com/webstore/detail/simpread-reader-view/ijllcpnolfcooahcekpamkbidhejabll</a><br>阅读模式 + 标注系统 + 稍后读，简悦 2.0 想成为你的知识管理解决方案 <a href="https://sspai.com/post/61996" target="_blank" rel="noopener">sspai.com/post/61996</a></p>
+</blockquote>
+<h4 id="2-Craft-Docs（Web-amp-iOS-amp-macOS）"><a href="#2-Craft-Docs（Web-amp-iOS-amp-macOS）" class="headerlink" title="2. Craft Docs（Web &amp; iOS &amp; macOS）"></a>2. <a href="https://www.craft.do/" target="_blank" rel="noopener">Craft Docs</a>（Web &amp; iOS &amp; macOS）</h4><p>文档写作工具产品，设计细腻，操作过程流畅无负担，即便你已经是资深文档产品体验者也能感到小惊喜。支持团队多人实时协作、添加批注。可以从<a href="https://www.craft.do/download.html" target="_blank" rel="noopener">官网入口</a>下载使用。<br /><img src="https://cdn.nlark.com/yuque/0/2020/jpeg/535404/1598149814697-89887497-0418-402a-99a6-181699aba997.jpeg#align=left&display=inline&height=648&margin=%5Bobject%20Object%5D&name=Craft-Docs-1.jpg&originHeight=648&originWidth=1200&size=132444&status=done&style=none&width=1200" alt="Craft-Docs-1.jpg">)<img src="https://cdn.nlark.com/yuque/0/2020/jpeg/535404/1598149815973-4878c26d-e360-4075-b9ee-e205c8259863.jpeg#align=left&display=inline&height=648&margin=%5Bobject%20Object%5D&name=Craft-Docs-2.jpg&originHeight=648&originWidth=1200&size=105561&status=done&style=none&width=1200" alt="Craft-Docs-2.jpg"></p>
+<blockquote>
+<p>官网 <a href="https://www.craft.do/" target="_blank" rel="noopener">www.craft.do</a><br>Craft Update - Open Beta and Collaboration <a href="https://www.craft.do/s/06SqJwDIYvZize" target="_blank" rel="noopener">www.craft.do/s/06SqJwDIYvZize</a></p>
+</blockquote>
+<h4 id="3-Podcastle（Chrome-插件）"><a href="#3-Podcastle（Chrome-插件）" class="headerlink" title="3. Podcastle（Chrome 插件）"></a>3. <a href="https://podcastle.ai/" target="_blank" rel="noopener">Podcastle</a>（Chrome 插件）</h4><p>采用机器学习技术将网页文字内容转换为接近自然人声的音频，以方便用户通过耳朵来「阅读」新闻资讯等内容。在 <a href="https://chrome.google.com/webstore/detail/podcastle-ai/icmhhflehepmfekgegofjggdpjkocjid" target="_blank" rel="noopener">Chrome 应用商店</a>可免费安装使用。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1598161661698-f4c3098f-6a75-40eb-87e2-c27bb5a9f342.png#align=left&display=inline&height=492&margin=%5Bobject%20Object%5D&name=podcastle.PNG&originHeight=492&originWidth=798&size=296920&status=done&style=none&width=798" alt="podcastle.PNG"></p>
+<blockquote>
+<p>官网 <a href="https://podcastle.ai/" target="_blank" rel="noopener">podcastle.ai</a><br>视频介绍 <a href="https://youtu.be/x3M6Pk9wbzQ" target="_blank" rel="noopener">youtu.be/x3M6Pk9wbzQ</a><br>下载地址 <a href="https://chrome.google.com/webstore/detail/podcastle-ai/icmhhflehepmfekgegofjggdpjkocjid" target="_blank" rel="noopener">chrome.google.com/webstore/detail/podcastle-ai/icmhhflehepmfekgegofjggdpjkocjid</a></p>
+</blockquote>
+<h3 id="佳文推介"><a href="#佳文推介" class="headerlink" title="佳文推介"></a>佳文推介</h3><h4 id="1-被科技公司忽略的政治、历史视角：中国出海公司可以从-TikTok-身上学到什么？"><a href="#1-被科技公司忽略的政治、历史视角：中国出海公司可以从-TikTok-身上学到什么？" class="headerlink" title="1. 被科技公司忽略的政治、历史视角：中国出海公司可以从 TikTok 身上学到什么？"></a>1. <a href="https://mp.weixin.qq.com/s/drNVHsBLwwcgD8s88vQU8w" target="_blank" rel="noopener">被科技公司忽略的政治、历史视角：中国出海公司可以从 TikTok 身上学到什么？</a></h4><p>The Information 最近的一篇中文 Newsletter，作者采访一位系统研究过美国历史、法律的中国学者，梳理了 TikTok 事件发生前后的政治历史背景，结合其专业知识，指出了一些容易被科技行业忽视的问题。区区经常跟一些喜欢谈论中美贸易问题的人讲慎重下武断结论，我们这点阅读量可能根本不懂美国政治（不信你试试能不能讲清楚美国大选究竟是怎么选的、参众两院的权力分别为何）。The Information 面向中文用户推出邮件订阅服务 <a href="https://www.theinformation.com/china" target="_blank" rel="noopener">The Information China Newsletter</a>，值得看。<br /></p>
+<blockquote>
+<p>值得注意的是，如果交易方之前并未主动向 CFIUS 申报交易并通过 CFIUS 的审查流程，美国总统甚至可以在交易完成后撤销有关交易。这就是特朗普借 CFIUS 向字节发难的政治合理之处。这位研究美国历史和法律的学者认为，字节在 2017 底完成对 Musical.ly 的收购，但并没有对 CFIUS 提交审查是个非常冒险的行为。他们不应该回避这个权力在不断扩张的政治组织。他认为，像字节这样下定决心做海外市场的科技巨头，在第一天就应该认识到在华盛顿游说的重要性。在出海的、有一定体量的中国公司，不管是否涉及美国市场，都需要在美国政界花足够多的时间和精力 （因为有长臂管辖）。<br>包括字节跳动在内的很多科技公司有种「学好数理化，走遍天下都不怕」的「无畏感」，认为科技可以改变一切，但忽略了世界运行的底层逻辑是政治。因此，在公司内部培养精通各国政治、法律的人才、建立公司内健全的应对体系尤为重要。即使这样的岗位确实对很多互联网公司而言很陌生——也很难设定绩效考核标准（如 KPI/OKR）。因为在没有事情发生时，公司很难判断这是公司运气好还是相关团队工作做得好。而等到问题发生，才开始着手招聘、找人游说已经太迟了。</p>
+</blockquote>
+<blockquote>
+<p>原文链接 <a href="https://mp.weixin.qq.com/s/drNVHsBLwwcgD8s88vQU8w" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/drNVHsBLwwcgD8s88vQU8w</a><br>The Information China Newsletter <a href="https://www.theinformation.com/china" target="_blank" rel="noopener">https://www.theinformation.com/china</a></p>
+</blockquote>
+<h4 id="2-People-Die-but-Long-Live-GitHub"><a href="#2-People-Die-but-Long-Live-GitHub" class="headerlink" title="2. People Die, but Long Live GitHub"></a>2. <a href="https://laike9m.com/blog/people-die-but-long-live-github,122/" target="_blank" rel="noopener">People Die, but Long Live GitHub</a></h4><p>衰老和死亡迟早要到来，如何处理网络上的个人知识以实现有价值信息长久发光发热？本文给出了思考和行动。如果你想复制这种做法，也可以参考<a href="https://github.com/yihong0618/gitblog" target="_blank" rel="noopener">这个博客</a>。<br /></p>
+<blockquote>
+<p>我们处在信息时代的早期，同样也处在人类文明的早期。从今往后，被数字化的东西只会越来越多。既然有人意识到了 GitHub 的独特性，随着时间推移，越来越多的人总会意识到。那时候会发生什么？自然是，越来越多的人会把自己的信息搬到 GitHub 上，依托 GitHub 实现曾经人们可望而不可及的「永生」。人有两次死亡，第一次是肉体，第二次是被人忘记。我忘记这句话是谁说的了，但现在我们已经可以回避第二次。只要 GitHub 支持，就一定会有人这么做，至少我是其中之一。几十几百年后，GitHub 将成为世界上最大的数字公墓，注册用户大部分都已去世，然而个人主页、项目、commit 历史还述说着他们生前做过的事。</p>
+</blockquote>
+<blockquote>
+<p>原文链接 <a href="https://laike9m.com/blog/people-die-but-long-live-github,122/" target="_blank" rel="noopener">laike9m.com/blog/people-die-but-long-live-github,122</a><br>Gitblog <a href="https://github.com/yihong0618/gitblog" target="_blank" rel="noopener">github.com/yihong0618/gitblog</a></p>
+</blockquote>
+<h4 id="3-Digital-business-model-archetypes-En"><a href="#3-Digital-business-model-archetypes-En" class="headerlink" title="3. Digital business model archetypes (En)"></a>3. <a href="https://www.simon-torrance.com/blog/Digital%20Business%20Model%20Archetypes" target="_blank" rel="noopener">Digital business model archetypes</a> (En)</h4><p>《New Growth Playbook》作者 Simon Torrance 对数字化业务抽象了五种模型，商业观点阐述比较有意思。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1598165714901-d48cc58b-c18a-4a07-aa1e-753ce1e50d28.png#align=left&display=inline&height=977&margin=%5Bobject%20Object%5D&name=Digital-Business-Model-Archetypes.png&originHeight=977&originWidth=1890&size=264688&status=done&style=none&width=1890" alt="Digital-Business-Model-Archetypes.png"></p>
+<blockquote>
+<p>Simon Torrance reviews 5 archetypes for incumbents to orient. Four out of five are platform-oriented, and such models have much more attractive economics. They focus on exploiting and monetising higher margin ‘intellectual capital’ (encapsulated in software) and ‘relational capital’ (connections between multiple parties) rather than more costly ‘human capital’ (human experts), ‘financial capital’ (money), or ‘physical capital’ (things).</p>
+</blockquote>
+<blockquote>
+<p>原文链接 <a href="https://www.simon-torrance.com/blog/Digital%20Business%20Model%20Archetypes" target="_blank" rel="noopener">www.simon-torrance.com/blog/Digital%20Business%20Model%20Archetypes</a></p>
+</blockquote>
+<br />
+
+<h3 id="资源与工具"><a href="#资源与工具" class="headerlink" title="资源与工具"></a>资源与工具</h3><h4 id="1-RSS-订阅源"><a href="#1-RSS-订阅源" class="headerlink" title="1. RSS 订阅源"></a>1. RSS 订阅源</h4><p>近日 Reeder 软件限时免费的消息引发了一小波关于 RSS 的讨论潮。RSS 可以说是在信息爆炸时代提高信噪比的最佳选项之一，然而找到优质订阅源也非易事。<a href="https://twitter.com/theChenWen/status/1295739627404369920?s=20" target="_blank" rel="noopener">Chen Wen 整理</a>了三份博客 RSS 订阅源，其中包括<a href="https://blog.yitianshijie.net/2019/12/10/rss-feeds-recommendation/" target="_blank" rel="noopener">李如一先生在博客「一天世界」</a>推荐的 RSS 订阅列表和 <a href="https://anyway.fm/compulsive-hoarding" target="_blank" rel="noopener">Leon Gao 先生在「Anyway.FM」播客</a>分享过的订阅列表。<br /></p>
+<blockquote>
+<p>下载链接1 <a href="https://chenwen.cowtransfer.com/s/106a0ce80c9f43" target="_blank" rel="noopener">chenwen.cowtransfer.com/s/106a0ce80c9f43</a><br>下载链接2 <a href="https://drive.google.com/drive/folders/1412v3macQBP6d2GBkHyk79JylTqrcrEs" target="_blank" rel="noopener">drive.google.com/drive/folders/1412v3macQBP6d2GBkHyk79JylTqrcrEs</a><br>李如一推荐的 RSS 订阅列表 <a href="https://blog.yitianshijie.net/2019/12/10/rss-feeds-recommendation/" target="_blank" rel="noopener">blog.yitianshijie.net/2019/12/10/rss-feeds-recommendation</a><br>Leon Gao 分享的订阅列表 <a href="https://anyway.fm/compulsive-hoarding" target="_blank" rel="noopener">anyway.fm/compulsive-hoarding</a></p>
+</blockquote>
+<h4 id="2-Figma-社区"><a href="#2-Figma-社区" class="headerlink" title="2. Figma 社区"></a>2. <a href="https://www.figma.com/community" target="_blank" rel="noopener">Figma 社区</a></h4><p>Figma 开放了社区服务，很方便查看一流设计师/团队的作品和插件。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1598166234103-47e20cf3-e65d-4eb4-aa08-dfbb6414fd24.png#align=left&display=inline&height=881&margin=%5Bobject%20Object%5D&name=Figma-Community.PNG&originHeight=881&originWidth=1634&size=554905&status=done&style=none&width=1634" alt="Figma-Community.PNG"></p>
+<blockquote>
+<p>链接 <a href="https://www.figma.com/community" target="_blank" rel="noopener">www.figma.com/community</a></p>
+</blockquote>
+<br />
+
+<h3 id="每周一书"><a href="#每周一书" class="headerlink" title="每周一书"></a>每周一书</h3><p>马国川 访谈《<a href="https://book.douban.com/subject/6954443/" target="_blank" rel="noopener">告别皇帝的中国</a>》<br />本书由马国川先生围绕「辛亥百年」的主题，对海内外十二位著名学者进行访谈的采访稿组成。十二篇访谈对辛亥革命的本质、成因与遗产进行了政治、历史、军事、法律、文化等多层次、多角度的剖析，反思了辛亥革命后一百年间中国现代化道路上的经验和教训，探讨了处于社会转型期的当代中国与未来走向。十二位学者基于各自的学问背景与独思创见，表述了对辛亥百年之间大事件不同的解读与评价，形成一场在认知与价值观层面上的精彩论辩。有些观点相互之间存在张力，甚至并不正确，通过阅读这场论辩后觉得辛亥革命不再单纯是以往所了解的那些节点事件组成、不再是黑白二分，必能对辛亥百年的整体认识大有增益。本书的简体中文版由牛津大学出版社《没有皇帝的中国：辛亥革命百年访谈录》删减而成。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1598164167950-72f89ccf-2edd-4b69-a996-9e57330e9dd0.png#align=left&display=inline&height=390&margin=%5Bobject%20Object%5D&name=book-gaobiehuangdi.PNG&originHeight=809&originWidth=622&size=593479&status=done&style=none&width=300" alt="book-gaobiehuangdi.PNG"></p>
+<blockquote>
+<p>「二次革命」……用梁漱溟的话说，开创了用武力解决政治问题的先河。 准确地说，是袁世凯与国民党联手摧毁了民初的宪政架构。而且从长远来看，1928年国民党统一全国以前，这个宪政架构一直稳定不下来，更大的责任是国民党，因为袁世凯在1916年就死了。袁死后，北方政府有几次机会可以实现和平统一，把中国推向稳定发展的道路，都被国民党破坏了。<br>1917-1952年这三十五年的历史是极其悲剧性的，研究这段历史让人撕心裂肺。所以许多人宁愿佯装不知。然而如果后人不能与先辈产生共鸣，那么先辈的痛苦经历就毫无意义了。</p>
+</blockquote>
+<blockquote>
+<p>豆瓣图书地址 <a href="https://book.douban.com/subject/6954443/" target="_blank" rel="noopener">book.douban.com/subject/6954443</a></p>
+</blockquote>
+<h3 id="订阅"><a href="#订阅" class="headerlink" title="订阅"></a>订阅</h3><p>如无意外，本周刊每周更新，发布在 <a href="https://github.com/HerbertChang/pmweekly" target="_blank" rel="noopener">GitHub</a>、<a href="https://weixin.sogou.com/weixin?type=1&s_from=input&query=%E8%8B%A5%E6%84%9A%E8%8B%A5%E6%98%8F&ie=utf8&_sug_=y&_sug_type_=&w=01019900&sut=10610&sst0=1571666684054&lkt=0%2C0%2C0" target="_blank" rel="noopener">微信公众号</a>、<a href="https://yuque.com/herbert-chang/pmweekly/" target="_blank" rel="noopener">语雀</a>和<a href="https://productweekly.substack.com/" target="_blank" rel="noopener">邮件订阅组</a>。本周刊遵循 CC BY-NC-ND 标准。本周刊推出邮件订阅服务，提供更好的阅读体验，请访问 <a href="https://productweekly.substack.com/" target="_blank" rel="noopener">https://productweekly.substack.com/</a> 开启订阅，推荐使用 Gmail、Protonmail、iCloud 等国外邮件服务来进行订阅。如果觉得「产品周刊 Product Weekly」有价值，请分享给你的朋友或社交网络。欢迎将建议、内容分享和产品/设计岗位内推需求发送给我。微信搜索「若愚若昏」，可关注我的微信公众号。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1595080759715-5e73085e-7d82-4506-930e-97507f80e022.png#align=left&display=inline&height=155&margin=%5Bobject%20Object%5D&name=%E6%89%AB%E7%A0%81_%E6%90%9C%E7%B4%A2%E8%81%94%E5%90%88%E4%BC%A0%E6%92%AD%E6%A0%B7%E5%BC%8F-%E7%99%BD%E8%89%B2%E7%89%88.png&originHeight=624&originWidth=1710&size=4268298&status=done&style=none&width=425" alt="扫码_搜索联合传播样式-白色版.png"></p>
+<h3 id="推荐"><a href="#推荐" class="headerlink" title="推荐"></a>推荐</h3><ul>
+<li><a href="https://pmthinking.us11.list-manage.com/track/click?u=c4dcdf8a6b76265256adf8255&id=a540a873a8&e=5f9cbb74d3" target="_blank" rel="noopener">黄埔犬校</a>：纯银的黄埔犬校内容精选 </li>
+<li><a href="https://www.notion.so/PRODUCT-THINKING-a601a12335044f349a22caf57f274c27" target="_blank" rel="noopener">产品沉思录精选</a>：少楠（Plidezus）的产品知识库</li>
+<li><a href="https://yitianshijie.net/" target="_blank" rel="noopener">一天世界</a>：IPN 李如一的博客</li>
+<li><a href="https://pmthinking.us11.list-manage.com/track/click?u=c4dcdf8a6b76265256adf8255&id=2049427034&e=5f9cbb74d3" target="_blank" rel="noopener">刻意体会</a>：即刻产品汪 Kyth 的自留地</li>
+<li><a href="https://pmthinking.us11.list-manage.com/track/click?u=c4dcdf8a6b76265256adf8255&id=f60bfc9cb9&e=5f9cbb74d3" target="_blank" rel="noopener">Λ-Reading</a>：每天 2 分钟，扩展认知边界</li>
+<li><a href="https://assets.iois.me/uzjhgqzglpa.html" target="_blank" rel="noopener">Deep Reading 精选</a>：在事实之上，构建一个关于观点（洞察）与故事的筛选机制</li>
+<li><a href="https://github.com/Newslab2020/Contents/blob/master/wechataccount.md" target="_blank" rel="noopener">新闻实验室微信公众号文章备份</a>：优化媒体食谱，提高媒介素养</li>
+<li><a href="https://notion.cx/" target="_blank" rel="noopener">Notion 中文社区</a>：Better Life, Better Work</li>
+<li><a href="https://www.notion.so/da53956e706a4b0c8aabb757c0259382" target="_blank" rel="noopener">数据产品的日常</a>：数据 PM 资料库</li>
+<li><a href="http://elproducto.eu/" target="_blank" rel="noopener">el producto</a>：Tech &amp; Product Management News and Thoughts</li>
+<li><a href="https://clearbox.substack.com/" target="_blank" rel="noopener">透明盒子计划</a>：非虚构类书籍阅读笔记</li>
+<li><a href="https://news.dex.group/f3b9324ec1c545f3a7ad31d71da1fc38?v=13a31b332fd8465a9bb81d92748643b4" target="_blank" rel="noopener">DEX 周刊</a>：DEX 旗下关于产品、设计和开发的邮件订阅列表</li>
+<li><a href="https://www.notion.so/blog-by-liqi-io-4bdf37d4fb3443b4b6dbed8317450307" target="_blank" rel="noopener">独立 blog 订阅列表 by 利器 liqi.io</a>：中文独立博客列表</li>
+</ul>
+
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/uploads/wechat-qcode.jpg" alt="Herbert Chang wechat" style="width: 200px; max-width: 100%;"/>
+    <div>欢迎您扫一扫上面的微信公众号，订阅我的博客！</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>转发和赞赏是对俺创作的支持</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/uploads/wechatpay.png" alt="Herbert Chang 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/uploads/alipay.png" alt="Herbert Chang 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A/" rel="tag"># 产品周刊</a>
+          
+            <a href="/tags/%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1/" rel="tag"># 产品设计</a>
+          
+            <a href="/tags/PM/" rel="tag"># PM</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/08/16/Product-Weekly-issue-28-20200817/" rel="next" title="产品周刊 ProductWeekly | 第 28 期（20200817）">
+                <i class="fa fa-chevron-left"></i> 产品周刊 ProductWeekly | 第 28 期（20200817）
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Herbert Chang</p>
+              <p class="site-description motion-element" itemprop="description">所南心史井中全</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%20%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">31</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-globe"></i>
+                
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://youhan26.github.io/" title="Tony You 的个人博客" target="_blank">Tony You 的个人博客</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://leiquan.website/" title="雷全的个人博客" target="_blank">雷全的个人博客</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#值得关注的产品"><span class="nav-number">1.</span> <span class="nav-text">值得关注的产品</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-简悦2-0（Chrome-插件-amp-iOS）"><span class="nav-number">1.1.</span> <span class="nav-text">1. 简悦2.0（Chrome 插件 &amp; iOS）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-Craft-Docs（Web-amp-iOS-amp-macOS）"><span class="nav-number">1.2.</span> <span class="nav-text">2. Craft Docs（Web &amp; iOS &amp; macOS）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-Podcastle（Chrome-插件）"><span class="nav-number">1.3.</span> <span class="nav-text">3. Podcastle（Chrome 插件）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#佳文推介"><span class="nav-number">2.</span> <span class="nav-text">佳文推介</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-被科技公司忽略的政治、历史视角：中国出海公司可以从-TikTok-身上学到什么？"><span class="nav-number">2.1.</span> <span class="nav-text">1. 被科技公司忽略的政治、历史视角：中国出海公司可以从 TikTok 身上学到什么？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-People-Die-but-Long-Live-GitHub"><span class="nav-number">2.2.</span> <span class="nav-text">2. People Die, but Long Live GitHub</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-Digital-business-model-archetypes-En"><span class="nav-number">2.3.</span> <span class="nav-text">3. Digital business model archetypes (En)</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#资源与工具"><span class="nav-number">3.</span> <span class="nav-text">资源与工具</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-RSS-订阅源"><span class="nav-number">3.1.</span> <span class="nav-text">1. RSS 订阅源</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-Figma-社区"><span class="nav-number">3.2.</span> <span class="nav-text">2. Figma 社区</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#每周一书"><span class="nav-number">4.</span> <span class="nav-text">每周一书</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#订阅"><span class="nav-number">5.</span> <span class="nav-text">订阅</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#推荐"><span class="nav-number">6.</span> <span class="nav-text">推荐</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2018 &mdash; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Herbert Chang</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://Herbert.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'https://herbertchang.github.io/2020/08/23/Product-Weekly-issue-29-20200824/';
+          this.page.identifier = '2020/08/23/Product-Weekly-issue-29-20200824/';
+          this.page.title = '产品周刊 ProductWeekly | 第 29 期（20200824）';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://Herbert.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
