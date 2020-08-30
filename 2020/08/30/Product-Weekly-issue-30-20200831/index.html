@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="产品周刊,产品设计,PM," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="张贺的博客" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="值得关注的产品：Odoo、VMware Fusion 12、Story Creator、Softr；佳文推介：《4 Types of Dependencies that Kill Startups》《神经科学的存在危机》；资源与工具：灵感触发器 Fuse、Pandas 中文教程；每周一书：伊塔洛·卡尔维诺《树上的男爵》。">
+<meta name="keywords" content="产品周刊,产品设计,PM">
+<meta property="og:type" content="article">
+<meta property="og:title" content="产品周刊 ProductWeekly | 第 30 期（20200831）">
+<meta property="og:url" content="https:&#x2F;&#x2F;herbertchang.github.io&#x2F;2020&#x2F;08&#x2F;30&#x2F;Product-Weekly-issue-30-20200831&#x2F;index.html">
+<meta property="og:site_name" content="张贺的博客">
+<meta property="og:description" content="值得关注的产品：Odoo、VMware Fusion 12、Story Creator、Softr；佳文推介：《4 Types of Dependencies that Kill Startups》《神经科学的存在危机》；资源与工具：灵感触发器 Fuse、Pandas 中文教程；每周一书：伊塔洛·卡尔维诺《树上的男爵》。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1598760868641-87ef48fb-6b8d-4ce9-a4db-1c534f668707.png#align=left&amp;display=inline&amp;height=585&amp;margin=%5Bobject%20Object%5D&amp;name=Odoo.PNG&amp;originHeight=585&amp;originWidth=1439&amp;size=56313&amp;status=done&amp;style=none&amp;width=1439">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1598758594499-567e60b0-4943-4d2a-9002-440b14e40bc3.png#align=left&amp;display=inline&amp;height=525&amp;margin=%5Bobject%20Object%5D&amp;name=vmware-fusion-12-hero-768x525.png&amp;originHeight=525&amp;originWidth=768&amp;size=319949&amp;status=done&amp;style=none&amp;width=768">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1598768415021-89562248-f120-4107-bafb-54c54ae5aea4.png#align=left&amp;display=inline&amp;height=742&amp;margin=%5Bobject%20Object%5D&amp;name=story-creator.PNG&amp;originHeight=742&amp;originWidth=1277&amp;size=532983&amp;status=done&amp;style=none&amp;width=1277">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1598770102418-81c94736-7073-4936-af74-d8d2600dec95.png#align=left&amp;display=inline&amp;height=651&amp;margin=%5Bobject%20Object%5D&amp;name=softr.PNG&amp;originHeight=651&amp;originWidth=1228&amp;size=253143&amp;status=done&amp;style=none&amp;width=1228">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1598776614879-827e15f9-795e-454d-be30-a9976a666462.png#align=left&amp;display=inline&amp;height=400&amp;margin=%5Bobject%20Object%5D&amp;name=an-existential-crisis-in-neuroscience.png&amp;originHeight=400&amp;originWidth=733&amp;size=736027&amp;status=done&amp;style=none&amp;width=733">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1598774373371-ffec8abc-7b04-4092-84a5-2d218e6be7ae.png#align=left&amp;display=inline&amp;height=773&amp;margin=%5Bobject%20Object%5D&amp;name=Fuse.PNG&amp;originHeight=773&amp;originWidth=1851&amp;size=201621&amp;status=done&amp;style=none&amp;width=1851">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1598772294665-42c37677-ca82-46ac-950f-3e26d4d914a2.png#align=left&amp;display=inline&amp;height=452&amp;margin=%5Bobject%20Object%5D&amp;name=book-shushangdenanjue.PNG&amp;originHeight=899&amp;originWidth=597&amp;size=362554&amp;status=done&amp;style=none&amp;width=300">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1595080759715-5e73085e-7d82-4506-930e-97507f80e022.png#align=left&amp;display=inline&amp;height=155&amp;margin=%5Bobject%20Object%5D&amp;name=%E6%89%AB%E7%A0%81_%E6%90%9C%E7%B4%A2%E8%81%94%E5%90%88%E4%BC%A0%E6%92%AD%E6%A0%B7%E5%BC%8F-%E7%99%BD%E8%89%B2%E7%89%88.png&amp;originHeight=624&amp;originWidth=1710&amp;size=4268298&amp;status=done&amp;style=none&amp;width=425">
+<meta property="og:updated_time" content="2020-08-30T10:08:58.743Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1598760868641-87ef48fb-6b8d-4ce9-a4db-1c534f668707.png#align=left&amp;display=inline&amp;height=585&amp;margin=%5Bobject%20Object%5D&amp;name=Odoo.PNG&amp;originHeight=585&amp;originWidth=1439&amp;size=56313&amp;status=done&amp;style=none&amp;width=1439">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://herbertchang.github.io/2020/08/30/Product-Weekly-issue-30-20200831/"/>
+
+
+
+
+
+  <title>产品周刊 ProductWeekly | 第 30 期（20200831） | 张贺的博客</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">张贺的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">若愚若昏</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://herbertchang.github.io/2020/08/30/Product-Weekly-issue-30-20200831/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Herbert Chang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="张贺的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">产品周刊 ProductWeekly | 第 30 期（20200831）</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-08-30T18:07:52+08:00">
+                2020-08-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A/" itemprop="url" rel="index">
+                    <span itemprop="name">产品周刊</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2020/08/30/Product-Weekly-issue-30-20200831/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2020/08/30/Product-Weekly-issue-30-20200831/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+              <div class="post-description">
+                  值得关注的产品：Odoo、VMware Fusion 12、Story Creator、Softr；佳文推介：《4 Types of Dependencies that Kill Startups》《神经科学的存在危机》；资源与工具：灵感触发器 Fuse、Pandas 中文教程；每周一书：伊塔洛·卡尔维诺《树上的男爵》。
+              </div>
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <meta name="referrer" content="no-referrer" />
+<br />
+
+<h3 id="值得关注的产品"><a href="#值得关注的产品" class="headerlink" title="值得关注的产品"></a>值得关注的产品</h3><h4 id="1-Odoo-13-0（开源-ERP）"><a href="#1-Odoo-13-0（开源-ERP）" class="headerlink" title="1. Odoo 13.0（开源 ERP）"></a>1. <a href="http://www.odoo.com" target="_blank" rel="noopener">Odoo 13.0</a>（开源 ERP）</h4><p>Odoo 是一款基于 Python、采用开源商业模式的 ERP 系统。可满足企业全方位的业务管理需求，包括客户关系管理、采购管理、销售管理、库存管理、生产管理、财务管理、供应链管理、人力资源管理、网站设计等。有较为丰富的社区生态，对于中小企业需要自研 ERP 并定制化开发的或许有用。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1598760868641-87ef48fb-6b8d-4ce9-a4db-1c534f668707.png#align=left&display=inline&height=585&margin=%5Bobject%20Object%5D&name=Odoo.PNG&originHeight=585&originWidth=1439&size=56313&status=done&style=none&width=1439" alt="Odoo.PNG"></p>
+<blockquote>
+<p>官网 <a href="https://www.odoo.com/" target="_blank" rel="noopener">www.odoo.com</a><br>GitHub 项目地址 <a href="https://github.com/odoo/odoo" target="_blank" rel="noopener">github.com/odoo/odoo</a><br>开发者文档 <a href="https://www.odoo.com/documentation/13.0/" target="_blank" rel="noopener">www.odoo.com/documentation/13.0</a></p>
+</blockquote>
+<h4 id="2-VMware-Fusion-12（macOS）"><a href="#2-VMware-Fusion-12（macOS）" class="headerlink" title="2. VMware Fusion 12（macOS）"></a>2. <a href="https://blogs.vmware.com/teamfusion/2020/08/announcing-fusion-12-and-workstation-16.html" target="_blank" rel="noopener">VMware Fusion 12</a>（macOS）</h4><p>VMware 公布其 macOS 版虚拟化软件 Fusion 12 特性：支持 macOS Big Sur 操作系统；容器化与 Kubernetes 特性有所增强；DirectX 11、OpenGL 4.1 和 eGPU支持；允许从 APFS 分区恢复系统和其他一些特性。对个人非商用用户提供免费的 VMware Fusion Player。不过目前 VMware Fusion 12 还是期货，预计最迟于 10 月 30 日推出。同类竞品有 <a href="https://www.virtualbox.org/wiki/Downloads" target="_blank" rel="noopener">VirtualBox</a>、<a href="https://www.parallels.com/" target="_blank" rel="noopener">Parallels Desktop</a> 和微软 Hyper-V。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1598758594499-567e60b0-4943-4d2a-9002-440b14e40bc3.png#align=left&display=inline&height=525&margin=%5Bobject%20Object%5D&name=vmware-fusion-12-hero-768x525.png&originHeight=525&originWidth=768&size=319949&status=done&style=none&width=768" alt="vmware-fusion-12-hero-768x525.png"></p>
+<blockquote>
+<p>官网 <a href="https://blogs.vmware.com/teamfusion/2020/08/announcing-fusion-12-and-workstation-16.html" target="_blank" rel="noopener">blogs.vmware.com/teamfusion/2020/08/announcing-fusion-12-and-workstation-16.html</a><br>VMware Fusion 12 Announced With Support for macOS Big Sur, eGPUs, and More <a href="https://www.macrumors.com/2020/08/20/vmware-fusion-12/" target="_blank" rel="noopener">www.macrumors.com/2020/08/20/vmware-fusion-12</a><br>老牌虚拟机工具即将迎来大更新，支持个人免费使用 <a href="https://sspai.com/post/62287" target="_blank" rel="noopener">sspai.com/post/62287</a><br>VirtualBox 下载 <a href="https://www.virtualbox.org/wiki/Downloads" target="_blank" rel="noopener">www.virtualbox.org/wiki/Downloads</a><br>Parallels Desktop <a href="https://www.parallels.com/" target="_blank" rel="noopener">www.parallels.com</a></p>
+</blockquote>
+<h4 id="3-Story-Creator（Web）"><a href="#3-Story-Creator（Web）" class="headerlink" title="3. Story Creator（Web）"></a>3. <a href="https://storycreatorapp.com/" target="_blank" rel="noopener">Story Creator</a>（Web）</h4><p>在线版轻量视频剪辑工具，方便视频创作者快速创作。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1598768415021-89562248-f120-4107-bafb-54c54ae5aea4.png#align=left&display=inline&height=742&margin=%5Bobject%20Object%5D&name=story-creator.PNG&originHeight=742&originWidth=1277&size=532983&status=done&style=none&width=1277" alt="story-creator.PNG"></p>
+<blockquote>
+<p>官网 <a href="https://storycreatorapp.com/" target="_blank" rel="noopener">storycreatorapp.com</a><br>视频介绍 <a href="https://youtu.be/D1IlZkOFWsU" target="_blank" rel="noopener">youtu.be/D1IlZkOFWsU</a></p>
+</blockquote>
+<h4 id="4-Softr（Web）"><a href="#4-Softr（Web）" class="headerlink" title="4. Softr（Web）"></a>4. <a href="http://www.softr.io" target="_blank" rel="noopener">Softr</a>（Web）</h4><p>快速建站工具，通过拖拽网页控件、配置参数搭建响应式网页。支持与 Google Analytics、Mailchimp、Zapier、Integromat、Hotjar、Stripe、Crisp 等主流工具集成。本周刊第 15 期介绍过建站工具 <a href="https://www.yuque.com/herbert-chang/productweekly/issue-15#FGhv0" target="_blank" rel="noopener">TeleportHQ</a>、第 27 期介绍过 <a href="https://www.yuque.com/herbert-chang/productweekly/issue-27#IwROd" target="_blank" rel="noopener">No-code 工具集</a>。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1598770102418-81c94736-7073-4936-af74-d8d2600dec95.png#align=left&display=inline&height=651&margin=%5Bobject%20Object%5D&name=softr.PNG&originHeight=651&originWidth=1228&size=253143&status=done&style=none&width=1228" alt="softr.PNG"></p>
+<blockquote>
+<p>官网 <a href="https://www.softr.io/" target="_blank" rel="noopener">www.softr.io</a><br>演示视频 <a href="https://youtu.be/uVDdhK-FYpo" target="_blank" rel="noopener">youtu.be/uVDdhK-FYpo</a></p>
+</blockquote>
+<h3 id="佳文推介"><a href="#佳文推介" class="headerlink" title="佳文推介"></a>佳文推介</h3><h4 id="1-4-Types-of-Dependencies-that-Kill-Startups-En"><a href="#1-4-Types-of-Dependencies-that-Kill-Startups-En" class="headerlink" title="1. 4 Types of Dependencies that Kill Startups(En)"></a>1. <a href="https://productcoalition.com/4-types-of-dependencies-that-kill-32e8b58f851c" target="_blank" rel="noopener">4 Types of Dependencies that Kill Startups</a>(En)</h4><p>Product Stride 的产品管理咨询师 Sean Sullivan 以 Salesforce 和 Netflix 为例分析初创企业容易踩的几个坑：</p>
+<ul>
+<li>Dependencies on Existing Customers</li>
+<li>Dependencies on Existing Technology</li>
+<li>Dependencies across Product Teams</li>
+<li>Dependencies on Existing Business Model</li>
+</ul>
+<p>以及如何扬长避短开拓市场。</p>
+<blockquote>
+<p>Do not be afraid to take on larger, deep-pocketed incumbents. Be aware of the dependencies they have earned as they grew and look for ways to take advantage of them. Most incumbents will view their large install base as a great strength, but to a customer with a problem, it just means they can’t possibly be as responsive to changing market dynamics and rapidly evolving needs as you.<br>I recall competing against Oracle many years ago as a small startup. As a PM I would speak to customers that used both of our products, and the customer told me they never met a PM from Oracle before. They were so glad to meet someone who had a direct impact on the product that listened, I gained a champion for my product.<br>As a startup, research your key competitors and think about what dependencies they may have that slow them down. Wherever possible, take advantage of those and keep moving swiftly as you learn. Your greatest advantage is your agility.</p>
+</blockquote>
+<blockquote>
+<p>原文链接 <a href="https://productcoalition.com/4-types-of-dependencies-that-kill-32e8b58f851c" target="_blank" rel="noopener">productcoalition.com/4-types-of-dependencies-that-kill-32e8b58f851c</a></p>
+</blockquote>
+<h4 id="2-神经科学的存在危机"><a href="#2-神经科学的存在危机" class="headerlink" title="2. 神经科学的存在危机"></a>2. <a href="https://neu-reality.com/2020/05/an-existential-crisis-in-neuroscience/" target="_blank" rel="noopener">神经科学的存在危机</a></h4><p>来自<a href="https://neu-reality.com/" target="_blank" rel="noopener">「神经现实」</a>的一篇文章，哈佛大学分子与细胞生物学教授杰夫 · 李奇曼讲述他对脑科学与神经科学研究的看法和体验。脑机接口研究取得重大进展，赛博朋克照进现实，在纷扰的新闻之外或许可以关注一些更硬核的问题。<br /><a href="https://neu-reality.com/" target="_blank" rel="noopener">「神经现实」</a>是一家非营利性科学传播机构，专注于神经科学、认知科学和精神病学等领域的深度报道和前沿解读。目前，神经现实正在积极促进公众理解科学这一目标，并致力于推动学界的跨学科融合，旨在为脑科学的知识普及和行业发展添砖加瓦。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1598776614879-827e15f9-795e-454d-be30-a9976a666462.png#align=left&display=inline&height=400&margin=%5Bobject%20Object%5D&name=an-existential-crisis-in-neuroscience.png&originHeight=400&originWidth=733&size=736027&status=done&style=none&width=733" alt="an-existential-crisis-in-neuroscience.png"></p>
+<blockquote>
+<p>「机器不能输出比它自己更复杂的东西——这句话里边可能隐含着一种基本法则。」 李奇曼说，「一台车能做的最复杂的事比起造车的工程不值一提，而人脑所能做的比起它自身的工程渺小得多。这是非常不幸的事实。我们相信人类凭借无限的智能，可以理解世间万物。但要是我问你的狗能懂得多少事，你可能会说‘我的狗脑子很小，它知道啥。’可是人脑也不过是稍微大一点罢了。」他轻轻笑了，继续道，「既然如此，那为什么人有能力理解世间万物？」<br>花了一整天琢磨我的数据后，一天夜里我偶然翻到一则豪尔赫 · 路易斯 · 博尔赫斯写的短篇小说，它似乎抓住了绘制大脑地图的根本。这篇《论科学的精确性》（On Exactitude in Science）的主人公苏亚雷斯·米兰达（Suarez Miranda）记述了一个古老的帝国，该国凭借科学手段，绘图的技艺臻于完美。早期的地图是真实版图的粗糙微型，而随着每个版本不断地填充细节，新的地图一圈大过一圈。到最后，博尔赫斯写道，「绘图的技艺臻于完美，以至单单一个省的地图就占据了整整一个城市，而帝国的地图则是整整一个省。」即便如此，那里的人欲求更多细节。「随着时间流逝，这种不成比例的地图不再令人满足，于是各制图院打造了一幅帝国全图，它拥有帝国的尺寸并与之严格对应。」</p>
+</blockquote>
+<blockquote>
+<p>原文链接 <a href="https://neu-reality.com/2020/05/an-existential-crisis-in-neuroscience/" target="_blank" rel="noopener">neu-reality.com/2020/05/an-existential-crisis-in-neuroscience</a><br>我们会成为赛博格吗？（上）——人的本质与尊严挽救 <a href="https://neuromancing.fireside.fm/24-cyborg" target="_blank" rel="noopener">neuromancing.fireside.fm/24-cyborg</a><br>如何提高智商？农夫和盲人给我们的启发 <a href="https://clearbox.substack.com/p/025" target="_blank" rel="noopener">clearbox.substack.com/p/025</a></p>
+</blockquote>
+<h3 id="资源与工具"><a href="#资源与工具" class="headerlink" title="资源与工具"></a>资源与工具</h3><h4 id="1-灵感触发器-Fuse"><a href="#1-灵感触发器-Fuse" class="headerlink" title="1. 灵感触发器 Fuse"></a>1. <a href="https://fuse.blog/" target="_blank" rel="noopener">灵感触发器 Fuse</a></h4><p>有趣的网站，可以看到很多好玩的创意。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1598774373371-ffec8abc-7b04-4092-84a5-2d218e6be7ae.png#align=left&display=inline&height=773&margin=%5Bobject%20Object%5D&name=Fuse.PNG&originHeight=773&originWidth=1851&size=201621&status=done&style=none&width=1851" alt="Fuse.PNG"></p>
+<blockquote>
+<p>链接 <a href="https://fuse.blog/" target="_blank" rel="noopener">fuse.blog</a></p>
+</blockquote>
+<h4 id="2-Pandas-中文教程"><a href="#2-Pandas-中文教程" class="headerlink" title="2. Pandas 中文教程"></a>2. <a href="https://www.gairuo.com/p/pandas-tutorial" target="_blank" rel="noopener">Pandas 中文教程</a></h4><p>「盖若」所撰写的零基础人员直接学习使用 Pandas 系列教程，针对无任何编程背景人员，可不需要去先学习 Python 和 Numpy 库。<br /></p>
+<blockquote>
+<p>链接 <a href="https://www.gairuo.com/p/pandas-tutorial" target="_blank" rel="noopener">www.gairuo.com/p/pandas-tutorial</a></p>
+</blockquote>
+<h3 id="每周一书"><a href="#每周一书" class="headerlink" title="每周一书"></a>每周一书</h3><p>伊塔洛·卡尔维诺《<a href="https://book.douban.com/subject/6789605/" target="_blank" rel="noopener">树上的男爵</a>》<br />伊塔洛·卡尔维诺（Italo Calvino）是意大利当代最具有世界影响的作家，于 1985 年获得诺贝尔文学提名，却因于当年猝然去世而与该奖失之交臂，但其人其作早已在意大利文学界乃至世界文学界产生巨大影响。卡尔维诺从事文学创作 40 年，一直尝试着用各种手法表现当代人的生活和心灵。他的作品融现实主义、超现实主义与后现代主义于一身，以丰富的手法、奇特的角度构造超乎想像的、富有浓厚童话意味的故事，深为当代作家推崇，并给他们带来深刻影响。卡尔维诺这样看待他的「我们的祖先」三部曲：「关于人如何实现自我的经验的三部曲：在《不存在的骑士》中争取生存，在《分成两半的子爵》中追求不受社会摧残的完整人生，《树上的男爵》中有一条通向完整的道路，这是通过对个人的自我抉择矢志不移的努力而达到的非个人主义的完整——这三个故事代表通向自由的三个阶段。」《树上的男爵》这本小说因为今年浙江高考满分作为的争议也跟着上了一把热搜。《树上的男爵》叙事技巧卓然，结尾处男主人公跳到热气球上飞走结束一生堪称神来之笔，非常值得一读。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1598772294665-42c37677-ca82-46ac-950f-3e26d4d914a2.png#align=left&display=inline&height=452&margin=%5Bobject%20Object%5D&name=book-shushangdenanjue.PNG&originHeight=899&originWidth=597&size=362554&status=done&style=none&width=300" alt="book-shushangdenanjue.PNG"></p>
+<blockquote>
+<p>翁布罗萨不复存在了。凝视着空旷的天空，我不禁自问它是否确实存在过。那些密密层层错综复杂的枝叶，枝分权、叶裂片，越分越细、无穷无尽而天空只是一些不规则地闪现的碎片。这样的景象存在过，也许只是为了让我哥哥以他那银猴长尾山雀般轻盈的步子从那些枝叶上面走过。那是大自然的手笔，从空白开始不断添枝加叶、这同我让它一页页跑下去的这条墨水线一样，充满了画又涂改、大块墨渍、污点、空白，有时候撒成浅淡的大颗粒，有时候聚集成一片密密麻麻的小符号，细如微小的种将，忽而画圈圈，忽而画分又符、忽而把几个句子勾连在一个方框里，周围配上叶片似的或鸟云似的墨迹，接着全部连结起来，然后又开始盘绕纠缠着往前跑、往前跑。纠结解开了,线拉直了,最后把理想、梦想挽成串无意义的话语，这就算写完了。</p>
+</blockquote>
+<blockquote>
+<p>豆瓣图书地址 <a href="https://book.douban.com/subject/6789605/" target="_blank" rel="noopener">book.douban.com/subject/6789605</a></p>
+</blockquote>
+<h3 id="订阅"><a href="#订阅" class="headerlink" title="订阅"></a>订阅</h3><p>如无意外，本周刊每周更新，发布在 <a href="https://github.com/HerbertChang/pmweekly" target="_blank" rel="noopener">GitHub</a>、<a href="https://weixin.sogou.com/weixin?type=1&s_from=input&query=%E8%8B%A5%E6%84%9A%E8%8B%A5%E6%98%8F&ie=utf8&_sug_=y&_sug_type_=&w=01019900&sut=10610&sst0=1571666684054&lkt=0%2C0%2C0" target="_blank" rel="noopener">微信公众号</a>、<a href="https://yuque.com/herbert-chang/pmweekly/" target="_blank" rel="noopener">语雀</a>和<a href="https://productweekly.substack.com/" target="_blank" rel="noopener">邮件订阅组</a>。本周刊遵循 CC BY-NC-ND 标准。本周刊推出邮件订阅服务，提供更好的阅读体验，请访问 <a href="https://productweekly.substack.com/" target="_blank" rel="noopener">https://productweekly.substack.com/</a> 开启订阅，推荐使用 Gmail、Protonmail、iCloud 等国外邮件服务来进行订阅。如果觉得「产品周刊 Product Weekly」有价值，请分享给你的朋友或社交网络。欢迎将建议、内容分享和产品/设计岗位内推需求发送给我。微信搜索「若愚若昏」，可关注我的微信公众号。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1595080759715-5e73085e-7d82-4506-930e-97507f80e022.png#align=left&display=inline&height=155&margin=%5Bobject%20Object%5D&name=%E6%89%AB%E7%A0%81_%E6%90%9C%E7%B4%A2%E8%81%94%E5%90%88%E4%BC%A0%E6%92%AD%E6%A0%B7%E5%BC%8F-%E7%99%BD%E8%89%B2%E7%89%88.png&originHeight=624&originWidth=1710&size=4268298&status=done&style=none&width=425" alt="扫码_搜索联合传播样式-白色版.png"></p>
+<h3 id="推荐"><a href="#推荐" class="headerlink" title="推荐"></a>推荐</h3><ul>
+<li><a href="https://pmthinking.us11.list-manage.com/track/click?u=c4dcdf8a6b76265256adf8255&id=a540a873a8&e=5f9cbb74d3" target="_blank" rel="noopener">黄埔犬校</a>：纯银的黄埔犬校内容精选 </li>
+<li><a href="https://www.notion.so/PRODUCT-THINKING-a601a12335044f349a22caf57f274c27" target="_blank" rel="noopener">产品沉思录精选</a>：少楠（Plidezus）的产品知识库</li>
+<li><a href="https://github.com/Newslab2020/Contents/blob/master/wechataccount.md" target="_blank" rel="noopener">新闻实验室</a>：优化媒体食谱，提高媒介素养</li>
+<li><a href="https://assets.iois.me/uzjhgqzglpa.html" target="_blank" rel="noopener">Deep Reading 精选</a>：在事实之上构建关于观点（洞察）与故事的筛选</li>
+<li><a href="https://platformthinking.plus/" target="_blank" rel="noopener">Platform Thinking+</a>：张宁的博客</li>
+<li><a href="https://yitianshijie.net/" target="_blank" rel="noopener">一天世界</a>：IPN 李如一的博客</li>
+<li><a href="https://pmthinking.us11.list-manage.com/track/click?u=c4dcdf8a6b76265256adf8255&id=2049427034&e=5f9cbb74d3" target="_blank" rel="noopener">刻意体会</a>：即刻产品人 Kyth 的自留地</li>
+<li><a href="https://notion.cx/" target="_blank" rel="noopener">Notion 中文社区</a>：Better Life, Better Work</li>
+<li><a href="https://www.notion.so/da53956e706a4b0c8aabb757c0259382" target="_blank" rel="noopener">数据产品的日常</a>：数据 PM 资料库</li>
+<li><a href="http://elproducto.eu/" target="_blank" rel="noopener">el producto</a>：Tech &amp; Product Management News and Thoughts</li>
+<li><a href="https://clearbox.substack.com/" target="_blank" rel="noopener">透明盒子计划</a>：非虚构类书籍阅读笔记</li>
+<li><a href="https://news.dex.group/f3b9324ec1c545f3a7ad31d71da1fc38?v=13a31b332fd8465a9bb81d92748643b4" target="_blank" rel="noopener">DEX 周刊</a>：DEX 旗下关于产品、设计和开发的邮件订阅列表</li>
+<li><a href="https://pmthinking.us11.list-manage.com/track/click?u=c4dcdf8a6b76265256adf8255&id=f60bfc9cb9&e=5f9cbb74d3" target="_blank" rel="noopener">Λ-Reading</a>：每天 2 分钟，扩展认知边界</li>
+<li><a href="https://www.notion.so/blog-by-liqi-io-4bdf37d4fb3443b4b6dbed8317450307" target="_blank" rel="noopener">独立 blog 订阅列表 by 利器 liqi.io</a>：中文独立博客列表</li>
+</ul>
+
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/uploads/wechat-qcode.jpg" alt="Herbert Chang wechat" style="width: 200px; max-width: 100%;"/>
+    <div>欢迎您扫一扫上面的微信公众号，订阅我的博客！</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>转发和赞赏是对俺创作的支持</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/uploads/wechatpay.png" alt="Herbert Chang 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/uploads/alipay.png" alt="Herbert Chang 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A/" rel="tag"># 产品周刊</a>
+          
+            <a href="/tags/%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1/" rel="tag"># 产品设计</a>
+          
+            <a href="/tags/PM/" rel="tag"># PM</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/08/23/Product-Weekly-issue-29-20200824/" rel="next" title="产品周刊 ProductWeekly | 第 29 期（20200824）">
+                <i class="fa fa-chevron-left"></i> 产品周刊 ProductWeekly | 第 29 期（20200824）
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Herbert Chang</p>
+              <p class="site-description motion-element" itemprop="description">所南心史井中全</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%20%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">32</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-globe"></i>
+                
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://youhan26.github.io/" title="Tony You 的个人博客" target="_blank">Tony You 的个人博客</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://leiquan.website/" title="雷全的个人博客" target="_blank">雷全的个人博客</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#值得关注的产品"><span class="nav-number">1.</span> <span class="nav-text">值得关注的产品</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-Odoo-13-0（开源-ERP）"><span class="nav-number">1.1.</span> <span class="nav-text">1. Odoo 13.0（开源 ERP）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-VMware-Fusion-12（macOS）"><span class="nav-number">1.2.</span> <span class="nav-text">2. VMware Fusion 12（macOS）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-Story-Creator（Web）"><span class="nav-number">1.3.</span> <span class="nav-text">3. Story Creator（Web）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-Softr（Web）"><span class="nav-number">1.4.</span> <span class="nav-text">4. Softr（Web）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#佳文推介"><span class="nav-number">2.</span> <span class="nav-text">佳文推介</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-4-Types-of-Dependencies-that-Kill-Startups-En"><span class="nav-number">2.1.</span> <span class="nav-text">1. 4 Types of Dependencies that Kill Startups(En)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-神经科学的存在危机"><span class="nav-number">2.2.</span> <span class="nav-text">2. 神经科学的存在危机</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#资源与工具"><span class="nav-number">3.</span> <span class="nav-text">资源与工具</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-灵感触发器-Fuse"><span class="nav-number">3.1.</span> <span class="nav-text">1. 灵感触发器 Fuse</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-Pandas-中文教程"><span class="nav-number">3.2.</span> <span class="nav-text">2. Pandas 中文教程</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#每周一书"><span class="nav-number">4.</span> <span class="nav-text">每周一书</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#订阅"><span class="nav-number">5.</span> <span class="nav-text">订阅</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#推荐"><span class="nav-number">6.</span> <span class="nav-text">推荐</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2018 &mdash; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Herbert Chang</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://Herbert.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'https://herbertchang.github.io/2020/08/30/Product-Weekly-issue-30-20200831/';
+          this.page.identifier = '2020/08/30/Product-Weekly-issue-30-20200831/';
+          this.page.title = '产品周刊 ProductWeekly | 第 30 期（20200831）';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://Herbert.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

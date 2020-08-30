@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="产品周刊,产品设计,PM," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="张贺的博客" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="值得关注的产品：Joplin、Landbot、Ego Reader；佳文推介：《二零二零年八月，新浪微博封杀万维网》《What the Apple Newton taught us about UX 27 years ago》；资源与工具：Opensource Builders、Q 语言；每周一书：戴锦华《电影批评》。">
+<meta name="keywords" content="产品周刊,产品设计,PM">
+<meta property="og:type" content="article">
+<meta property="og:title" content="产品周刊 ProductWeekly | 第 23 期（20200712）">
+<meta property="og:url" content="https:&#x2F;&#x2F;herbertchang.github.io&#x2F;2020&#x2F;07&#x2F;12&#x2F;Product-Weekly-issue-23-20200712&#x2F;index.html">
+<meta property="og:site_name" content="张贺的博客">
+<meta property="og:description" content="值得关注的产品：Joplin、Landbot、Ego Reader；佳文推介：《二零二零年八月，新浪微博封杀万维网》《What the Apple Newton taught us about UX 27 years ago》；资源与工具：Opensource Builders、Q 语言；每周一书：戴锦华《电影批评》。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1594455757413-5caf8b3a-4965-4428-9bcd-17bf52c276d2.png#align=left&amp;display=inline&amp;height=638&amp;margin=%5Bobject%20Object%5D&amp;name=Joplin.png&amp;originHeight=638&amp;originWidth=1154&amp;size=433215&amp;status=done&amp;style=none&amp;width=1154">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1594474003735-ad1b5971-ead4-4134-a779-93be40e06e82.png#align=left&amp;display=inline&amp;height=653&amp;margin=%5Bobject%20Object%5D&amp;name=landbot-V3.PNG&amp;originHeight=653&amp;originWidth=1277&amp;size=140068&amp;status=done&amp;style=none&amp;width=1277">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1594476072740-74e4b4d0-438b-49d8-9f27-967a51c00608.png#align=left&amp;display=inline&amp;height=606&amp;margin=%5Bobject%20Object%5D&amp;name=Ego-Reader.PNG&amp;originHeight=606&amp;originWidth=1200&amp;size=441305&amp;status=done&amp;style=none&amp;width=1200">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;jpeg&#x2F;535404&#x2F;1594477102789-02c1713f-6f62-4369-adea-ff7e707e9b66.jpeg#align=left&amp;display=inline&amp;height=664&amp;margin=%5Bobject%20Object%5D&amp;name=Apple-Newton-taught-us-about%20UX.jpeg&amp;originHeight=664&amp;originWidth=1250&amp;size=106684&amp;status=done&amp;style=none&amp;width=1250">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1594459964376-5f4e4bfa-6df3-477c-9352-2e4036e33114.png#align=left&amp;display=inline&amp;height=873&amp;margin=%5Bobject%20Object%5D&amp;name=opensource-builders.png&amp;originHeight=873&amp;originWidth=1868&amp;size=137514&amp;status=done&amp;style=none&amp;width=1868">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1594460938971-56912236-d4e8-4c44-9ec6-559ba863a11e.png#align=left&amp;display=inline&amp;height=846&amp;margin=%5Bobject%20Object%5D&amp;name=Q-design-language.png&amp;originHeight=846&amp;originWidth=1852&amp;size=783241&amp;status=done&amp;style=none&amp;width=1852">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1594468845999-6ae45af2-5366-4c3a-8427-935788de67c7.png#align=left&amp;display=inline&amp;height=898&amp;margin=%5Bobject%20Object%5D&amp;name=book-dianyingpiping.png&amp;originHeight=898&amp;originWidth=565&amp;size=172257&amp;status=done&amp;style=none&amp;width=565">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2019&#x2F;jpeg&#x2F;535404&#x2F;1571989117002-cef6be63-7b29-4ac4-a35f-3b5a43e7ce88.jpeg#align=left&amp;display=inline&amp;height=120&amp;margin=%5Bobject%20Object%5D&amp;originHeight=258&amp;originWidth=258&amp;status=done&amp;style=none&amp;width=120">
+<meta property="og:updated_time" content="2020-07-21T14:50:11.257Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1594455757413-5caf8b3a-4965-4428-9bcd-17bf52c276d2.png#align=left&amp;display=inline&amp;height=638&amp;margin=%5Bobject%20Object%5D&amp;name=Joplin.png&amp;originHeight=638&amp;originWidth=1154&amp;size=433215&amp;status=done&amp;style=none&amp;width=1154">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://herbertchang.github.io/2020/07/12/Product-Weekly-issue-23-20200712/"/>
+
+
+
+
+
+  <title>产品周刊 ProductWeekly | 第 23 期（20200712） | 张贺的博客</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">张贺的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">若愚若昏</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://herbertchang.github.io/2020/07/12/Product-Weekly-issue-23-20200712/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Herbert Chang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="张贺的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">产品周刊 ProductWeekly | 第 23 期（20200712）</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-07-12T08:50:21+08:00">
+                2020-07-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A/" itemprop="url" rel="index">
+                    <span itemprop="name">产品周刊</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2020/07/12/Product-Weekly-issue-23-20200712/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2020/07/12/Product-Weekly-issue-23-20200712/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+              <div class="post-description">
+                  值得关注的产品：Joplin、Landbot、Ego Reader；佳文推介：《二零二零年八月，新浪微博封杀万维网》《What the Apple Newton taught us about UX 27 years ago》；资源与工具：Opensource Builders、Q 语言；每周一书：戴锦华《电影批评》。
+              </div>
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <meta name="referrer" content="no-referrer" />
+### 值得关注的产品
+
+<h4 id="1-Joplin（Windows-amp-macOS-amp-Linux-amp-Android-amp-iOS）"><a href="#1-Joplin（Windows-amp-macOS-amp-Linux-amp-Android-amp-iOS）" class="headerlink" title="1. Joplin（Windows &amp; macOS &amp; Linux &amp; Android &amp; iOS）"></a>1. <a href="https://joplinapp.org/" target="_blank" rel="noopener">Joplin</a>（Windows &amp; macOS &amp; Linux &amp; Android &amp; iOS）</h4><p>全平台开源笔记&amp;To-do list 应用，当前发布版本为 V1.0.226，覆盖平台包括桌面端(Windows, macOS &amp; Linux)、移动端 (Android &amp; iOS)和命令行界面 (Windows, macOS, Linux &amp; FreeBSD)，数据以 Markdown 格式保存。在意个人数据隐私的笔记用户视之为 Evernote 的开源替代品，在 GitHub 上已有 16k 个 Star。支持导入 .md 文档和从 Evernote 导入 .enex 格式文件，允许通过 Nextcloud、Dropbox、OneDrive、WebDAV 等方式同步数据，也可通过 Web Clipper 从浏览器保存网页数据。关于笔记类应用，本周刊在<a href="https://www.yuque.com/herbert-chang/productweekly/issue-18" target="_blank" rel="noopener">第 18 期</a>、<a href="https://www.yuque.com/herbert-chang/productweekly/issue-22#lhS0J" target="_blank" rel="noopener">第 22 期</a>介绍过 TiddlyWiki 和 Obsidian。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1594455757413-5caf8b3a-4965-4428-9bcd-17bf52c276d2.png#align=left&display=inline&height=638&margin=%5Bobject%20Object%5D&name=Joplin.png&originHeight=638&originWidth=1154&size=433215&status=done&style=none&width=1154" alt="Joplin.png"></p>
+<blockquote>
+<p>官网 <a href="https://joplinapp.org/" target="_blank" rel="noopener">https://joplinapp.org</a><br>Joplin 在 GitHub  <a href="https://github.com/laurent22/joplin" target="_blank" rel="noopener">https://github.com/laurent22/joplin</a><br>TiddlyWiki 介绍 <a href="https://www.yuque.com/herbert-chang/productweekly/issue-18#lhS0J" target="_blank" rel="noopener">https://www.yuque.com/herbert-chang/productweekly/issue-18#lhS0J</a><br>Obsidian 介绍 <a href="https://www.yuque.com/herbert-chang/productweekly/issue-22#lhS0J" target="_blank" rel="noopener">https://www.yuque.com/herbert-chang/productweekly/issue-22#lhS0J</a></p>
+</blockquote>
+<h4 id="2-Landbot-3-0（Web）"><a href="#2-Landbot-3-0（Web）" class="headerlink" title="2. Landbot 3.0（Web）"></a>2. <a href="https://landbot.io/" target="_blank" rel="noopener">Landbot 3.0</a>（Web）</h4><p>No-code 方式构建对话服务，提供丰富的界面组件，可以通过图形化界面建立机器人、三方服务、数据计算和人工服务的业务流。支持与 Messenger API、WhatsApp API、Zapier、Slack、SalesForce、Zendesk 等平台对接。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1594474003735-ad1b5971-ead4-4134-a779-93be40e06e82.png#align=left&display=inline&height=653&margin=%5Bobject%20Object%5D&name=landbot-V3.PNG&originHeight=653&originWidth=1277&size=140068&status=done&style=none&width=1277" alt="landbot-V3.PNG"></p>
+<blockquote>
+<p>官网 <a href="https://landbot.io/" target="_blank" rel="noopener">https://landbot.io/</a><br>Landbot 3.0 视频介绍 <a href="https://youtu.be/OPDc3BGS6Iw" target="_blank" rel="noopener">https://youtu.be/OPDc3BGS6Iw</a></p>
+</blockquote>
+<h4 id="3-Ego-Reader（iOS）"><a href="#3-Ego-Reader（iOS）" class="headerlink" title="3. Ego Reader（iOS）"></a>3. <a href="https://apps.apple.com/cn/app/ego-reader-rss%E9%98%85%E8%AF%BB%E5%99%A8/id1509189573" target="_blank" rel="noopener">Ego Reader</a>（iOS）</h4><p>独立开发者 pxmage 所开发的 RSS 阅读器 App，采用卡片式 UI 展示 RSS 订阅源，支持 RSS1.0、RSS2.0、Atom 等协议，可通过分类管理订阅源，支持所有未读文章组成的未读列表、并可以一键已读。RSS 古典优雅而不断焕发生命力，在本周刊<a href="https://www.yuque.com/herbert-chang/productweekly/issue-21#BhGcP" target="_blank" rel="noopener">第 21 期</a>曾经推荐过<a href="https://www.yuque.com/herbert-chang/productweekly/issue-21#BhGcP" target="_blank" rel="noopener">《RSS 二十年》</a>这篇文章。顺带提一下开源桌面 RSS 阅读器 <a href="https://hyliu.me/fluent-reader/" target="_blank" rel="noopener">Fluent Reader</a>，采用微软 Fluent UI 设计风格，目前提供 Windows 和 macOS 双平台支持。<br /><br><br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1594476072740-74e4b4d0-438b-49d8-9f27-967a51c00608.png#align=left&display=inline&height=606&margin=%5Bobject%20Object%5D&name=Ego-Reader.PNG&originHeight=606&originWidth=1200&size=441305&status=done&style=none&width=1200" alt="Ego-Reader.PNG"></p>
+<blockquote>
+<p>Ego Reader下载 <a href="https://apps.apple.com/cn/app/ego-reader-rss%E9%98%85%E8%AF%BB%E5%99%A8/id1509189573" target="_blank" rel="noopener">https://apps.apple.com/cn/app/ego-reader-rss%E9%98%85%E8%AF%BB%E5%99%A8/id1509189573</a><br>《RSS 二十年》 <a href="https://kyth.hedwig.pub/i/rss-er-shi-nian" target="_blank" rel="noopener">https://kyth.hedwig.pub/i/rss-er-shi-nian</a><br>Fluent Reader 官网 <a href="https://hyliu.me/fluent-reader/" target="_blank" rel="noopener">https://hyliu.me/fluent-reader/</a><br>Fluent Reader 测评 <a href="https://huhuhang.com/post/product-hunt/product-hunt-n124" target="_blank" rel="noopener">https://huhuhang.com/post/product-hunt/product-hunt-n124</a></p>
+</blockquote>
+<h3 id="佳文推介"><a href="#佳文推介" class="headerlink" title="佳文推介"></a>佳文推介</h3><h4 id="1-二零二零年八月，新浪微博封杀万维网"><a href="#1-二零二零年八月，新浪微博封杀万维网" class="headerlink" title="1. 二零二零年八月，新浪微博封杀万维网"></a>1. <a href="https://blog.yitianshijie.net/2020/07/10/weibo-kills-the-web-in-august-2020/" target="_blank" rel="noopener">二零二零年八月，新浪微博封杀万维网</a></h4><p><a href="https://www.douban.com/note/658946742/" target="_blank" rel="noopener">李如一先生</a>对新浪微博封杀链接一事的评论。「互联网电视化」一词极为贴切，每每被人提起的直播带货与电视卖货没啥区别。李如一在 <a href="https://itgonglun.com/episodes/178" target="_blank" rel="noopener">《IT 公论》第 178 期</a>中曾说「『网红』一词说明了电视的强大」。IPN 旗下的播客质量很高，强烈推荐听一听。IPN 成立于二零一四年，是一个不伦·不类、昆乱不挡的高级大众媒体。目前它旗下有多档节目：《一天世界》《灭茶苦茶》《太医来了》《無次元》《硬影像》《流行通信》《选·美》《怪物尚志》以及《talich 闲侃》。<br /></p>
+<blockquote>
+<p>链接是一种惠民的权利。可惜，中国的互联网企业往往把它视为可以用来寻租的权力。新浪微博并不是第一个封杀万维网的中国公司。腾讯从一开始就不允许微信公众号的作者在文章中添加可点击的链接（腾讯拥有的网址除外），它的封杀比微博更加彻底。对于许多资深的中国互联网业者而言，允许自己的用户自由使用链接是一件不可思议之事。链接在她们的口中被称作「外链」（新浪微博关于白名单的声明亦使用此词），允许用户添加链接则属于「导流」，白白便宜了别人。很多时候，封杀链接还被视为对用户的保护。诚然，互联网是一个「巨大且令人困惑的所在」，一个看似简单的链接，有时确实可以造成灾难性后果。但是这种蛮横的封杀式解决方案，与我们常常听到的「中国人素质不行所以不适合民主」「中国人就是要管」理论恰是同源。<br>新浪微博此举或有政府授意，或许有别的动机。我们也可以说，在二零二零年八月之前，中国互联网用户早已在网络巨头的诱导下放弃了链接的权利。但作为中国数一数二的网络平台，不论背后的原因是什么，微博的这一做法无疑会加速互联网电视化的过程，让已经黑了的时代变得加倍黑暗。<br>原文链接 <a href="https://blog.yitianshijie.net/2020/07/10/weibo-kills-the-web-in-august-2020/" target="_blank" rel="noopener">https://blog.yitianshijie.net/2020/07/10/weibo-kills-the-web-in-august-2020/</a><br>IPN 网站 <a href="https://ipn.li/" target="_blank" rel="noopener">https://ipn.li/</a><br>《IT 公论》第 178 期 <a href="https://itgonglun.com/episodes/178" target="_blank" rel="noopener">https://itgonglun.com/episodes/178</a><br>【List】all about 李如一 <a href="https://www.douban.com/note/658946742/" target="_blank" rel="noopener">https://www.douban.com/note/658946742/</a></p>
+</blockquote>
+<h4 id="2-What-the-Apple-Newton-taught-us-about-UX-27-years-ago（En）"><a href="#2-What-the-Apple-Newton-taught-us-about-UX-27-years-ago（En）" class="headerlink" title="2. What the Apple Newton taught us about UX 27 years ago（En）"></a>2. <a href="https://uxdesign.cc/what-the-apple-newton-taught-us-about-ux-27-years-ago-427c6be66a59" target="_blank" rel="noopener">What the Apple Newton taught us about UX 27 years ago</a>（En）</h4><p>看完只好感慨一句：Newton 的界面设计在它那个年代太超前了。<br /><img src="https://cdn.nlark.com/yuque/0/2020/jpeg/535404/1594477102789-02c1713f-6f62-4369-adea-ff7e707e9b66.jpeg#align=left&display=inline&height=664&margin=%5Bobject%20Object%5D&name=Apple-Newton-taught-us-about%20UX.jpeg&originHeight=664&originWidth=1250&size=106684&status=done&style=none&width=1250" alt="Apple-Newton-taught-us-about UX.jpeg"><br /></p>
+<blockquote>
+<p>Apple had a long history of building pixel-perfect UIs for black and white screens, so it’s no surprise they were able to pull off a simple design aesthetic that was consistent across all of the UI. The Newton’s OS had the personality of the original Macintosh and leveraged the hardware limitations the best that it could.</p>
+</blockquote>
+<blockquote>
+<p>原文链接 <a href="https://uxdesign.cc/what-the-apple-newton-taught-us-about-ux-27-years-ago-427c6be66a59" target="_blank" rel="noopener">https://uxdesign.cc/what-the-apple-newton-taught-us-about-ux-27-years-ago-427c6be66a59</a></p>
+</blockquote>
+<br />
+
+<h3 id="资源与工具"><a href="#资源与工具" class="headerlink" title="资源与工具"></a>资源与工具</h3><h4 id="1-Opensource-Builders"><a href="#1-Opensource-Builders" class="headerlink" title="1. Opensource Builders"></a>1. <a href="https://opensource.builders/" target="_blank" rel="noopener">Opensource Builders</a></h4><p>Opensource Builders 是一款专门收录针对在线商业服务的开源替代品的开源项目，涵盖了 Shopify、Slack、Heroku、GitHub、1Password、TeamViewer、Salesforce 等主流商业软件的替代品，可作为财力不足的个人与企业作为软件备选项。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1594459964376-5f4e4bfa-6df3-477c-9352-2e4036e33114.png#align=left&display=inline&height=873&margin=%5Bobject%20Object%5D&name=opensource-builders.png&originHeight=873&originWidth=1868&size=137514&status=done&style=none&width=1868" alt="opensource-builders.png"></p>
+<blockquote>
+<p>Opensource Builders <a href="https://opensource.builders/" target="_blank" rel="noopener">https://opensource.builders/</a><br>Adobe 软件的替代品们 <a href="https://www.appinn.com/alternative-adobe/" target="_blank" rel="noopener">https://www.appinn.com/alternative-adobe/</a></p>
+</blockquote>
+<h4 id="2-腾讯推出的设计语言——Q-语言"><a href="#2-腾讯推出的设计语言——Q-语言" class="headerlink" title="2. 腾讯推出的设计语言——Q 语言"></a>2. <a href="https://qq.design/design/QLanguage/Concept/" target="_blank" rel="noopener">腾讯推出的设计语言——Q 语言</a></h4><p>腾讯 Q 语言为统一应用于QQ平台的设计语言，其理念为「生机」——生机的理念承载乐观活力与积极延续，具备有序和精致的特点，也象征万物发展所蕴含的生命力。相对于 <a href="https://ant.design/docs/spec/values-cn" target="_blank" rel="noopener">Ant Design</a>，Q 语言官网所展示信息尚不够清晰和完备。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1594460938971-56912236-d4e8-4c44-9ec6-559ba863a11e.png#align=left&display=inline&height=846&margin=%5Bobject%20Object%5D&name=Q-design-language.png&originHeight=846&originWidth=1852&size=783241&status=done&style=none&width=1852" alt="Q-design-language.png"><br /></p>
+<blockquote>
+<p>Q 语言官网 <a href="https://qq.design/design/QLanguage/Concept/" target="_blank" rel="noopener">https://qq.design/design/QLanguage/Concept/</a><br>Ant Design 官网 <a href="https://ant.design/docs/spec/values-cn" target="_blank" rel="noopener">https://ant.design/docs/spec/values-cn</a></p>
+</blockquote>
+<h3 id="每周一书"><a href="#每周一书" class="headerlink" title="每周一书"></a>每周一书</h3><p>戴锦华《<a href="https://book.douban.com/subject/26309974/" target="_blank" rel="noopener">电影批评</a>》<br />《电影批评》为电影文本解读和文化批评领域的一本入门书。作者戴锦华现为北京大学比较文学与比较文化研究所教授、北京大学电影与文化研究中心主任，从事电影、女性文学和大众文化等多方面研究。此书以九个经典电影文本为释读对象，每章先进行理论铺垫再进行文本细读，兼具理论洞察力与可读性。书中所运用的多种理论运用范围不仅限于电影，通过电影情节与理论的交叉叙述，亦可借此进入对文学、艺术和生活现实的抽象视角再思考。<br /></p>
+<blockquote>
+<p>从另一个角度上看，影片《蓝色》的主题，无疑是生命与死亡、记忆与遗忘。 这幅画面在告知我们，对于茱莉说来，观赏方糖饱吸咖啡的过程，远比一个爱她的男人在寻找她、渴求她、思念她来得重要。或许更为准确的表述是，类似捕捉阳光的暖意、长久地凝视光影的移动或自己勺中的倒影，成为一种途径、一道围栏，茱莉可以凭借它们将自己托付给时间之流，或将自己封闭在身体感觉之中，从而将自己变为一无所感的空白，以此抗拒情感与记忆的涌现。 她拒绝记忆，拒绝与记忆相关的一切，正是由于无法遗忘。她只能将自己「浸泡」在无为时间之中，将自己囚禁在自己的肌肤之下ー一为了能活下去，尽管生命于她已成为完全的磨难和煎熬。 影片的摄影师斯拉沃米尔・伊札克在接受电视采访时谈到，在影片实拍时，大家都意识到了游泳池的象征意义：水下是死，水上是生。水面成为生死分界线。跃入或浮出水面的动作构成了生死间的穿行。 因此，茱莉一次次地跃人游泳池，一边表达她将自己变为一个孩子，以期在象征性的母亲怀抱/母腹之中获得想象性的安全与底护，一边则是一次次象征性地经历死亡与毁灭。比诺什谈到，她因此为自己设计了一个在水中漂浮的动作如同母腹中的胎儿的体态。<br>——引自第二章第三节 《蓝色》：主题与色彩</p>
+</blockquote>
+<p><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1594468845999-6ae45af2-5366-4c3a-8427-935788de67c7.png#align=left&display=inline&height=898&margin=%5Bobject%20Object%5D&name=book-dianyingpiping.png&originHeight=898&originWidth=565&size=172257&status=done&style=none&width=565" alt="book-dianyingpiping.png"></p>
+<blockquote>
+<p>豆瓣图书地址 <a href="https://book.douban.com/subject/26309974/" target="_blank" rel="noopener">https://book.douban.com/subject/26309974/</a><br>购买链接 <a href="https://u.jd.com/QnFeNb" target="_blank" rel="noopener">https://u.jd.com/QnFeNb</a><br>访谈学者戴锦华：我不想向年轻人的年代投降 <a href="https://www.qdaily.com/articles/50553.html" target="_blank" rel="noopener">https://www.qdaily.com/articles/50553.html</a></p>
+</blockquote>
+<h3 id="订阅"><a href="#订阅" class="headerlink" title="订阅"></a>订阅</h3><p>如无意外，本周刊每周日发布，同步更新在 <a href="https://github.com/HerbertChang/pmweekly" target="_blank" rel="noopener">GitHub</a>、<a href="https://weixin.sogou.com/weixin?type=1&s_from=input&query=%E8%8B%A5%E6%84%9A%E8%8B%A5%E6%98%8F&ie=utf8&_sug_=y&_sug_type_=&w=01019900&sut=10610&sst0=1571666684054&lkt=0%2C0%2C0" target="_blank" rel="noopener">微信公众号</a>、<a href="https://yuque.com/herbert-chang/pmweekly/" target="_blank" rel="noopener">语雀</a>和<a href="https://productweekly.substack.com/" target="_blank" rel="noopener">邮件订阅组</a>。本周刊遵循 CC BY-NC-ND 标准。本周刊推出邮件订阅服务，提供更好的阅读体验，请访问 <a href="https://productweekly.substack.com/" target="_blank" rel="noopener">https://productweekly.substack.com/</a> 开启订阅，推荐使用 Gmail、Protonmail、iCloud 等国外邮件服务来进行订阅。如果觉得「产品周刊 Product Weekly」有价值，请分享给你的朋友或社交网络。欢迎将建议、内容分享和产品/设计岗位内推需求发送给我。微信搜索「若愚若昏」，可关注我的微信公众号。<br /><img src="https://cdn.nlark.com/yuque/0/2019/jpeg/535404/1571989117002-cef6be63-7b29-4ac4-a35f-3b5a43e7ce88.jpeg#align=left&display=inline&height=120&margin=%5Bobject%20Object%5D&originHeight=258&originWidth=258&status=done&style=none&width=120" alt=""><br /></p>
+<h3 id="推荐"><a href="#推荐" class="headerlink" title="推荐"></a>推荐</h3><ul>
+<li><a href="https://pmthinking.us11.list-manage.com/track/click?u=c4dcdf8a6b76265256adf8255&id=a540a873a8&e=5f9cbb74d3" target="_blank" rel="noopener">黄埔犬校</a>：纯银的黄埔犬校内容精选 <br /></li>
+<li><a href="https://www.notion.so/PRODUCT-THINKING-a601a12335044f349a22caf57f274c27" target="_blank" rel="noopener">产品沉思录精选</a>：少楠（Plidezus）的产品知识库<br /></li>
+<li><a href="https://yitianshijie.net/" target="_blank" rel="noopener">一天世界</a>：IPN 李如一的博客<br /></li>
+<li><a href="https://pmthinking.us11.list-manage.com/track/click?u=c4dcdf8a6b76265256adf8255&id=2049427034&e=5f9cbb74d3" target="_blank" rel="noopener">刻意体会</a>：即刻产品汪 Kyth 的自留地<br /></li>
+<li><a href="https://pmthinking.us11.list-manage.com/track/click?u=c4dcdf8a6b76265256adf8255&id=f60bfc9cb9&e=5f9cbb74d3" target="_blank" rel="noopener">Λ-Reading</a>：每天 2 分钟，扩展认知边界</li>
+<li><a href="https://assets.iois.me/uzjhgqzglpa.html" target="_blank" rel="noopener">Deep Reading 精选</a>：在事实之上，构建一个关于观点（洞察）与故事的筛选机制</li>
+<li><a href="https://github.com/Newslab2020/Contents/blob/master/wechataccount.md" target="_blank" rel="noopener">新闻实验室微信公众号文章备份</a>：优化媒体食谱，提高媒介素养</li>
+<li><a href="https://notion.cx/" target="_blank" rel="noopener">Notion 中文社区</a>：Better Life, Better Work</li>
+<li><a href="http://elproducto.eu/" target="_blank" rel="noopener">el producto</a>：Tech &amp; Product Management News and Thoughts</li>
+</ul>
+
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/uploads/wechat-qcode.jpg" alt="Herbert Chang wechat" style="width: 200px; max-width: 100%;"/>
+    <div>欢迎您扫一扫上面的微信公众号，订阅我的博客！</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>转发和赞赏是对俺创作的支持</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/uploads/wechatpay.png" alt="Herbert Chang 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/uploads/alipay.png" alt="Herbert Chang 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A/" rel="tag"># 产品周刊</a>
+          
+            <a href="/tags/%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1/" rel="tag"># 产品设计</a>
+          
+            <a href="/tags/PM/" rel="tag"># PM</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/07/05/Product-Weekly-issue-22-20200705/" rel="next" title="产品周刊 | 第 22 期（20200705）">
+                <i class="fa fa-chevron-left"></i> 产品周刊 | 第 22 期（20200705）
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/07/19/Product-Weekly-issue-24-20200719/" rel="prev" title="产品周刊 ProductWeekly | 第 24 期（20200719）">
+                产品周刊 ProductWeekly | 第 24 期（20200719） <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Herbert Chang</p>
+              <p class="site-description motion-element" itemprop="description">所南心史井中全</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%20%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">32</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-globe"></i>
+                
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://youhan26.github.io/" title="Tony You 的个人博客" target="_blank">Tony You 的个人博客</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://leiquan.website/" title="雷全的个人博客" target="_blank">雷全的个人博客</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-Joplin（Windows-amp-macOS-amp-Linux-amp-Android-amp-iOS）"><span class="nav-number">1.</span> <span class="nav-text">1. Joplin（Windows &amp; macOS &amp; Linux &amp; Android &amp; iOS）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-Landbot-3-0（Web）"><span class="nav-number">2.</span> <span class="nav-text">2. Landbot 3.0（Web）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-Ego-Reader（iOS）"><span class="nav-number">3.</span> <span class="nav-text">3. Ego Reader（iOS）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#佳文推介"><span class="nav-number"></span> <span class="nav-text">佳文推介</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-二零二零年八月，新浪微博封杀万维网"><span class="nav-number">1.</span> <span class="nav-text">1. 二零二零年八月，新浪微博封杀万维网</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-What-the-Apple-Newton-taught-us-about-UX-27-years-ago（En）"><span class="nav-number">2.</span> <span class="nav-text">2. What the Apple Newton taught us about UX 27 years ago（En）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#资源与工具"><span class="nav-number"></span> <span class="nav-text">资源与工具</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-Opensource-Builders"><span class="nav-number">1.</span> <span class="nav-text">1. Opensource Builders</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-腾讯推出的设计语言——Q-语言"><span class="nav-number">2.</span> <span class="nav-text">2. 腾讯推出的设计语言——Q 语言</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#每周一书"><span class="nav-number"></span> <span class="nav-text">每周一书</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#订阅"><span class="nav-number"></span> <span class="nav-text">订阅</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#推荐"><span class="nav-number"></span> <span class="nav-text">推荐</span></a></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2018 &mdash; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Herbert Chang</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://Herbert.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'https://herbertchang.github.io/2020/07/12/Product-Weekly-issue-23-20200712/';
+          this.page.identifier = '2020/07/12/Product-Weekly-issue-23-20200712/';
+          this.page.title = '产品周刊 ProductWeekly | 第 23 期（20200712）';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://Herbert.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
