@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="产品周刊,产品设计,PM," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="张贺的博客" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="值得关注的产品：IdeasAI、Logseq、accessiBe；佳文推介：《工作监控新手段》《The Billion Dollar Blog》；资源与工具：Shape 2、Notionised；每周一书：刘擎《中国有多特殊》。">
+<meta name="keywords" content="产品周刊,产品设计,PM">
+<meta property="og:type" content="article">
+<meta property="og:title" content="产品周刊 ProductWeekly | 第 32 期（20200914）">
+<meta property="og:url" content="https:&#x2F;&#x2F;herbertchang.github.io&#x2F;2020&#x2F;09&#x2F;13&#x2F;Product-Weekly-issue-32-20200914&#x2F;index.html">
+<meta property="og:site_name" content="张贺的博客">
+<meta property="og:description" content="值得关注的产品：IdeasAI、Logseq、accessiBe；佳文推介：《工作监控新手段》《The Billion Dollar Blog》；资源与工具：Shape 2、Notionised；每周一书：刘擎《中国有多特殊》。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1599979574111-7c54ca6a-ee11-4eb5-8925-46c90fed9a51.png#align=left&amp;display=inline&amp;height=611&amp;margin=%5Bobject%20Object%5D&amp;name=ideasAI-GPT-3.PNG&amp;originHeight=611&amp;originWidth=989&amp;size=134478&amp;status=done&amp;style=none&amp;width=989">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1599981090223-8eea5f49-39a5-4e55-96b8-81b424a8e6c8.png#align=left&amp;display=inline&amp;height=1079&amp;margin=%5Bobject%20Object%5D&amp;name=logseq.png&amp;originHeight=1079&amp;originWidth=1919&amp;size=131691&amp;status=done&amp;style=none&amp;width=1919">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1599988847349-4ea4ac32-2e44-49c5-8c38-3ad60c63d40c.png#align=left&amp;display=inline&amp;height=834&amp;margin=%5Bobject%20Object%5D&amp;name=accessiBe.PNG&amp;originHeight=834&amp;originWidth=1885&amp;size=305205&amp;status=done&amp;style=none&amp;width=1885">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1599989865487-cfcee5ea-25c6-4bdd-bfd9-f09ee39ad456.png#align=left&amp;display=inline&amp;height=615&amp;margin=%5Bobject%20Object%5D&amp;name=Shape-2.PNG&amp;originHeight=615&amp;originWidth=1026&amp;size=529209&amp;status=done&amp;style=none&amp;width=1026">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1599987353947-82c6c806-2872-4df9-9508-ad038a9b400d.png#align=left&amp;display=inline&amp;height=869&amp;margin=%5Bobject%20Object%5D&amp;name=Notionised.PNG&amp;originHeight=869&amp;originWidth=1161&amp;size=102515&amp;status=done&amp;style=none&amp;width=1161">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1599990536864-d1468a6f-8a8f-4c86-a219-1d56de17a425.png#align=left&amp;display=inline&amp;height=523&amp;margin=%5Bobject%20Object%5D&amp;name=book-zhongguoyouduoteshu.PNG&amp;originHeight=523&amp;originWidth=379&amp;size=470439&amp;status=done&amp;style=none&amp;width=379">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1595080759715-5e73085e-7d82-4506-930e-97507f80e022.png#align=left&amp;display=inline&amp;height=155&amp;margin=%5Bobject%20Object%5D&amp;name=%E6%89%AB%E7%A0%81_%E6%90%9C%E7%B4%A2%E8%81%94%E5%90%88%E4%BC%A0%E6%92%AD%E6%A0%B7%E5%BC%8F-%E7%99%BD%E8%89%B2%E7%89%88.png&amp;originHeight=624&amp;originWidth=1710&amp;size=4268298&amp;status=done&amp;style=none&amp;width=425">
+<meta property="og:updated_time" content="2020-09-13T11:39:06.268Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1599979574111-7c54ca6a-ee11-4eb5-8925-46c90fed9a51.png#align=left&amp;display=inline&amp;height=611&amp;margin=%5Bobject%20Object%5D&amp;name=ideasAI-GPT-3.PNG&amp;originHeight=611&amp;originWidth=989&amp;size=134478&amp;status=done&amp;style=none&amp;width=989">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://herbertchang.github.io/2020/09/13/Product-Weekly-issue-32-20200914/"/>
+
+
+
+
+
+  <title>产品周刊 ProductWeekly | 第 32 期（20200914） | 张贺的博客</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">张贺的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">若愚若昏</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://herbertchang.github.io/2020/09/13/Product-Weekly-issue-32-20200914/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Herbert Chang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="张贺的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">产品周刊 ProductWeekly | 第 32 期（20200914）</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-09-13T19:29:01+08:00">
+                2020-09-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A/" itemprop="url" rel="index">
+                    <span itemprop="name">产品周刊</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2020/09/13/Product-Weekly-issue-32-20200914/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2020/09/13/Product-Weekly-issue-32-20200914/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+              <div class="post-description">
+                  值得关注的产品：IdeasAI、Logseq、accessiBe；佳文推介：《工作监控新手段》《The Billion Dollar Blog》；资源与工具：Shape 2、Notionised；每周一书：刘擎《中国有多特殊》。
+              </div>
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <meta name="referrer" content="no-referrer" />
+<br />
+
+<h3 id="值得关注的产品"><a href="#值得关注的产品" class="headerlink" title="值得关注的产品"></a>值得关注的产品</h3><h4 id="1-IdeasAI（Web）"><a href="#1-IdeasAI（Web）" class="headerlink" title="1. IdeasAI（Web）"></a>1. <a href="https://ideasai.net/" target="_blank" rel="noopener">IdeasAI</a>（Web）</h4><p>采用 OpenAI 的 GPT-3 模型（本周刊<a href="https://www.yuque.com/herbert-chang/productweekly/issue-25#lhS0J" target="_blank" rel="noopener">第 25 期</a>曾介绍）自动生成「创意」的网站，每小时生成数个创意。浏览者可以给 AI 「想」出来的创意投票。其中不乏有可行性的想法，访问者可以花 99 美元买断一个创意，买断后站长将会把这个创意移除，并将经费用于购买支持网站运转所需的 API。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1599979574111-7c54ca6a-ee11-4eb5-8925-46c90fed9a51.png#align=left&display=inline&height=611&margin=%5Bobject%20Object%5D&name=ideasAI-GPT-3.PNG&originHeight=611&originWidth=989&size=134478&status=done&style=none&width=989" alt="ideasAI-GPT-3.PNG"><br /></p>
+<blockquote>
+<p>官网 <a href="https://ideasai.net/" target="_blank" rel="noopener">ideasai.net</a><br>关于 GPT-3 的介绍 <a href="https://www.yuque.com/herbert-chang/productweekly/issue-25#lhS0J" target="_blank" rel="noopener">www.yuque.com/herbert-chang/productweekly/issue-25#lhS0J</a></p>
+</blockquote>
+<h4 id="2-Logseq（Web）"><a href="#2-Logseq（Web）" class="headerlink" title="2. Logseq（Web）"></a>2. <a href="https://logseq.com/" target="_blank" rel="noopener">Logseq</a>（Web）</h4><p>双向链笔记服务 RoamResearch 的开源同类产品，允许用户通过 Github、Google Drive、WebDAV 等同步数据或者采用本地化存储。除了支持 Roam 的大多数特性外还支持 Org mode 和 Tiddlywiki 的一些特性，logseq 上的操作是直接同步到对应文件中，所以很方便跟已有的编辑器比如 Typora、VScode、Vim、Emacs 这些结合使用。有关 Roam 的介绍可以查看<a href="https://www.yuque.com/herbert-chang/productweekly/issue-14#lhS0J" target="_blank" rel="noopener">本周刊第 14 期</a>的内容。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1599981090223-8eea5f49-39a5-4e55-96b8-81b424a8e6c8.png#align=left&display=inline&height=1079&margin=%5Bobject%20Object%5D&name=logseq.png&originHeight=1079&originWidth=1919&size=131691&status=done&style=none&width=1919" alt="logseq.png"></p>
+<blockquote>
+<p>官网 <a href="https://logseq.com/" target="_blank" rel="noopener">logseq.com</a><br>介绍视频 <a href="https://youtu.be/Vw-x7yTTO0s" target="_blank" rel="noopener">youtu.be/Vw-x7yTTO0s</a><br>RoamResearch介绍 <a href="https://www.yuque.com/herbert-chang/productweekly/issue-14#lhS0J" target="_blank" rel="noopener">www.yuque.com/herbert-chang/productweekly/issue-14#lhS0J</a></p>
+</blockquote>
+<h4 id="3-accessiBe（Web）"><a href="#3-accessiBe（Web）" class="headerlink" title="3. accessiBe（Web）"></a>3. <a href="https://accessibe.com/" target="_blank" rel="noopener">accessiBe</a>（Web）</h4><p>网页的无障碍设计是一些网站需要关注的问题，accessiBe 采用 AI 自动识别页面元素并给出修改建议，包括页面朗读调整、虚拟键盘导航、控件微调等内容。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1599988847349-4ea4ac32-2e44-49c5-8c38-3ad60c63d40c.png#align=left&display=inline&height=834&margin=%5Bobject%20Object%5D&name=accessiBe.PNG&originHeight=834&originWidth=1885&size=305205&status=done&style=none&width=1885" alt="accessiBe.PNG"></p>
+<blockquote>
+<p>官网 <a href="https://accessibe.com/" target="_blank" rel="noopener">accessibe.com</a><br>介绍短片 <a href="https://youtu.be/zA4BBEkClHs" target="_blank" rel="noopener">youtu.be/zA4BBEkClHs</a></p>
+</blockquote>
+<h3 id="佳文推介"><a href="#佳文推介" class="headerlink" title="佳文推介"></a>佳文推介</h3><h4 id="1-工作监控新手段"><a href="#1-工作监控新手段" class="headerlink" title="1. 工作监控新手段"></a>1. <a href="https://mp.weixin.qq.com/s/u8Hk4sYytqZwehI3wzNZWw" target="_blank" rel="noopener">工作监控新手段</a></h4><p>为了充分榨取劳动者的价值，老板们使出各种手段来监控员工的产出，在赛博时代这种情况更为严峻。同时我们还需要理解一件事：劳动者为何主动要求「996」并以此为荣？福柯的理论也许可以帮助解释此种情况。<br /></p>
+<blockquote>
+<p>算法将监控之下的工人变成了非实体的数据流，无论是传统雇佣还是零工经济，被困在系统中的，远不止外卖员。</p>
+</blockquote>
+<blockquote>
+<p>在资本主义制度下，工作场所的监控和对员工隐私的侵犯其实一直存在。人类劳动力作为一种商品被交易，雇主购买后试图最大化其剩余价值，这一过程中就需要某种形式的监控和评估，而这必然涉及到对工人隐私的一定程度的干预。在这一层面出现的问题是，如今的工作场所监控与以前相比是否有什么根本不同？换句话说，它仅仅是简单涉及数量上的变化、监控范围上的变化，还是涉及了员工监控本质的转变？在这篇文章中，我的观点倾向于后者，并认为其对工作场所的权力关系性质产生了重要影响。</p>
+</blockquote>
+<blockquote>
+<p>在米歇尔·福柯的早期研究中，他分析了精神病院、医院之类的机构的建筑设计如何在空间上分散个体、并构建具有可见性的场域，让看守者有权去检查和控制被看守者（病人、工人、囚犯等）并惩罚那些违反既定规则的人。在《规训与惩罚》及之后的一些文本和演讲中，福柯展示了这些机构中权力的本质并不局限于压抑性的力量，而是涉及到制造「驯顺的身体（docile bodies）」，这种「驯顺的身体」指当被监视者意识到自己处于持续的监控之下时，他们将现有的规范内化，并无需通过强制就以被要求的方式行动——也就是说，他们自觉地将权力施加在自己身上。</p>
+</blockquote>
+<blockquote>
+<p>链接 <a href="https://mp.weixin.qq.com/s/u8Hk4sYytqZwehI3wzNZWw" target="_blank" rel="noopener">mp.weixin.qq.com/s/u8Hk4sYytqZwehI3wzNZWw</a><br>原文链接：<a href="https://monthlyreview.org/2019/02/01/new-means-of-workplace-surveillance/" target="_blank" rel="noopener">https://monthlyreview.org/2019/02/01/new-means-of-workplace-surveillance</a></p>
+</blockquote>
+<h4 id="2-The-Billion-Dollar-Blog"><a href="#2-The-Billion-Dollar-Blog" class="headerlink" title="2. The Billion Dollar Blog"></a>2. <a href="https://nathanbarry.com/billion/" target="_blank" rel="noopener">The Billion Dollar Blog</a></h4><p>十年前 Emily Weiss 任职 Vogue 杂志时尚助手时开始写博客 intothegloss.com， 十年后这个博客卖了 12 亿美金，同时 Emily 创立的时尚品牌 Glossier 估值也超过 10 亿美金。这篇长文分析并教你如何通过写 Blog 创立价值十亿的个人品牌，作者 Nathan Barry 从事软件设计与开发，通过写博客和教设计年收入超过 25 万刀，回报还在持续增长中。在互联网时代打造个人品牌可以创造商业价值，即所谓的「一人公司」，众多创作者的入驻正是邮件订阅平台 Substack 在今年春天获得 1530 美元融资的重要因素。坚持创作和输出价值并非易事，但首要的还是行动起来。附上采用 <a href="https://kalasearch.cn/blog/gatsby-blog-setup-tutorial-with-netlify/" target="_blank" rel="noopener">Gatsby</a> 和 <a href="https://io-oi.me/tech/hexo-next-optimization/" target="_blank" rel="noopener">Hexo</a> 建博客的教程。<br /></p>
+<blockquote>
+<p>原文链接 <a href="https://nathanbarry.com/billion/" target="_blank" rel="noopener">nathanbarry.com/billion</a><br>独立 blog 订阅列表 by 利器 <a href="https://www.notion.so/blog-by-liqi-io-4bdf37d4fb3443b4b6dbed8317450307" target="_blank" rel="noopener">www.notion.so/blog-by-liqi-io-4bdf37d4fb3443b4b6dbed8317450307</a><br>中文独立博客列表 <a href="https://github.com/timqian/chinese-independent-blogs" target="_blank" rel="noopener">github.com/timqian/chinese-independent-blogs</a><br>如何用 Gatsby 和 Netlify 打造你的梦幻博客 <a href="https://kalasearch.cn/blog/gatsby-blog-setup-tutorial-with-netlify/" target="_blank" rel="noopener">kalasearch.cn/blog/gatsby-blog-setup-tutorial-with-netlify</a><br>如何通过产品策略优化搜索排序结果？ <a href="https://kalasearch.cn/blog/how-tackled-the-ranking-problem-of-search-engines/" target="_blank" rel="noopener">kalasearch.cn/blog/how-tackled-the-ranking-problem-of-search-engines</a><br>Hexo+Github Pages 搭建博客 <a href="https://io-oi.me/tech/hexo-next-optimization/" target="_blank" rel="noopener">io-oi.me/tech/hexo-next-optimization</a></p>
+</blockquote>
+<h3 id="资源与工具"><a href="#资源与工具" class="headerlink" title="资源与工具"></a>资源与工具</h3><h4 id="1-Shape-2"><a href="#1-Shape-2" class="headerlink" title="1. Shape 2"></a>1. <a href="https://shape.so/" target="_blank" rel="noopener">Shape 2</a></h4><p>5000+ 精美图标和手绘，PNG 格式可免费使用。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1599989865487-cfcee5ea-25c6-4bdd-bfd9-f09ee39ad456.png#align=left&display=inline&height=615&margin=%5Bobject%20Object%5D&name=Shape-2.PNG&originHeight=615&originWidth=1026&size=529209&status=done&style=none&width=1026" alt="Shape-2.PNG"></p>
+<blockquote>
+<p>链接 <a href="https://shape.so/" target="_blank" rel="noopener">shape.so</a></p>
+</blockquote>
+<h4 id="2-Notionised"><a href="#2-Notionised" class="headerlink" title="2. Notionised"></a>2. <a href="https://www.notion.so/Notionised-f9a4523ae9cb4ba8aef1049d15e6ddb0" target="_blank" rel="noopener">Notionised</a></h4><p>来自 Ben Smith 的 Notion 模板集合：Notionised 是将市面上 Saas 平台 Notion 化，比如 Basecamp、Clickup、Coda 等（此介绍来源于 <a href="https://anyway.fm/news.php" target="_blank" rel="noopener">Anyway.news</a>）。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1599987353947-82c6c806-2872-4df9-9508-ad038a9b400d.png#align=left&display=inline&height=869&margin=%5Bobject%20Object%5D&name=Notionised.PNG&originHeight=869&originWidth=1161&size=102515&status=done&style=none&width=1161" alt="Notionised.PNG"></p>
+<blockquote>
+<p>原文链接 <a href="https://www.notion.so/Notionised-f9a4523ae9cb4ba8aef1049d15e6ddb0" target="_blank" rel="noopener">www.notion.so/Notionised-f9a4523ae9cb4ba8aef1049d15e6ddb0</a></p>
+</blockquote>
+<h3 id="每周一书"><a href="#每周一书" class="headerlink" title="每周一书"></a>每周一书</h3><p>刘擎《<a href="https://book.douban.com/subject/24719014/" target="_blank" rel="noopener">中国有多特殊</a>》<br />《中国有多特殊》为刘擎的时事评论集，出版于 2013 年。作者为华东师范大学政治学系教授、博导，美国明尼苏达大学政治学博士毕业，主要研究领域为西方思想史，政治哲学与国际政治理论。在这本时评集中，刘教授面对时事的评论总能落脚于政治哲学的思辨，条分缕析逻辑通畅。时事评论是一种很容易过时的文体，但如果写作者不停留于热点、追根溯源，则虽时过境迁仍有重读价值。这本书由于是集结而成，文章的水平不免有参差不齐的缺点。然而在动荡不安的 2020 年，作者的看法仍有有助于思考当下的中国与世界所面对的问题。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1599990536864-d1468a6f-8a8f-4c86-a219-1d56de17a425.png#align=left&display=inline&height=523&margin=%5Bobject%20Object%5D&name=book-zhongguoyouduoteshu.PNG&originHeight=523&originWidth=379&size=470439&status=done&style=none&width=379" alt="book-zhongguoyouduoteshu.PNG"></p>
+<blockquote>
+<p>国人自产的「中国特殊论」也源远流长，自晚清以来从未平息，也有过多次勃兴。由此衍生的一个推论，可称之为「不适合论」：由于中国如此特殊，非中国原产的理念、价值、制度或实践，大多不适合中国国情。曾经有林林总总的「不适合论」，听上去都振振有词。比如，「西医不适合中国」，因为国人体质与西人大为不同；「自由恋爱不适合中国」，因为中国自古崇尚大家庭观念，婚姻不是男女个人的结合，而是两个家庭的结合，要遵从「父母之命，媒妁之言」；「男女同校不适合中国」，因为中国传统讲「男女授受不亲」；「马克思主义不适合中国」，因为一个犹太人根据欧洲传统与社会经验总结出来的理论不可能适合本土国情；「个人权利观念」不适合中国，因为中国人的认同从来根植于群体，而不是「原子化的个人」；「市场经济不适合中国」，因为中国文化是集体主义取向，中国人又经过社会主义的锻造，不可能接受追逐利润与金钱的价值观（李新宇教授两年前曾发表《「特别国情论」小史》一文，对百年来流布的「宪政」「共和」与「民主」不适合中国国情的种种说法与理由，做过引人入胜的梳理与解读）。据说，快餐业巨头麦当劳在进入中国之前，曾找人评估市场前景，得到的结论是「必败无疑」。因为中国人有自己独特、丰富而悠久的面食传统，绝对不会接受「汉堡包」之类！结果使得麦当劳犹疑不决，在小弟弟肯德基捷足先登之后，才迟缓地作出反应。<br>而今，从西医到麦当劳，从男女同校到自由恋爱，从马克思主义理论到市场经济制度，不仅都进入了中国，而且在中国生根开花、发芽结果。以「事后之明」回望，当初那些振振有词的「不适合论」，大多是不足为信的武断辩解。<br>这当然不是说中国的特殊性是一个无意义的命题，也不是说「适合不适合」国情的疑问是一个假问题。关键在于，许多流行版本的特殊论，往往基于某种虚假的本质主义文明论，杜撰出某种固定不变的、同质透明的「中华性」。实际上，中国古代与近现代的文化因素，以及多种外来的价值与理念，都「共时性地」构成了我们生活实践的地平线，已经成为当代中国文化内在的构成性部分。<br>理解中国文化的特殊性，解释中国崛起的原因与后果，应当着眼于历史传统制约下的当代实践。而历史的制约与影响从来是复杂和开放的，特别是由于中国传统具有内部的多重性，经典文本的义理、现实政治中的原则和民间日常生活之间存在着复杂的关系，也由于中国在近代以来经历了多次巨大的变迁。因此，每当遇到「特殊论」的时候，我们也许要抛开那些陈词滥调，认真地问一问：「当我们在谈论『国情』的时候，我们究竟在谈什么？」</p>
+</blockquote>
+<blockquote>
+<p>刘擎：中国有多特殊？ <a href="http://www.aisixiang.com/data/65416.html" target="_blank" rel="noopener">www.aisixiang.com/data/65416.html</a><br>豆瓣图书地址 <a href="https://book.douban.com/subject/24719014/" target="_blank" rel="noopener">book.douban.com/subject/24719014</a></p>
+</blockquote>
+<h3 id="订阅"><a href="#订阅" class="headerlink" title="订阅"></a>订阅</h3><p>如无意外，本周刊每周更新，发布在 <a href="https://github.com/HerbertChang/pmweekly" target="_blank" rel="noopener">GitHub</a>、<a href="https://weixin.sogou.com/weixin?type=1&s_from=input&query=%E8%8B%A5%E6%84%9A%E8%8B%A5%E6%98%8F&ie=utf8&_sug_=y&_sug_type_=&w=01019900&sut=10610&sst0=1571666684054&lkt=0%2C0%2C0" target="_blank" rel="noopener">微信公众号</a>、<a href="https://yuque.com/herbert-chang/pmweekly/" target="_blank" rel="noopener">语雀</a>和<a href="https://productweekly.substack.com/" target="_blank" rel="noopener">邮件订阅组</a>。本周刊遵循 CC BY-NC-ND 标准。本周刊推出邮件订阅服务，提供更好的阅读体验，请访问 <a href="https://productweekly.substack.com/" target="_blank" rel="noopener">https://productweekly.substack.com/</a> 开启订阅，推荐使用 Gmail、Protonmail、iCloud 等国外邮件服务来进行订阅。如果觉得「产品周刊 Product Weekly」有价值，请分享给你的朋友或社交网络。欢迎将建议、内容分享和产品/设计岗位内推需求发送给我。微信搜索「若愚若昏」，可关注我的微信公众号。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1595080759715-5e73085e-7d82-4506-930e-97507f80e022.png#align=left&display=inline&height=155&margin=%5Bobject%20Object%5D&name=%E6%89%AB%E7%A0%81_%E6%90%9C%E7%B4%A2%E8%81%94%E5%90%88%E4%BC%A0%E6%92%AD%E6%A0%B7%E5%BC%8F-%E7%99%BD%E8%89%B2%E7%89%88.png&originHeight=624&originWidth=1710&size=4268298&status=done&style=none&width=425" alt="扫码_搜索联合传播样式-白色版.png"></p>
+<h3 id="推荐"><a href="#推荐" class="headerlink" title="推荐"></a>推荐</h3><ul>
+<li><a href="https://pmthinking.us11.list-manage.com/track/click?u=c4dcdf8a6b76265256adf8255&id=a540a873a8&e=5f9cbb74d3" target="_blank" rel="noopener">黄埔犬校</a>：纯银的黄埔犬校内容精选 </li>
+<li><a href="https://www.notion.so/PRODUCT-THINKING-a601a12335044f349a22caf57f274c27" target="_blank" rel="noopener">产品沉思录精选</a>：少楠（Plidezus）的产品知识库</li>
+<li><a href="https://yitianshijie.net/" target="_blank" rel="noopener">一天世界</a>：IPN 李如一的博客</li>
+<li><a href="https://pmthinking.us11.list-manage.com/track/click?u=c4dcdf8a6b76265256adf8255&id=2049427034&e=5f9cbb74d3" target="_blank" rel="noopener">刻意体会</a>：即刻产品汪 Kyth 的自留地</li>
+<li><a href="https://pmthinking.us11.list-manage.com/track/click?u=c4dcdf8a6b76265256adf8255&id=f60bfc9cb9&e=5f9cbb74d3" target="_blank" rel="noopener">Λ-Reading</a>：每天 2 分钟，扩展认知边界</li>
+<li><a href="https://assets.iois.me/uzjhgqzglpa.html" target="_blank" rel="noopener">Deep Reading 精选</a>：在事实之上，构建一个关于观点（洞察）与故事的筛选机制</li>
+<li><a href="https://github.com/Newslab2020/Contents/blob/master/wechataccount.md" target="_blank" rel="noopener">新闻实验室微信公众号文章备份</a>：优化媒体食谱，提高媒介素养</li>
+<li><a href="https://notion.cx/" target="_blank" rel="noopener">Notion 中文社区</a>：Better Life, Better Work</li>
+<li><a href="https://www.notion.so/da53956e706a4b0c8aabb757c0259382" target="_blank" rel="noopener">数据产品的日常</a>：数据 PM 资料库</li>
+<li><a href="http://elproducto.eu/" target="_blank" rel="noopener">el producto</a>：Tech &amp; Product Management News and Thoughts</li>
+<li><a href="https://clearbox.substack.com/" target="_blank" rel="noopener">透明盒子计划</a>：非虚构类书籍阅读笔记</li>
+<li><a href="https://news.dex.group/f3b9324ec1c545f3a7ad31d71da1fc38?v=13a31b332fd8465a9bb81d92748643b4" target="_blank" rel="noopener">DEX 周刊</a>：DEX 旗下关于产品、设计和开发的邮件订阅列表</li>
+<li><a href="https://www.notion.so/blog-by-liqi-io-4bdf37d4fb3443b4b6dbed8317450307" target="_blank" rel="noopener">独立 blog 订阅列表 by 利器 liqi.io</a>：中文独立博客列表</li>
+</ul>
+
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/uploads/wechat-qcode.jpg" alt="Herbert Chang wechat" style="width: 200px; max-width: 100%;"/>
+    <div>欢迎您扫一扫上面的微信公众号，订阅我的博客！</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>转发和赞赏是对俺创作的支持</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/uploads/wechatpay.png" alt="Herbert Chang 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/uploads/alipay.png" alt="Herbert Chang 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A/" rel="tag"># 产品周刊</a>
+          
+            <a href="/tags/%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1/" rel="tag"># 产品设计</a>
+          
+            <a href="/tags/PM/" rel="tag"># PM</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/09/07/Product-Weekly-issue-31-20200907-newsletter-for-pm/" rel="next" title="产品人应订阅的中文 Newsletter 有哪些？| 产品周刊 ProductWeekly 第 31 期">
+                <i class="fa fa-chevron-left"></i> 产品人应订阅的中文 Newsletter 有哪些？| 产品周刊 ProductWeekly 第 31 期
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Herbert Chang</p>
+              <p class="site-description motion-element" itemprop="description">所南心史井中全</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%20%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">34</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-globe"></i>
+                
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://youhan26.github.io/" title="Tony You 的个人博客" target="_blank">Tony You 的个人博客</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://leiquan.website/" title="雷全的个人博客" target="_blank">雷全的个人博客</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#值得关注的产品"><span class="nav-number">1.</span> <span class="nav-text">值得关注的产品</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-IdeasAI（Web）"><span class="nav-number">1.1.</span> <span class="nav-text">1. IdeasAI（Web）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-Logseq（Web）"><span class="nav-number">1.2.</span> <span class="nav-text">2. Logseq（Web）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-accessiBe（Web）"><span class="nav-number">1.3.</span> <span class="nav-text">3. accessiBe（Web）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#佳文推介"><span class="nav-number">2.</span> <span class="nav-text">佳文推介</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-工作监控新手段"><span class="nav-number">2.1.</span> <span class="nav-text">1. 工作监控新手段</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-The-Billion-Dollar-Blog"><span class="nav-number">2.2.</span> <span class="nav-text">2. The Billion Dollar Blog</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#资源与工具"><span class="nav-number">3.</span> <span class="nav-text">资源与工具</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-Shape-2"><span class="nav-number">3.1.</span> <span class="nav-text">1. Shape 2</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-Notionised"><span class="nav-number">3.2.</span> <span class="nav-text">2. Notionised</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#每周一书"><span class="nav-number">4.</span> <span class="nav-text">每周一书</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#订阅"><span class="nav-number">5.</span> <span class="nav-text">订阅</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#推荐"><span class="nav-number">6.</span> <span class="nav-text">推荐</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2018 &mdash; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Herbert Chang</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://Herbert.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'https://herbertchang.github.io/2020/09/13/Product-Weekly-issue-32-20200914/';
+          this.page.identifier = '2020/09/13/Product-Weekly-issue-32-20200914/';
+          this.page.title = '产品周刊 ProductWeekly | 第 32 期（20200914）';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://Herbert.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
