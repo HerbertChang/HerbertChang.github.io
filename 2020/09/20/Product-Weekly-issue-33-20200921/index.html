@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="产品周刊,产品设计,PM," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="张贺的博客" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="值得关注的产品：Haptic Life Tracker、Remotive、Cubox；佳文推介：《设计 Widget - 避免「功能化」》《Amazon&amp;apos;s profits, AWS and advertising》；资源与工具：Sketch 插件：Deck、电子书《The Data Driven Product Manager》；每周一书：王汎森《执拗的低音》。">
+<meta name="keywords" content="产品周刊,产品设计,PM">
+<meta property="og:type" content="article">
+<meta property="og:title" content="产品周刊 ProductWeekly | 第 33 期（20200921）">
+<meta property="og:url" content="https:&#x2F;&#x2F;herbertchang.github.io&#x2F;2020&#x2F;09&#x2F;20&#x2F;Product-Weekly-issue-33-20200921&#x2F;index.html">
+<meta property="og:site_name" content="张贺的博客">
+<meta property="og:description" content="值得关注的产品：Haptic Life Tracker、Remotive、Cubox；佳文推介：《设计 Widget - 避免「功能化」》《Amazon&amp;apos;s profits, AWS and advertising》；资源与工具：Sketch 插件：Deck、电子书《The Data Driven Product Manager》；每周一书：王汎森《执拗的低音》。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1600604851618-84a8ecf6-1776-441d-8b17-99d00547690f.png#align=left&amp;display=inline&amp;height=634&amp;margin=%5Bobject%20Object%5D&amp;name=Haptic.PNG&amp;originHeight=634&amp;originWidth=1234&amp;size=200863&amp;status=done&amp;style=none&amp;width=1234">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1600607610977-88ba9cdd-c924-401f-9d60-e74468bdd0de.png#align=left&amp;display=inline&amp;height=884&amp;margin=%5Bobject%20Object%5D&amp;name=Remotive.PNG&amp;originHeight=884&amp;originWidth=1890&amp;size=149829&amp;status=done&amp;style=none&amp;width=1890">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1600603857122-29e91c61-f7fb-42f0-9f05-3416dc08afae.png#align=left&amp;display=inline&amp;height=628&amp;margin=%5Bobject%20Object%5D&amp;name=Cubox-iphone.PNG&amp;originHeight=628&amp;originWidth=1213&amp;size=352504&amp;status=done&amp;style=none&amp;width=1213">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1600603863257-0b3a2c3d-9d1f-4883-bd09-274374ff9ca3.png#align=left&amp;display=inline&amp;height=891&amp;margin=%5Bobject%20Object%5D&amp;name=Cubox-web.PNG&amp;originHeight=891&amp;originWidth=1914&amp;size=76655&amp;status=done&amp;style=none&amp;width=1914">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;webp&#x2F;535404&#x2F;1600589711580-be2e4e9e-9884-46c1-af79-4f4ec502f0a8.webp#align=left&amp;display=inline&amp;height=608&amp;margin=%5Bobject%20Object%5D&amp;originHeight=608&amp;originWidth=1080&amp;size=0&amp;status=done&amp;style=none&amp;width=1080">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1600605542043-e1846bb8-5adf-40a8-b112-23cd79ed826f.png#align=left&amp;display=inline&amp;height=298&amp;margin=%5Bobject%20Object%5D&amp;name=The-Data-Driven-Product-Manager-ebook.png&amp;originHeight=1098&amp;originWidth=1104&amp;size=1194579&amp;status=done&amp;style=none&amp;width=300">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1600608558085-9703615f-3d7c-4fcf-b007-58f848d4fe98.png#align=left&amp;display=inline&amp;height=425&amp;margin=%5Bobject%20Object%5D&amp;name=book-zhiniudediyin.PNG&amp;originHeight=893&amp;originWidth=630&amp;size=672238&amp;status=done&amp;style=none&amp;width=300">
+<meta property="og:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1595080759715-5e73085e-7d82-4506-930e-97507f80e022.png#align=left&amp;display=inline&amp;height=155&amp;margin=%5Bobject%20Object%5D&amp;name=%E6%89%AB%E7%A0%81_%E6%90%9C%E7%B4%A2%E8%81%94%E5%90%88%E4%BC%A0%E6%92%AD%E6%A0%B7%E5%BC%8F-%E7%99%BD%E8%89%B2%E7%89%88.png&amp;originHeight=624&amp;originWidth=1710&amp;size=4268298&amp;status=done&amp;style=none&amp;width=425">
+<meta property="og:updated_time" content="2020-09-20T14:30:14.073Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;cdn.nlark.com&#x2F;yuque&#x2F;0&#x2F;2020&#x2F;png&#x2F;535404&#x2F;1600604851618-84a8ecf6-1776-441d-8b17-99d00547690f.png#align=left&amp;display=inline&amp;height=634&amp;margin=%5Bobject%20Object%5D&amp;name=Haptic.PNG&amp;originHeight=634&amp;originWidth=1234&amp;size=200863&amp;status=done&amp;style=none&amp;width=1234">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://herbertchang.github.io/2020/09/20/Product-Weekly-issue-33-20200921/"/>
+
+
+
+
+
+  <title>产品周刊 ProductWeekly | 第 33 期（20200921） | 张贺的博客</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">张贺的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">若愚若昏</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://herbertchang.github.io/2020/09/20/Product-Weekly-issue-33-20200921/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Herbert Chang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="张贺的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">产品周刊 ProductWeekly | 第 33 期（20200921）</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-09-20T22:26:16+08:00">
+                2020-09-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A/" itemprop="url" rel="index">
+                    <span itemprop="name">产品周刊</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2020/09/20/Product-Weekly-issue-33-20200921/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2020/09/20/Product-Weekly-issue-33-20200921/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+              <div class="post-description">
+                  值得关注的产品：Haptic Life Tracker、Remotive、Cubox；佳文推介：《设计 Widget - 避免「功能化」》《Amazon's profits, AWS and advertising》；资源与工具：Sketch 插件：Deck、电子书《The Data Driven Product Manager》；每周一书：王汎森《执拗的低音》。
+              </div>
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <meta name="referrer" content="no-referrer" />
+<br />
+
+<p>按：本周刊也许从十月开始停更三个月、也许不再更新。三十余期更新对我最大的收益在于迫使我对阅读源进行优化、减少注意力涣散，这些相对优质的阅读源散落在各期推荐之中。如<a href="https://lordoflight.substack.com/p/-issue-0026" target="_blank" rel="noopener">《光明王电邮简讯食用指南》</a>所言：「文章主要内容都在链接里，它可能比较长，但绝对值得你好好静下来读一读，它可能只是一个窗口，把你导向另一个厉害的人、好看的书或者是获取科学信息的渠道。请参照阅读时间，结合自己的阅读习惯进行阅读与思考。我们习惯了快速滚屏，目光在一篇又一篇的文章里快速切换，却慢慢失去了阅读长文、阅读书籍的能力，而对于一个主题的深入阅读才是产生洞见和明白其底层逻辑的重要方法之一……每周选择一到两篇你感兴趣的读完，让我们一起复兴古典的阅读方式。」然而产出物仍不能让我满意，产品人的读物应该有更好的形式和内容。如果本周刊 2021 回归，希望能带来更好的文本。欢迎你通过评论/邮件提出建议或者期望抑或随便聊聊。<br /></p>
+<h3 id="值得关注的产品"><a href="#值得关注的产品" class="headerlink" title="值得关注的产品"></a>值得关注的产品</h3><h4 id="1-Haptic-Life-Tracker（iOS）"><a href="#1-Haptic-Life-Tracker（iOS）" class="headerlink" title="1. Haptic Life Tracker（iOS）"></a>1. <a href="https://haptic.app/" target="_blank" rel="noopener">Haptic Life Tracker</a>（iOS）</h4><p>生活记录 App，分类事项包括专辑、书籍、游戏、航班、约会、喝水等等。由于涉及到个人生活习惯与隐私内容较多，App 承诺数据仅在设备上本地化保存。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1600604851618-84a8ecf6-1776-441d-8b17-99d00547690f.png#align=left&display=inline&height=634&margin=%5Bobject%20Object%5D&name=Haptic.PNG&originHeight=634&originWidth=1234&size=200863&status=done&style=none&width=1234" alt="Haptic.PNG"></p>
+<blockquote>
+<p>官网 <a href="https://haptic.app/" target="_blank" rel="noopener">haptic.app</a><br>iOS 版下载 <a href="https://apps.apple.com/ru/app/haptic-life-tracker/id1479167334" target="_blank" rel="noopener">apps.apple.com/ru/app/haptic-life-tracker/id1479167334</a><br>视频介绍 <a href="https://youtu.be/5-D2iGIRFK0" target="_blank" rel="noopener">youtu.be/5-D2iGIRFK0</a></p>
+</blockquote>
+<h4 id="2-Remotive（Web）"><a href="#2-Remotive（Web）" class="headerlink" title="2. Remotive（Web）"></a>2. <a href="https://remotive.io/" target="_blank" rel="noopener">Remotive</a>（Web）</h4><p>远程工作寻找与招聘平台，工种不限于 IT 行业。国内同类服务可以看<a href="https://eleduck.com/" target="_blank" rel="noopener">电鸭社区</a>。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1600607610977-88ba9cdd-c924-401f-9d60-e74468bdd0de.png#align=left&display=inline&height=884&margin=%5Bobject%20Object%5D&name=Remotive.PNG&originHeight=884&originWidth=1890&size=149829&status=done&style=none&width=1890" alt="Remotive.PNG"></p>
+<blockquote>
+<p>官网 <a href="https://remotive.io/" target="_blank" rel="noopener">remotive.io</a><br /></p>
+</blockquote>
+<h4 id="3-Cubox（Web、macOS、iOS-amp-Chrome-插件）"><a href="#3-Cubox（Web、macOS、iOS-amp-Chrome-插件）" class="headerlink" title="3. Cubox（Web、macOS、iOS &amp; Chrome 插件）"></a>3. <a href="https://cubox.pro/" target="_blank" rel="noopener">Cubox</a>（Web、macOS、iOS &amp; Chrome 插件）</h4><p>新型书签管理服务，帮助用户收藏、自动管理碎片化网络信息。Cubox 的命名来源于 ‘Cube’ + ‘Box’。产品设计面向场景为网络上浏览新闻、文章、资料、视频等内容时发现在意的信息后，可以通过 Cubox 提供的快捷收藏工具快速保存，并能够随时在 Cubox 中浏览或搜索。Cubox 围绕书签的「收藏」、「管理」、「浏览」和「搜索」这几个流程服务：</p>
+<ul>
+<li>收藏：通过 Cubox 提供的 App，收藏插件，书签工具等插件，在不同设备上以最便捷的方式，保存所浏览的网页。</li>
+<li>管理：根据设定的智能分类规则，自动归类书签，无需手动整理就可以保持井井有条。也可通过收藏夹、标签等方式手动归类书签，为日后的浏览和查找提供便利。</li>
+<li>浏览：Cubox 会识别网站类型，并针对文章网页提取正文，提供离线阅读视图，提升文章阅读体验。文章会被永久存档在 Cubox 中，即使原链接失效也可正常访问它们，</li>
+<li>搜索：通过不同设备上的 Cubox 搜索工具，随时找到自己的收藏。<br /></li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1600603857122-29e91c61-f7fb-42f0-9f05-3416dc08afae.png#align=left&display=inline&height=628&margin=%5Bobject%20Object%5D&name=Cubox-iphone.PNG&originHeight=628&originWidth=1213&size=352504&status=done&style=none&width=1213" alt="Cubox-iphone.PNG">)<img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1600603863257-0b3a2c3d-9d1f-4883-bd09-274374ff9ca3.png#align=left&display=inline&height=891&margin=%5Bobject%20Object%5D&name=Cubox-web.PNG&originHeight=891&originWidth=1914&size=76655&status=done&style=none&width=1914" alt="Cubox-web.PNG"></p>
+<blockquote>
+<p>官网 <a href="https://cubox.pro/" target="_blank" rel="noopener">cubox.pro</a><br>iOS/macOS 版下载 <a href="https://apps.apple.com/cn/app/id1113361350" target="_blank" rel="noopener">apps.apple.com/cn/app/id1113361350</a></p>
+</blockquote>
+<h3 id="佳文推介"><a href="#佳文推介" class="headerlink" title="佳文推介"></a>佳文推介</h3><h4 id="1-Figma-Config-又给我们带来了什么新特性？"><a href="#1-Figma-Config-又给我们带来了什么新特性？" class="headerlink" title="1. Figma Config 又给我们带来了什么新特性？"></a>1. <a href="https://mp.weixin.qq.com/s/-xcDU5Q0c0-AMj8NNcCgZQ" target="_blank" rel="noopener">Figma Config 又给我们带来了什么新特性？</a></h4><p>Figma 举办了第二届 <a href="https://www.figma.com/blog/config-europe-2020-new-feature-announcements/" target="_blank" rel="noopener">Config Europe</a>，主题是让设计和代码连接更紧密，公布了下半年一波新功能。Axure RP 不同版本间兼容问题和不支持协作诟病已久（日常嫌弃），做出功能强大又易用、对不同职能群体友好的工具还挺难的。<br /><img src="https://cdn.nlark.com/yuque/0/2020/webp/535404/1600589711580-be2e4e9e-9884-46c1-af79-4f4ec502f0a8.webp#align=left&display=inline&height=608&margin=%5Bobject%20Object%5D&originHeight=608&originWidth=1080&size=0&status=done&style=none&width=1080" alt=""></p>
+<blockquote>
+<p>界面设计除了需要美感，一定程度上还需要系统化思维，它是一个比较跨界的职业领域，并非纯艺术领域。Figma CEO Dylan Field 在这次大会的开场中曾说过这样一段话：「在传统理解上，设计人员和开发人员占据着不同的世界，使用着不同的工具。但是在实际工作中，他们是合作伙伴，致力于将想法变为现实的产品。虽然他们的方法可能不同，但各自都有独特的优势。设计师更喜欢自由形式的创造性探索，而开发人员则采用更结构化的方法。结果必然会导致两者之间产生矛盾：对于设计师来说创造性的探索，对于开发人员来说可能就是对结构的『破坏』；在开发人员看来是『结构化』的东西，对设计师来说可能会抑制灵感。」<br><br /><br>原文链接 <a href="https://mp.weixin.qq.com/s/-xcDU5Q0c0-AMj8NNcCgZQ" target="_blank" rel="noopener">mp.weixin.qq.com/s/-xcDU5Q0c0-AMj8NNcCgZQ</a><br>Figma Blog <a href="https://www.figma.com/blog/config-europe-2020-new-feature-announcements/" target="_blank" rel="noopener">www.figma.com/blog/config-europe-2020-new-feature-announcements/</a></p>
+</blockquote>
+<h4 id="2-设计-Widget-避免「功能化」"><a href="#2-设计-Widget-避免「功能化」" class="headerlink" title="2. 设计 Widget - 避免「功能化」"></a>2. <a href="https://mp.weixin.qq.com/s/rstplUh6ruApH5OubCcunA" target="_blank" rel="noopener">设计 Widget - 避免「功能化」</a></h4><p>Beforweb 连载 Widget 设计系列文章，这是第一篇。<br /></p>
+<blockquote>
+<p>不要为了引导用户进入 app 内特定的功能模块，而在 widget 上使用具有典型按钮样式的元素以及具有 call to action 暗示的文本，否则用户将很容易误认为点击该按钮即可实现相关操作；如果这样的按钮元素形成体系，用户便容易形成「widgets 是放在系统主屏的小 app」这样的错误观念；这样的误解是系统交互范式级的。</p>
+</blockquote>
+<blockquote>
+<p>原文链接 <a href="https://mp.weixin.qq.com/s/rstplUh6ruApH5OubCcunA" target="_blank" rel="noopener">mp.weixin.qq.com/s/rstplUh6ruApH5OubCcunA</a></p>
+</blockquote>
+<h4 id="3-Amazon’s-profits-AWS-and-advertising"><a href="#3-Amazon’s-profits-AWS-and-advertising" class="headerlink" title="3. Amazon’s profits, AWS and advertising"></a>3. <a href="https://www.ben-evans.com/benedictevans/2020/9/6/amazons-profits" target="_blank" rel="noopener">Amazon’s profits, AWS and advertising</a></h4><p>a16z 投资人 Benedict Evans 的文章，用一系列图表来解读 Amazon。<br /></p>
+<blockquote>
+<p>Amazon is not a loss-making business that will eventually have to raise prices to make money; rather, it’s many businesses leveraging a common platform and a common balance sheet.<br>Jeff Bezos always says that he runs it for “trailing 12 months’ absolute free cashflow”, not net income, and it’s had positive cashflow since 2002, which is before some startup founders were born.</p>
+</blockquote>
+<blockquote>
+<p>原文链接 <a href="https://www.ben-evans.com/benedictevans/2020/9/6/amazons-profits" target="_blank" rel="noopener">www.ben-evans.com/benedictevans/2020/9/6/amazons-profits</a></p>
+</blockquote>
+<h3 id="资源与工具"><a href="#资源与工具" class="headerlink" title="资源与工具"></a>资源与工具</h3><h4 id="1-Sketch-插件：Deck"><a href="#1-Sketch-插件：Deck" class="headerlink" title="1. Sketch 插件：Deck"></a>1. <a href="https://deck.is/" target="_blank" rel="noopener">Sketch 插件：Deck</a></h4><p>将 Sketch 设计稿转换成 PowerPoint 的插件。<br /></p>
+<blockquote>
+<p>链接 <a href="https://deck.is/" target="_blank" rel="noopener">deck.is</a></p>
+</blockquote>
+<h4 id="2-电子书《The-Data-Driven-Product-Manager》"><a href="#2-电子书《The-Data-Driven-Product-Manager》" class="headerlink" title="2. 电子书《The Data Driven Product Manager》"></a>2. <a href="https://toucantoco.com/en/resources/the-data-driven-product-manager-eBook.html" target="_blank" rel="noopener">电子书《The Data Driven Product Manager》</a></h4><p>Toucan 与 Product School 合作推出数据驱动产品设计的电子书，免费下载。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1600605542043-e1846bb8-5adf-40a8-b112-23cd79ed826f.png#align=left&display=inline&height=298&margin=%5Bobject%20Object%5D&name=The-Data-Driven-Product-Manager-ebook.png&originHeight=1098&originWidth=1104&size=1194579&status=done&style=none&width=300" alt="The-Data-Driven-Product-Manager-ebook.png"></p>
+<blockquote>
+<p>链接 <a href="https://toucantoco.com/en/resources/the-data-driven-product-manager-eBook.html" target="_blank" rel="noopener">toucantoco.com/en/resources/the-data-driven-product-manager-eBook.html</a></p>
+</blockquote>
+<h4 id="3-76-Tools-For-Designers-In-2020"><a href="#3-76-Tools-For-Designers-In-2020" class="headerlink" title="3. 76 Tools For Designers In 2020"></a>3. <a href="https://www.themasterpicks.com/tools-for-designers/" target="_blank" rel="noopener">76 Tools For Designers In 2020</a></h4><p>一个工具集合，其中 Webflow、Framer、ProtoPie 在往期中有过介绍。<br /></p>
+<blockquote>
+<p>原文链接 <a href="https://www.themasterpicks.com/tools-for-designers/" target="_blank" rel="noopener">www.themasterpicks.com/tools-for-designers</a></p>
+</blockquote>
+<h3 id="每周一书"><a href="#每周一书" class="headerlink" title="每周一书"></a>每周一书</h3><p>王汎森《<a href="https://book.douban.com/subject/25659944/" target="_blank" rel="noopener">执拗的低音：一些历史思考方式的反思</a>》<br />王汎森先生是历史学者、中央研究院院士，曾任中央研究院副院长。曾任历史语言研究所所长、历史语言研究所特聘研究员，主要从事思想文化史、学术史以及史学史、东亚文化交流史的相关研究。《执拗的低音》一书为王先生在复旦大学四次演讲稿整理而成，四篇文章主题分别为「执拗的低音——一些历史思考方式的反思」「『心力』与『破对待』」「王国维的『道德团体』论及相关问题」「『风』——一种被忽略的史学观念」。大体而言，这几篇演讲都在关注晚近学术思潮中的观念变迁、思想风气形成，审视西学东渐、思想碰撞过程中的观念变化的微妙复杂情形。从中也自然可以反思当代一些观念是如何演变而来。王先生强调「重访」（revisit）的重要作用，认为它是避免将现状「本质化」的资具之一，通过重访思想传统可以得到不一样的视野、提供思考问题的新可能性，摆脱线性的进化思维。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1600608558085-9703615f-3d7c-4fcf-b007-58f848d4fe98.png#align=left&display=inline&height=425&margin=%5Bobject%20Object%5D&name=book-zhiniudediyin.PNG&originHeight=893&originWidth=630&size=672238&status=done&style=none&width=300" alt="book-zhiniudediyin.PNG"></p>
+<blockquote>
+<p>这一个世纪以来，关于新旧思想的争论，大部分都把「史实的重建」和「价值的判断」混在一起。新派人物因为鄙弃保守派人物的思想，对他们的学术观点也一概否定。保守派人物也常常反过来做同样的事情……在近代思想发展过程中所造成的一些学术上的偏蔽之处，是到了应该「重访」的时候。现在将这些问题解放开来，重新加以省视，是一个有益的方向，进而改变过去趋于两个极端的旧视野。采取开放度额态度，也有可能获得新的现实资源。</p>
+</blockquote>
+<blockquote>
+<p>历史中的行为、事物之间的关系，很难用我们目前的词汇与概念完整描述。譬如历史上两种文化交遇时的关系，常如两种不同颜色流质的互相晕染，可使现在好像没有足够的词汇可以状写。古代的历史、文化也是一样，其中有很多复杂的情状，恐怕不是我们现代的学术语言所能充分表述。</p>
+</blockquote>
+<blockquote>
+<p>豆瓣图书地址 <a href="https://book.douban.com/subject/25659944/" target="_blank" rel="noopener">book.douban.com/subject/25659944</a><br>王汎森 葛兆光：寻找「执拗的低音」 <a href="http://www.aisixiang.com/data/66319.html" target="_blank" rel="noopener">www.aisixiang.com/data/66319.html</a></p>
+</blockquote>
+<h3 id="订阅"><a href="#订阅" class="headerlink" title="订阅"></a>订阅</h3><p>本周刊更新发布在 <a href="https://github.com/HerbertChang/pmweekly" target="_blank" rel="noopener">GitHub</a>、<a href="https://weixin.sogou.com/weixin?type=1&s_from=input&query=%E8%8B%A5%E6%84%9A%E8%8B%A5%E6%98%8F&ie=utf8&_sug_=y&_sug_type_=&w=01019900&sut=10610&sst0=1571666684054&lkt=0%2C0%2C0" target="_blank" rel="noopener">微信公众号</a>、<a href="https://yuque.com/herbert-chang/pmweekly/" target="_blank" rel="noopener">语雀</a>和<a href="https://productweekly.substack.com/" target="_blank" rel="noopener">邮件订阅组</a>。本周刊遵循 CC BY-NC-ND 标准。本周刊推出邮件订阅服务，提供更好的阅读体验，请访问 <a href="https://productweekly.substack.com/" target="_blank" rel="noopener">https://productweekly.substack.com/</a> 开启订阅，推荐使用 Gmail、Protonmail、iCloud 等国外邮件服务来进行订阅。如果觉得「产品周刊 Product Weekly」有价值，请分享给你的朋友或社交网络。欢迎将建议、内容分享和产品/设计岗位内推需求发送给我。微信搜索「若愚若昏」，可关注我的微信公众号。<br /><img src="https://cdn.nlark.com/yuque/0/2020/png/535404/1595080759715-5e73085e-7d82-4506-930e-97507f80e022.png#align=left&display=inline&height=155&margin=%5Bobject%20Object%5D&name=%E6%89%AB%E7%A0%81_%E6%90%9C%E7%B4%A2%E8%81%94%E5%90%88%E4%BC%A0%E6%92%AD%E6%A0%B7%E5%BC%8F-%E7%99%BD%E8%89%B2%E7%89%88.png&originHeight=624&originWidth=1710&size=4268298&status=done&style=none&width=425" alt="扫码_搜索联合传播样式-白色版.png"></p>
+<h3 id="推荐"><a href="#推荐" class="headerlink" title="推荐"></a>推荐</h3><ul>
+<li><a href="https://pmthinking.us11.list-manage.com/track/click?u=c4dcdf8a6b76265256adf8255&id=a540a873a8&e=5f9cbb74d3" target="_blank" rel="noopener">黄埔犬校</a>：纯银的黄埔犬校内容精选 </li>
+<li><a href="https://www.notion.so/PRODUCT-THINKING-a601a12335044f349a22caf57f274c27" target="_blank" rel="noopener">产品沉思录精选</a>：少楠（Plidezus）的产品知识库</li>
+<li><a href="https://github.com/Newslab2020/Contents/blob/master/wechataccount.md" target="_blank" rel="noopener">新闻实验室</a>：优化媒体食谱，提高媒介素养</li>
+<li><a href="https://assets.iois.me/uzjhgqzglpa.html" target="_blank" rel="noopener">Deep Reading 精选</a>：在事实之上构建关于观点（洞察）与故事的筛选</li>
+<li><a href="https://platformthinking.plus/" target="_blank" rel="noopener">Platform Thinking+</a>：张宁的博客</li>
+<li><a href="https://yitianshijie.net/" target="_blank" rel="noopener">一天世界</a>：IPN 李如一的博客</li>
+<li><a href="https://pmthinking.us11.list-manage.com/track/click?u=c4dcdf8a6b76265256adf8255&id=2049427034&e=5f9cbb74d3" target="_blank" rel="noopener">刻意体会</a>：即刻产品人 Kyth 的自留地</li>
+<li><a href="https://notion.cx/" target="_blank" rel="noopener">Notion 中文社区</a>：Better Life, Better Work</li>
+<li><a href="https://www.notion.so/da53956e706a4b0c8aabb757c0259382" target="_blank" rel="noopener">数据产品的日常</a>：数据 PM 资料库</li>
+<li><a href="http://elproducto.eu/" target="_blank" rel="noopener">el producto</a>：Tech &amp; Product Management News and Thoughts</li>
+<li><a href="https://clearbox.substack.com/" target="_blank" rel="noopener">透明盒子计划</a>：非虚构类书籍阅读笔记</li>
+<li><a href="https://news.dex.group/f3b9324ec1c545f3a7ad31d71da1fc38?v=13a31b332fd8465a9bb81d92748643b4" target="_blank" rel="noopener">DEX 周刊</a>：DEX 旗下关于产品、设计和开发的邮件订阅列表</li>
+<li><a href="https://pmthinking.us11.list-manage.com/track/click?u=c4dcdf8a6b76265256adf8255&id=f60bfc9cb9&e=5f9cbb74d3" target="_blank" rel="noopener">Λ-Reading</a>：每天 2 分钟，扩展认知边界</li>
+<li><a href="https://www.notion.so/blog-by-liqi-io-4bdf37d4fb3443b4b6dbed8317450307" target="_blank" rel="noopener">独立 blog 订阅列表 by 利器 liqi.io</a>：中文独立博客列表</li>
+</ul>
+
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/uploads/wechat-qcode.jpg" alt="Herbert Chang wechat" style="width: 200px; max-width: 100%;"/>
+    <div>欢迎您扫一扫上面的微信公众号，订阅我的博客！</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>转发和赞赏是对俺创作的支持</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/uploads/wechatpay.png" alt="Herbert Chang 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/uploads/alipay.png" alt="Herbert Chang 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/%E4%BA%A7%E5%93%81%E5%91%A8%E5%88%8A/" rel="tag"># 产品周刊</a>
+          
+            <a href="/tags/%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1/" rel="tag"># 产品设计</a>
+          
+            <a href="/tags/PM/" rel="tag"># PM</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/09/13/Product-Weekly-issue-32-20200914/" rel="next" title="产品周刊 ProductWeekly | 第 32 期（20200914）">
+                <i class="fa fa-chevron-left"></i> 产品周刊 ProductWeekly | 第 32 期（20200914）
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Herbert Chang</p>
+              <p class="site-description motion-element" itemprop="description">所南心史井中全</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%20%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">35</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-globe"></i>
+                
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://youhan26.github.io/" title="Tony You 的个人博客" target="_blank">Tony You 的个人博客</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://leiquan.website/" title="雷全的个人博客" target="_blank">雷全的个人博客</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#值得关注的产品"><span class="nav-number">1.</span> <span class="nav-text">值得关注的产品</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-Haptic-Life-Tracker（iOS）"><span class="nav-number">1.1.</span> <span class="nav-text">1. Haptic Life Tracker（iOS）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-Remotive（Web）"><span class="nav-number">1.2.</span> <span class="nav-text">2. Remotive（Web）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-Cubox（Web、macOS、iOS-amp-Chrome-插件）"><span class="nav-number">1.3.</span> <span class="nav-text">3. Cubox（Web、macOS、iOS &amp; Chrome 插件）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#佳文推介"><span class="nav-number">2.</span> <span class="nav-text">佳文推介</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-Figma-Config-又给我们带来了什么新特性？"><span class="nav-number">2.1.</span> <span class="nav-text">1. Figma Config 又给我们带来了什么新特性？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-设计-Widget-避免「功能化」"><span class="nav-number">2.2.</span> <span class="nav-text">2. 设计 Widget - 避免「功能化」</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-Amazon’s-profits-AWS-and-advertising"><span class="nav-number">2.3.</span> <span class="nav-text">3. Amazon’s profits, AWS and advertising</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#资源与工具"><span class="nav-number">3.</span> <span class="nav-text">资源与工具</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-Sketch-插件：Deck"><span class="nav-number">3.1.</span> <span class="nav-text">1. Sketch 插件：Deck</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-电子书《The-Data-Driven-Product-Manager》"><span class="nav-number">3.2.</span> <span class="nav-text">2. 电子书《The Data Driven Product Manager》</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-76-Tools-For-Designers-In-2020"><span class="nav-number">3.3.</span> <span class="nav-text">3. 76 Tools For Designers In 2020</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#每周一书"><span class="nav-number">4.</span> <span class="nav-text">每周一书</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#订阅"><span class="nav-number">5.</span> <span class="nav-text">订阅</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#推荐"><span class="nav-number">6.</span> <span class="nav-text">推荐</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2018 &mdash; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Herbert Chang</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://Herbert.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'https://herbertchang.github.io/2020/09/20/Product-Weekly-issue-33-20200921/';
+          this.page.identifier = '2020/09/20/Product-Weekly-issue-33-20200921/';
+          this.page.title = '产品周刊 ProductWeekly | 第 33 期（20200921）';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://Herbert.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
